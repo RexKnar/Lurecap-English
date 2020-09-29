@@ -1,3 +1,6 @@
+import { CourseService } from './../../services/course.service';
+import { Router } from '@angular/router';
+import { CourseList } from './../../models/Course';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,106 +9,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course-card.component.scss']
 })
 export class CourseCardComponent implements OnInit {
+    coursecardlist:CourseList[]=[];
 
-  constructor() { }
+  constructor(
+      private readonly _courseService: CourseService,
+      private readonly _router:Router
+
+  ) { }
 
   ngOnInit(): void {
+    this.get();
   }
 
+  get() {
+    this._courseService.getCourseList().subscribe((data: any) => {
+      this.coursecardlist = data.allCourse;
+    
+    });
+  
+}
+}
 
-  pageTitleArea: pageTitle[] = [
-    {
-        title: 'Courses'
-    }
-]
-singleCoursesBox: coursesContent[] = [
-    {
-        courseImg: 'assets/img/courses/img1.jpg',
-        coursePrice: 'Free',
-        coursePriceClass: 'free',
-        authorImg: 'assets/img/user1.jpg',
-        authorName: 'Alex Morgan',
-        title: 'Introduction to Quantitative Methods',
-        link: 'courses-details',
-        paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        courseDuration: '8 Weeks Long',
-        studentApply: 'Available Now'
-    },
-    {
-        courseImg: 'assets/img/courses/img2.jpg',
-        coursePrice: '$49',
-        coursePriceClass: 'paid',
-        authorImg: 'assets/img/user2.jpg',
-        authorName: 'Sarah Taylor',
-        title: 'Introduction to Linear Models and Matrix Algebra',
-        link: 'courses-details',
-        paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        courseDuration: '7 Weeks Long',
-        studentApply: 'Available Now'
-    },
-    {
-        courseImg: 'assets/img/courses/img3.jpg',
-        coursePrice: '$69',
-        coursePriceClass: 'paid',
-        authorImg: 'assets/img/user3.jpg',
-        authorName: 'David Warner',
-        title: 'Data Science: Inference and Modeling',
-        link: 'courses-details',
-        paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        courseDuration: '2 Weeks Long',
-        studentApply: 'Not Available'
-    },
-    {
-        courseImg: 'assets/img/courses/img4.jpg',
-        coursePrice: '$99',
-        coursePriceClass: 'paid',
-        authorImg: 'assets/img/user1.jpg',
-        authorName: 'Alex Morgan',
-        title: 'The Data Science Course: Complete Data Science',
-        link: 'courses-details',
-        paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        courseDuration: '8 Weeks Long',
-        studentApply: 'Available Now'
-    },
-    {
-        courseImg: 'assets/img/courses/img5.jpg',
-        coursePrice: '$49',
-        coursePriceClass: 'paid',
-        authorImg: 'assets/img/user2.jpg',
-        authorName: 'Sarah Taylor',
-        title: 'Java Programming Masterclass for Developers',
-        link: 'courses-details',
-        paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        courseDuration: '7 Weeks Long',
-        studentApply: 'Available Now'
-    },
-    {
-        courseImg: 'assets/img/courses/img6.jpg',
-        coursePrice: '$69',
-        coursePriceClass: 'paid',
-        authorImg: 'assets/img/user3.jpg',
-        authorName: 'David Warner',
-        title: 'Machine Learning A-Z™: Hands-On Python',
-        link: 'courses-details',
-        paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        courseDuration: '2 Weeks Long',
-        studentApply: 'Not Available'
-    }
-]
-
-}
-class pageTitle {
-title : string;
-}
-class coursesContent {
-courseImg : string;
-coursePrice : string;
-coursePriceClass : string;
-authorImg : string;
-authorName : string;
-title : string;
-link : string;
-paragraphText : string;
-courseDuration : string;
-studentApply : string;
-}
