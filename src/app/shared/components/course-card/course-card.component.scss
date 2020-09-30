@@ -1,3 +1,5 @@
+@import "../../../../styles.scss";
+
 .courses-area {
     position: relative;
     z-index: 1;
@@ -10,7 +12,7 @@
     margin-bottom: 30px;
     position: relative;
     border-radius: 5px;
-    background-color: var(--whiteColor);
+    background-color: $white;
     box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
 
     .courses-image {
@@ -30,18 +32,18 @@
             position: absolute;
             right: 20px;
             top: 20px;
-            color: var(--whiteColor);
+            color: $white;
             font-size: 30px;
             line-height: 1;
 
             &:hover {
-                color: var(--mainColor);
+                color: $secondary-color;
             }
         }
         .price {
             display: inline-block;
-            background-color: var(--mainColor);
-            color: var(--whiteColor);
+            background-color: $primary-color;
+            color: $white;
             width: 65px;
             height: 65px;
             border-radius: 50%;
@@ -52,7 +54,7 @@
             line-height: 67px;
             font: {
                 size: 22px;
-                weight: 800;
+                weight: 500;
             };
             &.free {
                 background-color: green;
@@ -72,7 +74,7 @@
                 margin-right: 10px;
             }
             span {
-                color: var(--mainColor);
+                color: $secondary-color;
                 font: {
                     weight: 600;
                     size: 15px;
@@ -107,7 +109,7 @@
                     right: 7px;
                 };
                 i {
-                    color: var(--mainColor);
+                    color: $secondary-color;
                     position: absolute;
                     left: 7px;
                     top: 0;
@@ -134,7 +136,7 @@
             bottom: 0;
         };
         a {
-            color: var(--mainColor);
+            color: $secondary-color;
 
             &:hover {
                 text-decoration: underline;
