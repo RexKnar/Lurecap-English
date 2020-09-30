@@ -1,6 +1,6 @@
 <section class="courses-area ptb-100 bg-fafafb">
-    <div class="container">
-        <div class="row">
+    <div class="container">       
+        <div  class="row">
             <div class="col-lg-4 col-md-6" *ngFor="let coursesContent of coursecardlist ">
                 <div class="single-courses-box">
                     <div class="courses-image">
@@ -12,21 +12,29 @@
 
                     <div class="courses-content">
                         <div class="course-author d-flex align-items-center">
+
                             <!-- <img [src]="coursesContent.imageUrl " class="rounded-circle" alt="image"> -->
-                            <span *ngIf="coursesContent.courseAmount!=0 ">{{coursesContent.courseAmount}}</span>
+
+                           <span *ngIf="coursesContent.courseAmount!=0 ">{{coursesContent.courseAmount}}</span>
                             <span *ngIf="coursesContent.courseAmount==0 ">FREE</span>
                         </div>
-
-                        <h3><a routerLink="/{{coursesContent.imageUrl}}">{{coursesContent. courseName}}</a></h3>
+                        
+                        <!-- <h3><a routerLink="/{{coursesContent.imageUrl}}">{{coursesContent. courseName}}</a></h3> -->
+                      
                         <p>{{coursesContent.description |Description:coursesContent }}</p>
-
                         <ul class="courses-box-footer d-flex justify-content-between align-items-center">
-                            <li>
+                         
+                            <li>{{coursesContent.count}}</li>
+                           <li>{{coursesContent.provideWhat}}</li>
+                           <li>{{coursesContent.tutorName}}</li>
+
+                           <!--  <li>
                                 <i class='flaticon-agendas'></i> {{coursesContent.courseDuration}}
                             </li>
                             <li>
                                 <i class='flaticon-team'></i> {{coursesContent.studentApply}}
-                            </li>
+                            </li> -->
+
                         </ul>
                     </div>
                 </div>

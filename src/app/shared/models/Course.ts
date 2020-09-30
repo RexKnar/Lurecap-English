@@ -1,22 +1,17 @@
 
-
-export class CourseList{
-
+export class CourseList {
     courseMasterId: number;
     courseName: string;
     courseAmount: number;
     description: string;
-    learnersNumber:number;
     provideWhat: string;
-    dicountAmount:number;
+    dicountAmount: number;
     language: string;
     courseType: string;
     imageUrl: string;
-    statusFlag: number;
-    affliationAmount:number ;
-    tutorId:  number;
-    vendorId:number ;
-
+    count :number;
+    tutorName: string;
+    tutorId: number;
 }
 
 

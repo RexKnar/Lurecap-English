@@ -24,7 +24,6 @@ export class CourseCardComponent implements OnInit {
   get() {
     this._courseService.getCourseList().subscribe((data: any) => {
       this.coursecardlist = data.allCourse;
-    
     });
   
 }
