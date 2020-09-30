@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course-card.component.scss']
 })
 export class CourseCardComponent implements OnInit {
-    coursecardlist:CourseList[]=[];
+    courseCardList:CourseList[]=[];
 
   constructor(
       private readonly _courseService: CourseService,
@@ -23,7 +23,7 @@ export class CourseCardComponent implements OnInit {
 
   get() {
     this._courseService.getCourseList().subscribe((data: any) => {
-      this.coursecardlist = data.allCourse;
+      this.courseCardList = data.allCourse;
     });
   
 }
