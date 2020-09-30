@@ -1,12 +1,15 @@
+$color1:#d9c9f7;
+$primary-color:#221638;
+$secondary-color:#9072c8;
+$white:#ffffff;
+
 :root {
     --fontFamily: 'Nunito', sans-serif;
-    --mainColor: #ff5d22;
-    --whiteColor: #ffffff;
-    --blackColor: #221638;
-    --optionalColor: #6b6b84;
+    // $color1:#20a52b;
     --fontSize: 17px;
     --transition: .5s;
 }
+
 body {
     padding: 0;
     margin: 0;
@@ -36,15 +39,15 @@ img {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font: {
         family: var(--fontFamily);
-        weight: 800;
+        weight: 500;
     };
 }
 p {
-    color: var(--optionalColor);
+    color: $color1;
     line-height: 1.8;
     margin-bottom: 15px;
     font: {
-        weight: 600;
+        weight: 200;
         size: var(--fontSize);
     };
     &:last-child {
@@ -108,8 +111,8 @@ a {
     text-align: center;
     overflow: hidden;
     z-index: 1;
-    color: var(--whiteColor);
-    background-color: var(--mainColor);
+    color: $white;
+    background-color: $primary-color;
     transition: var(--transition);
     border-radius: 5px;
     padding: 12px 25px 12px 50px;
@@ -123,7 +126,7 @@ a {
         width: 0;
         height: 0;
         border-radius: 50%;
-        background-color: var(--blackColor);
+        background-color: $primary-color;
         transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
         transform: translate(-50%, -50%);
         z-index: -1;
@@ -143,7 +146,8 @@ a {
         }
     }
     &:hover {
-        color: var(--whiteColor);
+        background-color: $secondary-color;
+        color: $white;
         box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
         transform: translateY(-5px);
 
