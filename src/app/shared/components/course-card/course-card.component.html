@@ -12,14 +12,14 @@
                     <div class="courses-content">
                         <div class="course-author d-flex ">
                             <span>{{coursesContent.tutorName}}</span>
+                        
+                               <!-- <bar-rating [(rate)]="rate" [max]="5"></bar-rating> -->
+<bar-rating [(rate)]="rates" [readOnly]="true"></bar-rating>
+                            
                         </div>
+                     
                         <h3><a routerLink="/{{coursesContent.imageUrl}}">{{coursesContent. courseName}}</a></h3>
                         <p>{{coursesContent.description |Description:coursesContent }}</p>
-                        <!-- <ul class="courses-box-footer">
-                            <li>
-                                <i class='flaticon-team'></i>{{coursesContent.count}} +users
-                            </li>
-                        </ul> -->
                         <ul class="courses-box-footer d-flex justify-content-between align-items-center">
                             <li>
                                 <i class='flaticon-team'></i>{{coursesContent.count}} +users
@@ -47,3 +47,4 @@
         </div>
     </div>
 </section>
+
