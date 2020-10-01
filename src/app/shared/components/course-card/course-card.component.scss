@@ -102,6 +102,33 @@
             font-weight: 500;
             background-color: $primary-color;
         }
+
+        .review-rating {
+            display: block;
+            margin-bottom: 8px;
+
+            .review-stars {
+                display: inline-block;
+
+                i {
+                    color: #cecfd2;
+                    font-size: 18px;
+                    display: inline-block;
+                    margin-right: 3px;
+    
+                    &.checked {
+                        color: orange;
+                    }
+                }
+            }
+            span {
+                color: var(--blackColor);
+                position: relative;
+                top: -2px;
+                font-weight: 800;
+                margin-left: 5px;
+            }
+        }
         .courses-box-footer {
             list-style-type: none;
             padding-left: 0;
