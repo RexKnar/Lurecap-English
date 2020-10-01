@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseCardComponent implements OnInit {
     courseCardList:CourseList[]=[];
-
+rates:number=3.5;
   constructor(
       private readonly _courseService: CourseService,
       private readonly _router:Router

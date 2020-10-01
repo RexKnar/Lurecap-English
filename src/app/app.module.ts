@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { CoreComponent } from './core/core.component';
 import { HomeModule } from './home/home.module';
 import { HttpClientModule } from '@angular/common/http';
+import { BarRatingModule } from 'ngx-bar-rating';
 
 @NgModule({
   declarations: [
@@ -19,8 +20,13 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     CoursesModule,
     SharedModule,
+    BarRatingModule,
     HomeModule
   ],
+  exports: [
+    BarRatingModule
+  ],
+
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
