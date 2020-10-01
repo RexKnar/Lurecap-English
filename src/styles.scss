@@ -1,4 +1,5 @@
 $color1:#d9c9f7;
+$color2:#45414c;
 $primary-color:#221638;
 $secondary-color:#9072c8;
 $white:#ffffff;
@@ -44,7 +45,7 @@ img {
     };
 }
 p {
-    color: $color1;
+    color: $color2;
     line-height: 1.8;
     margin-bottom: 15px;
     font: {
@@ -69,6 +70,12 @@ a {
     padding: {
         top: 100px;
         bottom: 100px;
+    };
+}
+.pttb-100 {
+    padding: {
+        top: 100px;
+        bottom: 34px;
     };
 }
 .pt-100 {
@@ -1435,6 +1442,12 @@ Shape Img CSS
         padding: {
             top: 60px;
             bottom: 60px;
+        };
+    }
+    .pttb-100 {
+        padding: {
+            top: 60px;
+            bottom: 0px;
         };
     }
     .pt-100 {
