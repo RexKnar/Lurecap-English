@@ -19,11 +19,14 @@ export class CourseCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.get();
+
+    
   }
 
   get() {
     this._courseService.getCourseList().subscribe((data: any) => {
       this.courseCardList = data.allCourse;
+      console.log(this.courseCardList);
     });
   
 }
