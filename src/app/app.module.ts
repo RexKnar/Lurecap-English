@@ -9,11 +9,15 @@ import { HomeModule } from './home/home.module';
 import { CommunityModule } from './community/community.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BarRatingModule } from 'ngx-bar-rating';
+import { TermsandcondtionsComponent } from './termsandcondtions/termsandcondtions.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoreComponent,
+    TermsandcondtionsComponent,
+    PrivacypolicyComponent,
   ],
   imports: [
     HttpClientModule,
