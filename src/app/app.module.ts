@@ -6,13 +6,14 @@ import { CoursesModule } from './courses/courses.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreComponent } from './core/core.component';
 import { HomeModule } from './home/home.module';
+import { CommunityModule } from './community/community.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BarRatingModule } from 'ngx-bar-rating';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoreComponent
+    CoreComponent,
   ],
   imports: [
     HttpClientModule,
@@ -21,7 +22,8 @@ import { BarRatingModule } from 'ngx-bar-rating';
     CoursesModule,
     SharedModule,
     BarRatingModule,
-    HomeModule
+    HomeModule,
+    CommunityModule
   ],
   exports: [
     BarRatingModule
