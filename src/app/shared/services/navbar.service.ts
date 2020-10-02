@@ -17,10 +17,10 @@ export class NavbarService {
       type: "parent",
       badgeType: "primary",
       active: false,
-      children: [
-        { path: "/home", title: "Edit Banner", type: "link", active: false, },
-        { path: "/settings/edit-slider", title: "Edit Slider", type: "link", active: false, },
-      ],
+      // children: [
+      //   { path: "/home", title: "Edit Banner", type: "link", active: false, },
+      //   { path: "/settings/edit-slider", title: "Edit Slider", type: "link", active: false, },
+      // ],
     },
     {
       path: "/about-us",

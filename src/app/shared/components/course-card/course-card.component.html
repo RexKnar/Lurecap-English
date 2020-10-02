@@ -1,4 +1,4 @@
-<section class="courses-area ptb-100 bg-fafafb">
+<section class="courses-area  bg-fafafb">
 
     <div class="container">
         <div class="row">
@@ -12,10 +12,7 @@
                     <div class="courses-content">
                         <div class="course-author d-flex ">
                             <span>{{coursesContent.tutorName}}</span>
-                        
-                               <!-- <bar-rating [(rate)]="rate" [max]="5"></bar-rating> -->
-<bar-rating [(rate)]="rates" [readOnly]="true"></bar-rating>
-                            
+                            <bar-rating [(rate)]="rates" [readOnly]="true"></bar-rating>    
                         </div>
                      
                         <h3><a routerLink="/{{coursesContent.imageUrl}}">{{coursesContent. courseName}}</a></h3>

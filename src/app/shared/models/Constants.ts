@@ -3,6 +3,6 @@ export const ROUTE_CONFIG = {
 };
 
 export const COURSE_CARD_API_CONFIG = {
-    GetAllCourseList: '/Course/GetAllCourseList'
+    GetAllCourseList: "/Course/GetAllCourseList?userType=learner"
 };
 

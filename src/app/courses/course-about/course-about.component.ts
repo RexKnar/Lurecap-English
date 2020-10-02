@@ -30,15 +30,15 @@ ourMissionContent: Content[] = [
 ourMissionList: List[] = [
     {
         icon: 'flaticon-tick',
-        title: 'more fluent and accurate '
+        title: 'More fluent and accurate '
     },
     {
         icon: 'flaticon-tick',
-        title: 'appropriate body language and tone'
+        title: 'Appropriate body language and tone'
     },
     {
         icon: 'flaticon-tick',
-        title: 'confidence to communicate '
+        title: 'Confidence to ommunicate '
     },
     {
         icon: 'flaticon-tick',
