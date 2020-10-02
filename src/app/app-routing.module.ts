@@ -5,8 +5,18 @@ import { TermsandcondtionsComponent } from './termsandcondtions/termsandcondtion
 
 const routes: Routes = [
 
-  {path: 'terms-and-conditions', component: TermsandcondtionsComponent},
-  {path:'privacy-policy',component: PrivacypolicyComponent}
+  {
+    path:'',
+    loadChildren: () => import("./home/home.module").then(m => m.HomeModule)
+  },
+  {
+    path: 'terms-and-conditions',
+     component: TermsandcondtionsComponent
+    },
+  {
+    path:'privacy-policy',
+    component: PrivacypolicyComponent
+  }
 ];
 
 @NgModule({

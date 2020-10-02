@@ -7,10 +7,8 @@ import { CoursesComponent } from './courses.component';
 import { SharedModule } from '../shared/shared.module';
 import { CourseAboutComponent } from './course-about/course-about.component';
 import { CourseIntroComponent } from './course-intro/course-intro.component';
-
 import { CourseListComponent } from './course-list/course-list.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
-
 
 
 @NgModule({

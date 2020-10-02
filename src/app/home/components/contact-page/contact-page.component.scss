@@ -1,3 +1,9 @@
+$white: #fff;
+$primary-color: #221638;
+$secondary-color:#9072c8;
+$black:#000;
+
+
 * {
   box-sizing: border-box;
 }
@@ -9,6 +15,7 @@ h2,h3{
        position: relative;
        padding-left: 100px;
        z-index: 1;
+       color: $primary-color;
    
        .icon {
            width: 75px;
@@ -34,11 +41,14 @@ h2,h3{
        }
        h3 {
            margin-bottom: 10px;
+           color: $primary-color;
            font: {
                size: 24px;
            };
        }
        p {
+           color: $primary-color;
+           font-weight: 500;
            margin: {
                bottom: 3px;
            };
@@ -46,6 +56,10 @@ h2,h3{
                margin-bottom: 0;
            }
        }
+       a{
+           color: $primary-color;
+       }
+
        .back-icon {
            position: absolute;
            right: 0;
@@ -65,7 +79,7 @@ h2,h3{
    }
    
    .contact-area{
-       background-color: white;
+       background-color: $white;
        position: relative;
        z-index: 1;
    }
