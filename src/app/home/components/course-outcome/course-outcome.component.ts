@@ -47,12 +47,12 @@ processContent: Content[] = [
     },
     {
         img: 'assets/img/People-Flat.png',
-        title: 'Get rid of Mother Tougue Influence!',
+        title: 'No Mother Tougue Influence!',
         number: '5'
     },
     {
         img: 'assets/img/People-Flat.png',
-        title: 'Improve your pronunciation and fluency!',
+        title: 'Improved pronunciation and fluency!',
         number: '6'
     }
 ]

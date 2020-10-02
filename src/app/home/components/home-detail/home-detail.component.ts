@@ -14,17 +14,17 @@ export class HomeDetailComponent implements OnInit {
 
   ourMissionImage: Image[] = [
     {
-        img: 'assets/img/our-mission/img2.png'
+        img: 'assets/img/business-english.jpg'
     }
 ]
 ourMissionContent: Content[] = [
     {
-        title: 'Real-world Data Challenges Prepare to Be A Data Science Leader',
-        paragraphText1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-        paragraphText2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
+        title: 'You’ll finally understand every English word you hear ',
+        paragraphText1: 'Want to start speaking English from your first lesson? You will! Our lessons take you by the hand and guide you through real English conversations.',
+        paragraphText2: 'Learning for travel or love? Want to focus on reading, writing, grammar or culture? You get lessons based on your goals and needs.',
         defaultBtnIcon: 'flaticon-right',
-        defaultBtnText: 'Apply Now',
-        defaultBtnLink: 'membership-levels'
+        defaultBtnText: 'Enroll Now',
+        defaultBtnLink: 'courses'
     }
 ]
 featuresList: List[] = [
