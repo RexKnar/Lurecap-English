@@ -10,15 +10,15 @@ import { BarRatingModule } from 'ngx-bar-rating';
 
 
 @NgModule({
-  declarations: [CourseCardComponent, NavbarComponent, FooterComponent,DescriptionPipe],
-  imports: [
-    CommonModule,
-    BarRatingModule
-  ],
-  exports: [
-    NavbarComponent, 
-    FooterComponent,
-    CourseCardComponent
-  ]
+declarations: [CourseCardComponent, NavbarComponent, FooterComponent,DescriptionPipe],
+imports: [
+CommonModule,
+BarRatingModule
+],
+exports: [
+NavbarComponent,
+FooterComponent,
+CourseCardComponent
+]
 })
 export class SharedModule { }

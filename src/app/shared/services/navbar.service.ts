@@ -47,7 +47,7 @@ export class NavbarService {
       active: false,
     },
     {
-      path: "/contact",
+      path: "/contact-page",
       title: "Contact",
       icon: "contact",
       type: "link",

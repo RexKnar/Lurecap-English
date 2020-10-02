@@ -5,9 +5,10 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { AboutUsWhyComponent } from './components/about-us/about-us-why/about-us-why.component';
 import { CourseProvideComponent } from './components/course-provide/course-provide.component';
 import { CourseOutcomeComponent } from './components/course-outcome/course-outcome.component';
+import { ContactPageComponent } from './components/contact-page/contact-page.component';
 
 @NgModule({
-  declarations: [AboutUsComponent, AboutUsWhyComponent, CourseProvideComponent, CourseOutcomeComponent],
+  declarations: [AboutUsComponent, AboutUsWhyComponent, CourseProvideComponent, CourseOutcomeComponent, ContactPageComponent],
   imports: [
     CommonModule,
     HomeRoutingModule
