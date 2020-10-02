@@ -9,6 +9,7 @@ import { HomeModule } from './home/home.module';
 import { CommunityModule } from './community/community.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BarRatingModule } from 'ngx-bar-rating';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BarRatingModule } from 'ngx-bar-rating';
     SharedModule,
     BarRatingModule,
     HomeModule,
+    NgbModule,
     CommunityModule
   ],
   exports: [
