@@ -35,6 +35,9 @@ $color2:#45414c;
             margin-bottom: 5px;
             font-size: 25px;
         }
+        p{
+            text-align: justify;
+        }
         span {
             color: $color2;
             font: {
@@ -113,6 +116,7 @@ $color2:#45414c;
     }
     p {
         margin-bottom: 20px;
+        text-align: justify;
 
         &:last-child {
             margin-bottom: 0;
