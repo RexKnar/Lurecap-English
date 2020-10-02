@@ -16,7 +16,7 @@ export class CourseOutcomeComponent implements OnInit {
     {
         subTitle: "Outcomes",
         title: 'What will you gain from this course',
-        paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
+        paragraphText: 'we guarantee that we will make you fluent in English in few months. We will make you speak English naturally and effortlessly. We will make your accent clearer and will make you speak like a native English speaker.'
     }
 ]
 processImage: Image[] = [

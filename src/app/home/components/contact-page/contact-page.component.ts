@@ -17,31 +17,6 @@ export class ContactPageComponent implements OnInit {
         title: 'Contact Us'
     }
 ]
-/**
-contactInfoBox1: InfoBox1[] = [
-    {
-        icon: 'bx bx-map',
-        title: 'Our Address',
-        location: '5-306, Karungal Road, Marthandam.'
-    }
-]
-contactInfoBox2: InfoBox2[] = [
-    {
-        icon: 'bx bx-phone-call',
-        title: 'Contact',
-        number: '+91-94874 27429',
-        email: 'academy@speakrefine.com'
-    }
-]
-contactInfoBox3: InfoBox3[] = [
-    {
-        icon: 'bx bx-time-five',
-        title: 'Hours of Operation',
-        text1: 'Monday - Friday: 09:00 - 20:00',
-        text2: 'Sunday & Saturday: 10:30 - 22:00'
-    }
-]*/
-
 contactInfoBox2: InfoBox2[] = [
     {
         icon: 'bx bx-phone-call',

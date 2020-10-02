@@ -17,7 +17,8 @@ export class HomeIntroComponent implements OnInit {
     {
         title: 'Have you been learning English for years but still cant speak fluently?',
         paragraphText: 'This is because you are learning English the wrong way.Learning grammar and vocabulary will NOT make you a fluent English speaker.The only way to improve Spoken English is to practice with Native English Speakers.',
-        linkText: 'Explore Learing',
+        defaultBtnIcon: 'flaticon-right',
+        linkText: 'Enroll Now',
         link: 'courses-grid'
     }
 ]
@@ -33,6 +34,7 @@ exploreLearningVideo: Video[] = [
 class Content {
 title : string;
 paragraphText : string;
+defaultBtnIcon : string;
 linkText : string;
 link : string;
 }

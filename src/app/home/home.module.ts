@@ -10,6 +10,8 @@ import { HomeSliderComponent } from './components/home-slider/home-slider.compon
 import { HomeIntroComponent } from './components/home-intro/home-intro.component';
 import { HomeDetailComponent } from './components/home-detail/home-detail.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { HomeContentComponent } from './components/home-content/home-content.component';
+import { HomeBriefComponent } from './components/home-brief/home-brief.component';
 
 @NgModule({
     declarations: [AboutUsComponent,
@@ -20,7 +22,9 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
       HomeSliderComponent,
       HomeIntroComponent,
       HomeDetailComponent,
-      ContactPageComponent
+      ContactPageComponent,
+      HomeContentComponent,
+      HomeBriefComponent
     ],
     imports: [
       CommonModule,
