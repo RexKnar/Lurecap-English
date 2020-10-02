@@ -1,35 +1,47 @@
-<section class="courses-area ptb-100 bg-fafafb">
+<section class="courses-area  bg-fafafb">
+
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6" *ngFor="let coursesContent of singleCoursesBox;">
+            <div class="col-lg-4 col-md-6" *ngFor="let coursesContent of courseCardList">
                 <div class="single-courses-box">
                     <div class="courses-image">
-                        <a routerLink="/{{coursesContent.link}}" class="d-block image">
-                            <img [src]="coursesContent.courseImg" alt="image">
+                        <a routerLink="/{{coursesContent.imageUrl}}" class="d-block image">
+                            <img [src]="coursesContent.imageUrl " alt="image">
                         </a>
-                        <div class="price shadow {{coursesContent.coursePriceClass}}">{{coursesContent.coursePrice}}</div>
                     </div>
-
                     <div class="courses-content">
-                        <div class="course-author d-flex align-items-center">
-                            <img [src]="coursesContent.authorImg" class="rounded-circle" alt="image">
-                            <span>{{coursesContent.authorName}}</span>
+                        <div class="course-author d-flex ">
+                            <span>{{coursesContent.tutorName}}</span>
+                            <bar-rating [(rate)]="rates" [readOnly]="true"></bar-rating>    
                         </div>
-
-                        <h3><a routerLink="/{{coursesContent.link}}">{{coursesContent.title}}</a></h3>
-                        <p>{{coursesContent.paragraphText}}</p>
-
+                     
+                        <h3><a routerLink="/{{coursesContent.imageUrl}}">{{coursesContent. courseName}}</a></h3>
+                        <p>{{coursesContent.description |Description:coursesContent }}</p>
                         <ul class="courses-box-footer d-flex justify-content-between align-items-center">
                             <li>
-                                <i class='flaticon-agendas'></i> {{coursesContent.courseDuration}}
+                                <i class='flaticon-team'></i>{{coursesContent.count}} +users
                             </li>
-                            <li>
-                                <i class='flaticon-team'></i> {{coursesContent.studentApply}}
-                            </li>
+                            <!-- <div class="others-option d-flex align-items-center">
+                                <div class="option-item">
+                                    <a routerLink="/contact" class="default-btn style">
+                                        Buy Now<span></span>
+                                    </a>
+                                </div>
+                            </div> -->
+
+                            <div class="price">
+                                <span *ngIf="coursesContent.courseAmount!=0 && coursesContent.dicountAmount==0; ">₹
+                                    {{coursesContent.courseAmount}}</span>
+                                <span *ngIf="coursesContent.dicountAmount!=0 && coursesContent.courseAmount!=0 ;">₹
+                                    {{coursesContent.dicountAmount}} <del>₹ {{coursesContent.courseAmount}}</del>
+                                </span>
+                                <span *ngIf="coursesContent.courseAmount==0 ;" class="free">FREE</span>
+                            </div>
                         </ul>
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
-            </section>
+        </div>
+    </div>
+</section>
+
