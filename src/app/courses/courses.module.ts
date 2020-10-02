@@ -5,15 +5,17 @@ import { CommonModule } from '@angular/common';
 import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses.component';
 import { SharedModule } from '../shared/shared.module';
-import { CourseAboutComponent } from './course-about/course-about.component'
+import { CourseAboutComponent } from './course-about/course-about.component';
+import { CourseDetailComponent } from './course-detail/course-detail.component'
 
 
 @NgModule({
-  declarations: [CoursesComponent, CourseAboutComponent],
+  declarations: [CoursesComponent, CourseAboutComponent, CourseDetailComponent],
   imports: [
     CommonModule,
     CoursesRoutingModule,
-    SharedModule
+    SharedModule,
+    
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
