@@ -9,7 +9,7 @@
     }
 }
 .single-courses-box {
-    height: 500px;
+    height: 550px;
     margin-bottom: 30px;
     position: relative;
     border-radius: 5px;
@@ -162,6 +162,9 @@
             }
         }
        
+    }
+    &:hover {
+        border-color: $secondary-color;
     }
 }
 .courses-info {
