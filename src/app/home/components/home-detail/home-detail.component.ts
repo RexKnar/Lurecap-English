@@ -30,23 +30,23 @@ ourMissionContent: Content[] = [
 featuresList: List[] = [
     {
         icon: 'flaticon-tick',
-        title: 'Leadership-Focused Learning'
+        title: 'No Textbooks '
     },
     {
         icon: 'flaticon-tick',
-        title: 'Experts at Teaching Online'
+        title: 'No Memorization'
     },
     {
         icon: 'flaticon-tick',
-        title: 'Proven Career Outcomes'
+        title: 'Audio & Video Lessons '
     },
     {
         icon: 'flaticon-tick',
-        title: 'Diverse Backgrounds Welcome'
+        title: 'Personalized Guidance '
     },
     {
         icon: 'flaticon-tick',
-        title: 'The Basics of Machine Learning'
+        title: 'Change how you speak English'
     }
 ]
 

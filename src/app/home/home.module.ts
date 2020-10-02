@@ -9,20 +9,22 @@ import { HomeComponent } from './components/home/home.component';
 import { HomeSliderComponent } from './components/home-slider/home-slider.component';
 import { HomeIntroComponent } from './components/home-intro/home-intro.component';
 import { HomeDetailComponent } from './components/home-detail/home-detail.component';
+import { ContactPageComponent } from './components/contact-page/contact-page.component';
 
 @NgModule({
-  declarations: [AboutUsComponent,
-    AboutUsWhyComponent,
-    CourseProvideComponent,
-    CourseOutcomeComponent,
-    HomeComponent,
-    HomeSliderComponent,
-    HomeIntroComponent,
-    HomeDetailComponent,
-   ],
-  imports: [
-    CommonModule,
-    HomeRoutingModule
-  ]
-})
+    declarations: [AboutUsComponent,
+      AboutUsWhyComponent,
+      CourseProvideComponent,
+      CourseOutcomeComponent,
+      HomeComponent,
+      HomeSliderComponent,
+      HomeIntroComponent,
+      HomeDetailComponent,
+      ContactPageComponent
+    ],
+    imports: [
+      CommonModule,
+      HomeRoutingModule
+    ]
+  })
 export class HomeModule { }
