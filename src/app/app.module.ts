@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoursesModule } from './courses/courses.module';
 import { SharedModule } from './shared/shared.module';
-import { CoreComponent } from './core/core.component';
 import { HomeModule } from './home/home.module';
 import { CommunityModule } from './community/community.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -14,7 +13,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
-    CoreComponent,
   ],
   imports: [
     HttpClientModule,
