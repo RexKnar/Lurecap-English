@@ -4,18 +4,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoursesModule } from './courses/courses.module';
 import { SharedModule } from './shared/shared.module';
-import { CoreComponent } from './core/core.component';
 import { HomeModule } from './home/home.module';
 import { CommunityModule } from './community/community.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BarRatingModule } from 'ngx-bar-rating';
 import { TermsandcondtionsComponent } from './termsandcondtions/termsandcondtions.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { CoreModule } from './core/core.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoreComponent,
     TermsandcondtionsComponent,
     PrivacypolicyComponent,
   ],
@@ -27,7 +27,8 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
     SharedModule,
     BarRatingModule,
     HomeModule,
-    CommunityModule
+    CommunityModule,
+    CoreModule
   ],
   exports: [
     BarRatingModule

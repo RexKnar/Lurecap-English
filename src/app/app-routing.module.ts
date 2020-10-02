@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { TermsandcondtionsComponent } from './termsandcondtions/termsandcondtions.component';
 
+
 const routes: Routes = [
 
   {
