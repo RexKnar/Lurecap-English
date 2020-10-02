@@ -68,7 +68,7 @@
                         };
                     }
                     &:hover, &:focus, &.active {
-                        color: var(--mainColor);
+                        color: $secondary-color;
                     }
                 }
                 &:last-child {
@@ -79,7 +79,7 @@
                 }
                 &:hover, &.active {
                     a {
-                        color: var(--mainColor);
+                        color: $secondary-color;
                     }
                 }
                 .dropdown-menu {
