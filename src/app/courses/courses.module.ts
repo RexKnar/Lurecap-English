@@ -8,11 +8,9 @@ import { SharedModule } from '../shared/shared.module';
 import { CourseAboutComponent } from './course-about/course-about.component';
 import { CourseIntroComponent } from './course-intro/course-intro.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 import { CourseListComponent } from './course-list/course-list.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { BarRatingModule } from 'ngx-bar-rating';
-
 
 
 @NgModule({
