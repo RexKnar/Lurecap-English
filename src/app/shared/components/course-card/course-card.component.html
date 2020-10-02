@@ -35,7 +35,7 @@
                                 <span *ngIf="coursesContent.courseAmount!=0 && coursesContent.dicountAmount==0; ">₹
                                     {{coursesContent.courseAmount}}</span>
                                 <span *ngIf="coursesContent.dicountAmount!=0 && coursesContent.courseAmount!=0 ;">₹
-                                    {{coursesContent.dicountAmount}} <del>₹ {{coursesContent.courseAmount}}</del>
+                                    {{coursesContent.dicountAmount}} <del  >₹ {{coursesContent.courseAmount}}</del>
                                 </span>
                                 <span *ngIf="coursesContent.courseAmount==0 ;" class="free">FREE</span>
                             </div>

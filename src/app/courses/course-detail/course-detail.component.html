@@ -1,52 +1,74 @@
 <section class="courses-details-area pb-100">
-    <div class="courses-details-image">
-        <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size" alt="image">
-    </div>
+   
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-12 d-lg-none">
-                <div class="courses-details-info">
-                    <!-- <div class="image">
-                        <img src="assets/img/courses/img1.jpg" alt="image">
-                        <a href="https://www.youtube.com/watch?v=PWvPbGWVRrU" class="link-btn popup-youtube"></a>
-                        <div class="content">
-                            <i class="flaticon-google-play"></i>
-                            <span>Course Preview</span>
+            <div class="courses-details-image d-lg-none ">
+                <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size" alt="image">
+            </div> 
+            <div class="col-lg-4 order-md-2 col-md-12 ">
+                <div class="sticky-top">
+                    <div class="courses-details-info">
+                        <!-- <div class="image">
+                            <img src="assets/img/courses/img1.jpg" alt="image">
+                            <a href="https://www.youtube.com/watch?v=PWvPbGWVRrU" class="link-btn popup-youtube"></a>
+                            <div class="content">
+                                <i class="flaticon-google-play"></i>
+                                <span>Course Preview</span>
+                            </div>
+                        </div> -->
+                        <ul class="info">
+                            <li class="price">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span><i class="flaticon-price-tag"></i> Price</span>
+                                    <span
+                                        *ngIf="currentCourseDetails.courseDetails.courseAmount!=0 && currentCourseDetails.courseDetails.dicountAmount==0; ">₹
+                                        {{currentCourseDetails.courseDetails.courseAmount}}
+                                    </span>
+                                    <span
+                                        *ngIf="currentCourseDetails.courseDetails.dicountAmount!=0 && currentCourseDetails.courseDetails.courseAmount!=0 ;">₹
+                                        {{currentCourseDetails.courseDetails.dicountAmount}} <del
+                                            class="discount-style">₹{{currentCourseDetails.courseDetails.courseAmount}}
+                                        </del>
+                                    </span>
+                                    <span *ngIf="currentCourseDetails.courseDetails.courseAmount==0 ;"
+                                        class="free">FREE</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span><i class="flaticon-distance-education"></i> Lessons</span>
+                                    {{currentCourseDetails.chapterCount}}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span><i class="flaticon-web"></i> Enrolled</span>
+                                    {{currentCourseDetails.courseDetails.userCount}}+students
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span><i class="flaticon-open-padlock"></i> Access</span>
+                                    1-year
+                                </div>
+                            </li>
+                        </ul>
+    
+                        <div class="btn-box">
+                            <a routerLink="/courses-details" class="default-btn"><i class="flaticon-price-tag"></i>Buy
+                                Now<span></span></a>
+    
                         </div>
-                    </div> -->
-                    <ul class="info">
-                        <li class="price">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span><i class="flaticon-price-tag"></i> Price</span>
-                                {{currentCourseDetails.courseDetails.courseAmount}}
-                            </div>
-                        </li>
-                        <li>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span><i class="flaticon-distance-education"></i> Lessons</span>
-                                {{currentCourseDetails.chapterCount}}
-                            </div>
-                        </li>
-                        <li>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span><i class="flaticon-web"></i> Enrolled</span>
-                                {{currentCourseDetails.courseDetails.userCount}}+students
-                            </div>
-                        </li>
-                        <li>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span><i class="flaticon-open-padlock"></i> Access</span>
-                                1-year
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="btn-box">
-                        <a routerLink="/courses-details" class="default-btn"><i class="flaticon-price-tag"></i>Buy
-                            Now<span></span></a>
                     </div>
                 </div>
+               
             </div>
-            <div class="col-lg-8 col-md-12">
+            <div class="col-lg-8 order-md-1 col-md-12">  
+                <div class="courses-details-image d-lg-inline d-none">
+                    <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size" alt="image">
+                </div>            
+                    <h3 class="coursename">{{currentCourseDetails.courseDetails.courseName}}</h3>
+                    <h6>{{currentCourseDetails.courseDetails.provideWhat}}</h6>
                 <div class="courses-details-desc">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item"><a class="nav-link active" id="overview-tab" data-toggle="tab"
@@ -103,51 +125,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-12 d-lg-inline d-none">
-                <div class="courses-details-info">
-                    <!-- <div class="image">
-                        <img src="assets/img/courses/img1.jpg" alt="image">
-                        <a href="https://www.youtube.com/watch?v=PWvPbGWVRrU" class="link-btn popup-youtube"></a>
-                        <div class="content">
-                            <i class="flaticon-google-play"></i>
-                            <span>Course Preview</span>
-                        </div>
-                    </div> -->
-                    <ul class="info">
-                        <li class="price">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span><i class="flaticon-price-tag"></i> Price</span>
-                                {{currentCourseDetails.courseDetails.courseAmount}}
-                            </div>
-                        </li>
-                        <li>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span><i class="flaticon-distance-education"></i> Lessons</span>
-                                {{currentCourseDetails.chapterCount}}
-                            </div>
-                        </li>
-                        <li>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span><i class="flaticon-web"></i> Enrolled</span>
-                                {{currentCourseDetails.courseDetails.userCount}}+students
-                            </div>
-                        </li>
-                        <li>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span><i class="flaticon-open-padlock"></i> Access</span>
-                                1-year
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class="btn-box">
-                        <a routerLink="/courses-details" class="default-btn"><i class="flaticon-price-tag"></i>Buy
-                            Now<span></span></a>
-
-                    </div>
-                </div>
-            </div>
+            </div>           
         </div>
     </div>
 </section>

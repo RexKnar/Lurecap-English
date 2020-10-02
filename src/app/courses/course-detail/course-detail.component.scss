@@ -2,6 +2,15 @@
   min-width: 100% !important;
   height: auto !important;
 }
+.discount-style{
+  font-size: 16px;
+  font-weight: 500;
+  color: #9072c8;
+}
+.coursename{
+  padding-top: 4%;
+  font-weight: 600 !important;
+}
 .courses-details-desc {
   margin-top: 60px;
   padding-right: 15px;
@@ -468,10 +477,10 @@
 .courses-details-info {
   background-color: #f8f9f8;
   border-radius: 5px;
-  padding: 12px 12px 50px 12px;
+  padding: 0px 12px 0px 12px;
   margin: {
     left: 15px;
-    top: -240px;
+    // top: -240px;
   }
   .image {
     text-align: center;
