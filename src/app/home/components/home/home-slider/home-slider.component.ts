@@ -9,9 +9,6 @@ export class HomeSliderComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
   singleCaseStudyItem: singleCaseStudyItemContent[] = [
     {
         subTitle: 'Case study #1',
@@ -35,14 +32,17 @@ export class HomeSliderComponent implements OnInit {
     }
 ]
 
+  ngOnInit(): void {
+  }
+
 }
 class singleCaseStudyItemContent {
-subTitle : string;
-title : string;
-paragraphText1 : string;
-paragraphText2 : string;
-link : string;
-linkText : string;
-linkIcon : string;
-img : string;
+subTitle: string;
+title: string;
+paragraphText1: string;
+paragraphText2: string;
+link: string;
+linkText: string;
+linkIcon: string;
+img: string;
 }

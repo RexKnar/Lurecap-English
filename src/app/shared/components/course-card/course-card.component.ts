@@ -9,18 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course-card.component.scss']
 })
 export class CourseCardComponent implements OnInit {
-    courseCardList:CourseList[]=[];
-rates:number=3.5;
+  courseCardList: CourseList[] = [];
+
   constructor(
-      private readonly _courseService: CourseService,
-      private readonly _router:Router
+    private readonly _courseService: CourseService,
+    private readonly _router: Router
 
   ) { }
 
   ngOnInit(): void {
     this.get();
 
-    
+
   }
 
   get() {
@@ -28,7 +28,7 @@ rates:number=3.5;
       this.courseCardList = data.allCourse;
       console.log(this.courseCardList);
     });
-  
-}
+
+  }
 }
 
