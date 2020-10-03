@@ -479,7 +479,6 @@
     height: auto;
     z-index: 999;
     padding: {
-        top: 10px;
         bottom: 10px;
     };
     &.is-sticky {
@@ -492,7 +491,6 @@
         background-color: var(--whiteColor) !important;
         animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
         padding: {
-            top: 5px;
             bottom: 5px;
         };
     }
