@@ -4,7 +4,7 @@ $secondary-color:#9072c8;
 $black:#000;
 
 .contact{
-    box-shadow: 0 0 20px rgba(158,158,158,.8);
+    box-shadow: 0 20px 20px 20px rgba(158,158,158,.8);
     margin-left: auto;
     margin-right: auto;
     // width: 50%;
@@ -100,8 +100,6 @@ h2,h3{
     }
 
     .about-image{
-        // background-image:url('../../../../assets/img/bg.jng');
-        // background-color: $primary-color;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover; 
