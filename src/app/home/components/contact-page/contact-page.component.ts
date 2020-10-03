@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ContactUsService } from '../../../shared/services/contact-us.service';
+import { ToastrService } from "ngx-toastr";
+import {MessageConstants} from '../../../shared/models/messageConstants';
 @Component({
     selector: 'app-contact-page',
     templateUrl: './contact-page.component.html',
@@ -13,6 +15,7 @@ export class ContactPageComponent implements OnInit {
 
     constructor(private readonly _contactUsService: ContactUsService,
                 private formBuilder: FormBuilder,
+                private toastr: ToastrService
     ) { }
     get f() {
         return this.queriesForm.controls;
@@ -66,8 +69,13 @@ export class ContactPageComponent implements OnInit {
         this.queriesForm.value.refund = this.refund;
         this.queriesForm.value.mailDate = '2020-10-02T21:19:47.437Z';
         this._contactUsService.sendQueries(this.queriesForm.value).subscribe((data: any) => {
+        this.toastr.success(
+            MessageConstants.CONTACT_SUCCESS, "",
+             { timeOut: 2000, }
+             );
             this.queriesForm.reset();
             this.submitted = false;
+
         });
 
     }
