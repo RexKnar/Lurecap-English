@@ -11,7 +11,7 @@
                 <div class="explore-learning-content" *ngFor="let Content of exploreLearningContent;">
                     <h2>{{Content.title}}</h2>
                     <p>{{Content.paragraphText}}</p>
-                    <a routerLink="/{{Content.link}}" class="default-btn"><i class="{{Content.defaultBtnIcon}}"></i>{{Content.linkText}}</a>
+                    <a href="/courses" class="default-btn"><i class="{{Content.defaultBtnIcon}}"></i>{{Content.linkText}}</a>
                 </div>
             </div>
         </div>

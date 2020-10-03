@@ -9,9 +9,39 @@ export class CourseList {
     language: string;
     courseType: string;
     imageUrl: string;
-    count :number;
+    count: number;
     tutorName: string;
     tutorId: number;
+}
+export class CourseDetail{
+    courseDetails: CourseDetails;
+    chapterCount: number;
+    chapters: ChapterDetails[];
+    reviews: Reviews[];
+}
+export class CourseDetails {
+    courseMasterId: number;
+    courseName: string;
+    courseAmount: number;
+    description: string;
+    provideWhat: string;
+    dicountAmount: number;
+    language: string;
+    courseType: string;
+    imageUrl: string;
+    userCount: number;
+    tutorName: string;
+    tutorId: number;
+}
+export class ChapterDetails{
+    chapterId: number;
+    chapterName: string;
+    orderNo: number;
+}
+export class Reviews{
+    userName: string;
+    review: string;
+    rating: number;
 }
 
 

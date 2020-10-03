@@ -3,6 +3,13 @@ $primary-color: #221638;
 $secondary-color:#9072c8;
 $black:#000;
 
+.contact{
+    box-shadow: 0 0 20px rgba(158,158,158,.8);
+    margin-left: auto;
+    margin-right: auto;
+    // width: 50%;
+    // float: right;
+}
 
 * {
   box-sizing: border-box;
@@ -48,7 +55,7 @@ h2,h3{
        }
        p {
            color: $primary-color;
-           font-weight: 500;
+           font-weight: 300;
            margin: {
                bottom: 3px;
            };
@@ -73,7 +80,7 @@ h2,h3{
        }
        &:hover {
            .icon {
-               background-color: #9072c8;
+               background-color: $secondary-color;
            }
        }
    }
@@ -92,6 +99,13 @@ h2,h3{
         background-size: cover; 
     }
 
+    .about-image{
+        background-image:url('../../../../assets/img/bg.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; 
+    }
+
 
    .contact-image {
        opacity: 1;
@@ -101,29 +115,29 @@ h2,h3{
    .contact-form {
        padding: 40px;
        margin-left: 15px;
-       box-shadow: 0 0 20px rgba(158,158,158,.8);
+    //    box-shadow: 0 5px 5px 5px rgba(158,158,158,.8);
        
        border-radius: 10px;
    
        form {
            .form-group {
                .form-control {
-                   height: 55px;
-                   border-radius: 30px;
+                   height: 40px;
+                   border-radius: 10px;
                }
                textarea.form-control {
                    height: auto;
                }
            }
            .default-btn {
-               background-color: #221638;
+               background-color: $primary-color;
                margin-top: 5px;
            }
            .default-btn:hover{
                .flaticon-tick{
                    color: white;
                }
-               background-color: #9072c8;
+               background-color: $secondary-color;
                color: white;
            }
        }
@@ -135,6 +149,7 @@ h2,h3{
            border: none;
        }
    }
+   
    
    @media only screen and (max-width: 767px) {
    

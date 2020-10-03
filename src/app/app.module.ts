@@ -8,16 +8,12 @@ import { HomeModule } from './home/home.module';
 import { CommunityModule } from './community/community.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BarRatingModule } from 'ngx-bar-rating';
-import { TermsandcondtionsComponent } from './termsandcondtions/termsandcondtions.component';
-import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { CoreModule } from './core/core.module';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TermsandcondtionsComponent,
-    PrivacypolicyComponent,
   ],
   imports: [
     HttpClientModule,
@@ -27,8 +23,9 @@ import { CoreModule } from './core/core.module';
     SharedModule,
     BarRatingModule,
     HomeModule,
-    CommunityModule,
-    CoreModule
+    CoreModule,
+    NgbModule,
+    CommunityModule
   ],
   exports: [
     BarRatingModule
