@@ -51,7 +51,6 @@ export class ContactPageComponent implements OnInit {
             phoneNumber: ['', [Validators.required]],
             description: ['', [Validators.required]],
         });
-        this.queriesForm.reset();
     }
     onSubmitQueriesForm() {
         this.submitted = true;

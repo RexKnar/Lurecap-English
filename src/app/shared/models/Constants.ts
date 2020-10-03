@@ -10,3 +10,7 @@ export const COURSE_CARD_API_CONFIG = {
 export const CONTACT_US_API_CONFIG = {
     SendQueries: '/Token/ContactusSave',
 };
+export const CORE_API_CONFIG = {
+    SiginURL: '/Token',
+    SignupURL: '/Token/RegisterUser',
+};
