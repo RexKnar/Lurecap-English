@@ -8,6 +8,7 @@ import { HomeModule } from './home/home.module';
 import { CommunityModule } from './community/community.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BarRatingModule } from 'ngx-bar-rating';
+import { CoreModule } from './core/core.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -22,6 +23,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SharedModule,
     BarRatingModule,
     HomeModule,
+    CoreModule,
     NgbModule,
     CommunityModule
   ],
