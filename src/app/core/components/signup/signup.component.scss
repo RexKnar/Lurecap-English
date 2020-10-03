@@ -93,14 +93,15 @@ h2,h3{
    
    
     .bg-about-image{
-        background-image:url('../../../../assets/img/page-title-bg.jpg');
+        background-image:url('../../../../assets/img/bg4.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover; 
     }
 
     .about-image{
-        background-image:url('../../../../assets/img/bg.jpg');
+        // background-image:url('../../../../assets/img/bg.jng');
+        // background-color: $primary-color;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover; 
@@ -115,14 +116,25 @@ h2,h3{
    .contact-form {
        padding: 40px;
        margin-left: 15px;
-    //    box-shadow: 0 5px 5px 5px rgba(158,158,158,.8);
-       
+       box-shadow: 0 0 20px rgba(158,158,158,.8);
        border-radius: 10px;
+
+       h2{
+           font-size: 26px;
+           text-align: center;
+           font-weight: 500;
+       }
+
+       label{
+        font-size: 14px;
+       }
    
        form {
            .form-group {
                .form-control {
                    height: 40px;
+                   width: 100%;
+                   font-size: 14px;
                    border-radius: 10px;
                }
                textarea.form-control {
