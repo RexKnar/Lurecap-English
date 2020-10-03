@@ -6,17 +6,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BarRatingModule } from 'ngx-bar-rating';
 
-
-
-
 @NgModule({
-  declarations: [CourseCardComponent, NavbarComponent, FooterComponent,DescriptionPipe],
+  declarations: [CourseCardComponent, NavbarComponent, FooterComponent, DescriptionPipe],
   imports: [
     CommonModule,
-    BarRatingModule
+    BarRatingModule,
   ],
   exports: [
-    NavbarComponent, 
+    NavbarComponent,
     FooterComponent,
     CourseCardComponent
   ]
