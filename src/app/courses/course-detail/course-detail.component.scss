@@ -12,7 +12,7 @@ top: 80px;
 }
 .coursename{
   padding-top: 4%;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
 }
 .courses-details-desc {
   margin-top: 60px;
@@ -43,8 +43,8 @@ top: 80px;
         position: relative;
         border-radius: 5px;
         font: {
-          size: 18px;
-          weight: 800;
+          size: 15px;
+          weight: 600;
         }
         &::before {
           content: "";
@@ -142,7 +142,7 @@ top: 80px;
             .courses-name {
               font: {
                 size: 15px;
-                weight: 800;
+                weight: 600;
               }
             }
             .courses-meta {
@@ -565,7 +565,7 @@ top: 80px;
         bottom: 14px;
       }
       span {
-        font-weight: 800;
+        font-weight: 600;
         color: var(--blackColor);
         position: relative;
         padding-left: 28px;
@@ -590,7 +590,7 @@ top: 80px;
           color: var(--blackColor);
           font: {
             size: 17px;
-            weight: 800;
+            weight: 600;
           }
         }
       }

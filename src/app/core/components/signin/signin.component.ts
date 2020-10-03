@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AthenticationService } from 'src/app/shared/services/athentication.service';
+import { ToastrService } from "ngx-toastr";
+import {MessageConstants} from '../../../shared/models/messageConstants';
 
 @Component({
     selector: 'app-signin',
@@ -11,6 +13,7 @@ export class SigninComponent implements OnInit {
     loginForm: FormGroup;
     submitted = false;
     constructor(private formBuilder: FormBuilder,
+        private toastr: ToastrService,
         private readonly _athenticationService: AthenticationService) { }
     get f() {
         return this.loginForm.controls;
@@ -35,6 +38,10 @@ export class SigninComponent implements OnInit {
             return;
         }
         this._athenticationService.Userlogin(this.loginForm.value).subscribe((data: any) => {
+            this.toastr.success(
+                MessageConstants.LOGIN_SUCCESS, "",
+                 { timeOut: 2000, }
+                 );
             this.loginForm.reset();
             this.submitted = false;
         });

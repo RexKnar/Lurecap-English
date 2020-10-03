@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BarRatingModule } from 'ngx-bar-rating';
 import { CoreModule } from './core/core.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeModule,
     CoreModule,
     NgbModule,
-    CommunityModule
+    CommunityModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 3000,
+      progressBar: false,
+      enableHtml: true,
+   }),
   ],
   exports: [
     BarRatingModule

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AthenticationService } from '../../../shared/services/athentication.service';
+import { ToastrService } from "ngx-toastr";
+import {MessageConstants} from '../../../shared/models/messageConstants';
+
 @Component({
     selector: 'app-signup',
     templateUrl: './signup.component.html',
@@ -10,6 +13,7 @@ export class SignupComponent implements OnInit {
     registerForm: FormGroup;
     submitted = false;
     constructor(private formBuilder: FormBuilder,
+        private toastr: ToastrService,
                 private readonly _athenticationService: AthenticationService) { }
     get f() {
         return this.registerForm.controls;
@@ -42,6 +46,10 @@ export class SignupComponent implements OnInit {
         this.registerForm.value.userId = '';
         this.registerForm.value.mailDate = '2020-10-02T21:19:47.437Z';
         this._athenticationService.Registeration(this.registerForm.value).subscribe((data: any) => {
+            this.toastr.success(
+                MessageConstants.REGISTER_SUCCESS, "",
+                 { timeOut: 2000, }
+                 );
             this.registerForm.reset();
             this.submitted = false;
         });

@@ -5,6 +5,7 @@ $secondary-color:#9072c8;
 $white:#ffffff;
 $black: #000;
 @import '~ngx-bar-rating/themes/br-default-theme' ;
+@import '~ngx-toastr/toastr';
 :root {
     --fontFamily: 'Nunito', sans-serif;
     // $color1:#20a52b;
@@ -50,7 +51,7 @@ p {
     margin-bottom: 15px;
     font: {
         weight: 200;
-        size: var(--fontSize);
+        size: 14px;
     };
     &:last-child {
         margin-bottom: 0;
@@ -199,7 +200,7 @@ a {
         position: relative;
         display: inline-block;
         font: {
-            size: 44px;
+            size: 30px;
         };
         .overlay {
             position: absolute;
