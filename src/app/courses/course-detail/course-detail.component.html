@@ -1,21 +1,21 @@
 <section class="courses-details-area pb-100">
-   
+
     <div class="container">
         <div class="row">
             <div class="courses-details-image d-lg-none ">
                 <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size" alt="image">
-            </div> 
+            </div>
             <div class="col-lg-4 order-md-2 col-md-12 ">
                 <div class="sticky-top cardfix">
                     <div class="courses-details-info">
-                        <div class="image">
+                        <!-- <div class="image">
                             <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size" alt="image">
                             <a href="https://www.youtube.com/watch?v=PWvPbGWVRrU" class="link-btn popup-youtube"></a>
                             <div class="content">
                                 <i class="flaticon-google-play"></i>
                                 <span>Course Preview</span>
                             </div>
-                        </div>
+                        </div> -->
                         <ul class="info">
                             <li class="price">
                                 <div class="d-flex justify-content-between align-items-center">
@@ -53,22 +53,22 @@
                                 </div>
                             </li>
                         </ul>
-    
+
                         <div class="btn-box">
                             <a href="/signup" class="default-btn"><i class="flaticon-price-tag"></i>Buy
                                 Now<span></span></a>
-    
+
                         </div>
                     </div>
                 </div>
-               
+
             </div>
-            <div class="col-lg-8 order-md-1 col-md-12">  
+            <div class="col-lg-8 order-md-1 col-md-12">
                 <div class="courses-details-image d-lg-inline d-none">
                     <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size" alt="image">
-                </div>            
-                    <h3 class="coursename">{{currentCourseDetails.courseDetails.courseName}}</h3>
-                    <h6>{{currentCourseDetails.courseDetails.provideWhat}}</h6>
+                </div>
+                <h3 class="coursename">{{currentCourseDetails.courseDetails.courseName}}</h3>
+                <h6>{{currentCourseDetails.courseDetails.provideWhat}}</h6>
                 <div class="courses-details-desc">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item"><a class="nav-link active" id="overview-tab" data-toggle="tab"
@@ -89,23 +89,41 @@
                         <div class="tab-pane fade" id="curriculum" role="tabpanel">
                             <div class="courses-curriculum">
                                 <ul>
-                                    <li *ngFor="let chapters of currentCourseDetails.chapters"><a
+                                    <!-- <li *ngFor="let chapters of currentCourseDetails.chapters">
+                                        <a
                                             class="d-flex justify-content-between align-items-center">
                                             <span class="courses-name">{{chapters.chapterName}}</span>
-                                        </a></li>
+                                        </a>
+                                    </li> -->
+                                    <li *ngFor="let chapters of chaptersList">
+                                        <a
+                                            class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">{{chapters.paragraphText}}</span>
+
+                                        </a>
+                                    </li>
+                        
+
                                 </ul>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="instructor" role="tabpanel">
                             <div class="courses-instructor">
                                 <div class="single-advisor-box">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="advisor-content">
-                                                <span
-                                                    class="sub-title">{{currentCourseDetails.courseDetails.tutorName}}</span>
-                                            </div>
-                                        </div>
+                                    <div class="advisor-content">
+                                        <!-- <span class="sub-title tutor-font">{{currentCourseDetails.courseDetails.tutorName}}</span> -->
+                                        <span class="sub-title tutor-font">AMAL J ERONIMUS IS HAVING A MOTTO TO BE A BETTER HUMAN
+                                            BEING. AN AUTHOR, ORATOR, STUDENT COUNSELOR, MUSICIAN, TRAINER, TRANSLATOR,
+                                            CUM PROFESSOR IN ENGLISH. HAVING WORKED IN MALDIVES FOR 7 YEARS AS VICE
+                                            PRINCIPAL CUM ENGLISH TEACHER, SERVED IN MEDIA AT MANILA, PHILIPPINES.
+                                            GAINED ADMINISTRATIVE SKILLS OFFERED AN OPPORTUNITY TO POSSESS THE POST OF
+                                            PRINCIPAL IN SHIMOGA, KARNATAKA FOR FIVE YEARS.</span>
+                                        <span class="sub-title tutor-font"> AUTHORED FIVE BOOKS CUM A TRANSLATIVE WORK. PUBLISHED
+                                            ARTICLES IN MAGAZINES AND JOURNALS WITH ISBN AND ISSN NUMBERS. HAVING
+                                            RESEARCH UNDER COMPARATIVE LITERATURE, AUTHOR OF SIX BOOKS CUM A TRANSLATIVE
+                                            WORK PUBLISHED ON ERANIAL PALACE IN TAMIL. WORKING ON DIFFERNT PROJECTS
+                                            UNDER HUMANISTIC APPROACHES AND GUIDING STUDENTS WITH VALUE BASED TEACHING
+                                            FOR THEIR FUTURE CAREER.</span>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-            </div>           
+            </div>
         </div>
     </div>
 </section>

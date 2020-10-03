@@ -1,6 +1,9 @@
 .cardfix{
 top: 80px;
 }
+.tutor-font{
+  font-size: 14px;
+}
 .image-size {
   min-width: 100% !important;
   height: auto !important;
@@ -270,7 +273,7 @@ top: 80px;
           .sub-title {
             display: block;
             color: var(--mainColor);
-            font-weight: 600;
+            font-weight: 400;
             margin-bottom: 15px;
           }
           .social-link {
