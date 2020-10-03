@@ -14,6 +14,7 @@ import {HomeContentComponent} from './components/home/home-content/home-content.
 import {HomeBriefComponent} from './components/home/home-brief/home-brief.component';
 import { PrivacypolicyComponent } from './components/privacypolicy/privacypolicy.component';
 import { TermsandcondtionsComponent } from './components/termsandcondtions/termsandcondtions.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [AboutUsComponent,
@@ -32,7 +33,9 @@ import { TermsandcondtionsComponent } from './components/termsandcondtions/terms
     ],
     imports: [
       CommonModule,
-      HomeRoutingModule
+      HomeRoutingModule,
+      ReactiveFormsModule,
+      FormsModule,
     ]
   })
 export class HomeModule { }
