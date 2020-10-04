@@ -12,7 +12,28 @@ export class HomeIntroComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+  singleFunfactsBox: Funfacts[] = [
+    {
+        icon: 'assets/img/icon1.png',
+        title: 'Confidence',
+        subTitle: 'Confidence'
+    },
+    {
+        icon: 'assets/img/icon2.png',
+        title: 'Fluency',
+        subTitle: 'Fluency'
+    },
+    {
+        icon: 'assets/img/icon3.png',
+        title: 'Accuracy',
+        subTitle: 'Accuracy'
+    },
+    {
+        icon: 'assets/img/icon4.png',
+        title: 'Pronunciation',
+        subTitle: 'Pronunciation'
+    }
+];
   exploreLearningContent: Content[] = [
     {
         title: 'Have you been learning English for years but still cant speak fluently?',
@@ -42,4 +63,9 @@ class Video {
 img : string;
 icon : string;
 videoLink : string;
+}
+class Funfacts {
+  icon: string;
+  title: string;
+  subTitle: string;
 }

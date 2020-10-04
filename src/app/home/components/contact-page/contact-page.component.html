@@ -6,13 +6,20 @@
         </div>
         <div class="row pb-5">
             <div class="col-lg-6 col-md-12 col-xs-6">
-                <div class="map-shape1"><img src="assets/img/shape/map-shape1.png" alt="image"></div>
+                <!-- <div class="map-shape1">
+                    <img src="assets/img/shape/map-shape1.png" alt="image">
+                </div> -->
                     <div class="vector-shape5"><img src="assets/img/shape/vector-shape5.png" alt="image"></div>
-                <div class="contact-info-box " *ngFor="let InfoBox2 of contactInfoBox2;">
+                    <h3>Contact-US</h3>
+                   <p>Learning for travel or love? Want to focus on reading, writing, grammar or culture? You get lessons based on your goals and needs.</p>
+
+                <div class="contact-info-box contact-align " *ngFor="let InfoBox2 of contactInfoBox2;">
+
+
                     <div class="icon">
                         <i class='{{InfoBox2.icon}}'></i>
                     </div>
-                    <h3>{{InfoBox2.title}}</h3>
+                    <!-- <h3>{{InfoBox2.title}}</h3> -->
                     <p>Mobile: <a>{{InfoBox2.number}}</a></p>
                     <p>E-mail: <a>{{InfoBox2.email}}</a></p>
                 </div>
