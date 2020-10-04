@@ -12,6 +12,10 @@ export class CourseList {
     count: number;
     tutorName: string;
     tutorId: number;
+    rating: number;
+    statusFlag: number;
+    learnersNumber: number;
+
 }
 export class CourseDetail{
     courseDetails: CourseDetails;
