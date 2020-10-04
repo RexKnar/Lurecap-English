@@ -16,6 +16,8 @@ import { PrivacypolicyComponent } from './components/privacypolicy/privacypolicy
 import { TermsandcondtionsComponent } from './components/termsandcondtions/termsandcondtions.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeBannerComponent } from './components/home/home-banner/home-banner.component';
+import { SharedModule } from '../shared/shared.module';
+import { CoursesModule } from '../courses/courses.module';
 
 @NgModule({
     declarations: [AboutUsComponent,
@@ -31,13 +33,16 @@ import { HomeBannerComponent } from './components/home/home-banner/home-banner.c
       HomeBriefComponent,
       PrivacypolicyComponent,
       TermsandcondtionsComponent,
-      HomeBannerComponent
+      HomeBannerComponent,
+  
     ],
     imports: [
       CommonModule,
       HomeRoutingModule,
       ReactiveFormsModule,
       FormsModule,
+      SharedModule,
+      CoursesModule
     ]
   })
 export class HomeModule { }
