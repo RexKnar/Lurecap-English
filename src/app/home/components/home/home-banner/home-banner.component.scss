@@ -169,7 +169,7 @@ $black:#000;
     .main-banner {
         margin-bottom: 60px;
         padding: {
-            top: 200px;
+            top: 100px;
             bottom: 0;
         };
         .container-fluid {
@@ -184,7 +184,7 @@ $black:#000;
     }
     .main-banner-content {
         margin-top: 0;
-        text-align: center;
+        text-align: left;
 
         h1 {
             font-size: 31px;
@@ -253,7 +253,7 @@ $black:#000;
 
     .main-banner {
         padding: {
-            top: 200px;
+            top: 100px;
             bottom: 80px;
         };
         .container-fluid {
@@ -267,7 +267,7 @@ $black:#000;
         }
     }
     .main-banner-content {
-        text-align: center;
+        text-align: left;
         margin: {
             top: 0;
             left: auto;
@@ -330,7 +330,7 @@ $black:#000;
 
     .main-banner {
         padding: {
-            top: 220px;
+            top: 120px;
             bottom: 200px;
         };
         .container-fluid {
