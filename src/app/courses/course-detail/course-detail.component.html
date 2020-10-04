@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="courses-details-image d-lg-none ">
-                <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size" alt="image">
+                <img src="assets/img/detailpage.jpg" class="image-size" alt="image">
             </div>
             <div class="col-lg-4 order-md-2 col-md-12 ">
                 <div class="sticky-top cardfix">
@@ -16,6 +16,415 @@
                                 <span>Course Preview</span>
                             </div>
                         </div> -->
+                        <ul class="info">
+                            <li class="price">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span><i class="flaticon-price-tag"></i> Price</span>
+                                    <!-- <span
+                                        *ngIf="currentCourseDetails.courseDetails.courseAmount!=0 && currentCourseDetails.courseDetails.dicountAmount==0; ">₹
+                                        {{currentCourseDetails.courseDetails.courseAmount}}
+                                    </span>
+                                    <span
+                                        *ngIf="currentCourseDetails.courseDetails.dicountAmount!=0 && currentCourseDetails.courseDetails.courseAmount!=0 ;">₹
+                                        {{currentCourseDetails.courseDetails.dicountAmount}} <del
+                                            class="discount-style">₹{{currentCourseDetails.courseDetails.courseAmount}}
+                                        </del>
+                                    </span> -->
+                                    <span class="free">FREE</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span><i class="flaticon-distance-education"></i> Lessons</span>
+                                    23
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span><i class="flaticon-web"></i> Enrolled</span>
+                                    50 +students
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span><i class="flaticon-open-padlock"></i> Access</span>
+                                    1-year
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="btn-box">
+                            <a href="/signup" class="default-btn"><i class="flaticon-price-tag"></i>Buy
+                                Now<span></span></a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-8 order-md-1 col-md-12">
+                <div class="courses-details-image d-lg-inline d-none">
+                    <img src="assets/img/detailpage.jpg" class="image-size" alt="image">
+                </div>
+                <h3 class="coursename">Basic English Speaking </h3>
+                <h6>{{currentCourseDetails.courseDetails.provideWhat}}</h6>
+                <div class="courses-details-desc">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item"><a class="nav-link active" id="overview-tab" data-toggle="tab"
+                                href="#overview" role="tab" aria-controls="overview">Description</a></li>
+                        <li class="nav-item"><a class="nav-link" id="curriculum-tab" data-toggle="tab"
+                                href="#curriculum" role="tab" aria-controls="curriculum">Curriculum</a></li>
+                        <li class="nav-item"><a class="nav-link" id="instructor-tab" data-toggle="tab"
+                                href="#instructor" role="tab" aria-controls="instructor">Instructor</a></li>
+                        <li class="nav-item"><a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews"
+                                role="tab" aria-controls="reviews">Reviews</a></li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="overview" role="tabpanel">
+                            <div class="courses-overview">
+                                <p>This course will help you reach that goal. Speak English Professionally: In person, Online and On the Phone will boost your English speaking skills.</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="curriculum" role="tabpanel">
+                            <div class="courses-curriculum">
+                                <ul>
+                                    <!-- <li *ngFor="let chapters of currentCourseDetails.chapters">
+                                        <a
+                                            class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">{{chapters.chapterName}}</span>
+                                        </a>
+                                    </li> -->
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">ENGLISH LANGUAGE SPEAKING CUM INTRODUCTION</span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">INTRODUCING THE SELF</span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">GREETINGS AND WISHES</span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">BE VERBS  WITH SENTENCE STRUCTURE</span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">QUESTION TAG</span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">STATEMENT FRAMING </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">DOALOGUE  </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">SUBJECT VERB OBJECT  </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">NOUNS </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">W/H QUESTIONS </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">BE VERBIAL QUESTION </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name"> ARTICLES </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name"> VERBS </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">3 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name"> PRESENT PAST FUTURE </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name"> ARTICLE </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">BASIC TENSE </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">3 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">PAST PARTICIPLE </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">ADVERB </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">INFINITIVES </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name"> ADJECTIVES  </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name"> PREPOSITION </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name"> PRONOUNS  </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">1 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="d-flex justify-content-between align-items-center">
+                                            <span class="courses-name">  CONJUNCTION </span>
+
+
+                                            <div class="courses-meta">
+
+                                                <span class="duration">2 hour</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="instructor" role="tabpanel">
+                            <div class="courses-instructor">
+                                <div class="single-advisor-box">
+                                    <div class="advisor-content">
+                                        <!-- <span class="sub-title tutor-font">{{currentCourseDetails.courseDetails.tutorName}}</span> -->
+                                        <span class="sub-title tutor-font">Amal J Eronimus is having a motto to be a better human being. an author, orator, student counselor, musician, trainer, translator, cum professor in english. having worked in maldives for 7 years as vice principal cum english teacher, served in media at manila, philippines. gained administrative skills offered an opportunity to possess the post of principal in shimoga, karnataka for five years.</span>
+                                        <span class="sub-title tutor-font">Authored five books cum a translative work. published articles in magazines and journals with isbn and issn numbers. having research under comparative literature, author of six books cum a translative work published on eranial palace in tamil. working on differnt projects under humanistic approaches and guiding students with value based teaching for their future career.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="reviews" role="tabpanel">
+                            <div class="courses-review-comments">
+                                <div class="user-review" *ngFor="let userReview of currentCourseDetails.reviews">
+                                    <div class="review-rating">
+                                        <div class="review-stars">
+                                            <bar-rating [(rate)]="userReview.rating" [readOnly]="true"></bar-rating>
+                                        </div>
+                                    </div>
+                                    <span class="d-block sub-comment">{{userReview.userName}}</span>
+                                    <p>{{userReview.review}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 
+<section class="courses-details-area pb-100">
+
+    <div class="container">
+        <div class="row">
+            <div class="courses-details-image d-lg-none ">
+                <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size" alt="image">
+            </div>
+            <div class="col-lg-4 order-md-2 col-md-12 ">
+                <div class="sticky-top cardfix">
+                    <div class="courses-details-info">
+                        <div class="image">
+                            <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size" alt="image">
+                            <a href="https://www.youtube.com/watch?v=PWvPbGWVRrU" class="link-btn popup-youtube"></a>
+                            <div class="content">
+                                <i class="flaticon-google-play"></i>
+                                <span>Course Preview</span>
+                            </div>
+                        </div>
                         <ul class="info">
                             <li class="price">
                                 <div class="d-flex justify-content-between align-items-center">
@@ -89,12 +498,12 @@
                         <div class="tab-pane fade" id="curriculum" role="tabpanel">
                             <div class="courses-curriculum">
                                 <ul>
-                                    <!-- <li *ngFor="let chapters of currentCourseDetails.chapters">
+                                    <li *ngFor="let chapters of currentCourseDetails.chapters">
                                         <a
                                             class="d-flex justify-content-between align-items-center">
                                             <span class="courses-name">{{chapters.chapterName}}</span>
                                         </a>
-                                    </li> -->
+                                    </li>
                                     <li *ngFor="let chapters of chaptersList">
                                         <a class="d-flex justify-content-between align-items-center">
                                             <span class="courses-name">{{chapters.paragraphText}}</span>
@@ -116,7 +525,7 @@
                             <div class="courses-instructor">
                                 <div class="single-advisor-box">
                                     <div class="advisor-content">
-                                        <!-- <span class="sub-title tutor-font">{{currentCourseDetails.courseDetails.tutorName}}</span> -->
+                                        <span class="sub-title tutor-font">{{currentCourseDetails.courseDetails.tutorName}}</span>
                                         <span class="sub-title tutor-font">Amal J Eronimus is having a motto to be a better human being. an author, orator, student counselor, musician, trainer, translator, cum professor in english. having worked in maldives for 7 years as vice principal cum english teacher, served in media at manila, philippines. gained administrative skills offered an opportunity to possess the post of principal in shimoga, karnataka for five years.</span>
                                         <span class="sub-title tutor-font">Authored five books cum a translative work. published articles in magazines and journals with isbn and issn numbers. having research under comparative literature, author of six books cum a translative work published on eranial palace in tamil. working on differnt projects under humanistic approaches and guiding students with value based teaching for their future career.</span>
                                     </div>
@@ -141,4 +550,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
