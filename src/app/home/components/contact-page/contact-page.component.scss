@@ -2,7 +2,9 @@ $white: #fff;
 $primary-color: #221638;
 $secondary-color: #9072c8;
 $black: #000;
-
+.contact-align{
+  margin-top: 7%;
+}
 * {
   box-sizing: border-box;
 }
@@ -10,6 +12,7 @@ h2,
 h3 {
   color: #221638;
 }
+
 .contact-info-box {
   margin-bottom: 30px;
   position: relative;

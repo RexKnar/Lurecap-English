@@ -23,7 +23,7 @@ singleServicesItem: ServicesItem[] = [
     {
         icon: 'assets/img/services/icon1.png',
         title: 'Speaking Skills ',
-        paragraphText: 'Everyday conversations, e.g. workplace interactions, travelling, communicating with friends, etc.',
+        paragraphText: 'Everyday conversations, e.g. workplace interactions,communicating with friends, etc.',
         btnIcon: 'flaticon-right',
         btnText: 'Read More',
         link: 'single-services-2'
