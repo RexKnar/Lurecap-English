@@ -11,13 +11,13 @@ export class CommunityPageComponent implements OnInit {
 
     projectStartImage: Image[] = [
         {
-            img: 'assets/img/8294-01.png'
+            img: 'assets/img/6487-01.png'
         }
     ];
     projectStartContent: Content[] = [
         {
-            title: 'Community',
-            paragraphText: 'Designed by English experts, our online English classes and courses provide a safe, inclusive learning community. Our highly qualified teachers help learners, adults as well children improve their English speaking, listening, reading and writing skills online, build their confidence and achieve their goals.',
+            title: 'Get fluent, quickly ',
+            paragraphText: 'The Speak Refine Community is the best way to practice speaking in English.We Provide A Better Language Exchange platform for our students.Learn how to speak fluently by talking with people like you.',
             defaultBtnIcon: 'flaticon-web',
             defaultBtnText: 'Get Started',
             defaultBtnLink: 'contact'

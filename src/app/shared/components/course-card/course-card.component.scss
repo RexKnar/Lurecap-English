@@ -45,8 +45,8 @@
     }
 
     .rounded-circle{
-        height: 20px;
-        width: 20px;
+        height: 15px;
+        width: 15px;
     }
  
     .courses-content {
@@ -81,11 +81,11 @@
             span {
                 color: $secondary-color;
                 margin: {
-                    top: 2px;
+                    // top: 2px;
                     left: 3px;
                 };
                 font: {
-                    weight: 600;
+                    weight: 400;
                     size: 12px;
                 };
             }

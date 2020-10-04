@@ -22,6 +22,10 @@ import { BarRatingModule } from 'ngx-bar-rating';
     NgbModule,
     BarRatingModule,
   ],
+  exports: [
+    CourseListComponent
+  ],
+  
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class CoursesModule { }
