@@ -1,4 +1,4 @@
-<div class="main-banner">
+<!-- <div class="main-banner">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-5 col-md-12">
@@ -7,9 +7,34 @@
                     <p class="wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1000ms">{{Content.paragraphText}}</p>
                     <div class="btn-box">
                         <a href="/courses" class="default-btn wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms"><i class="{{Content.defaultBtnIcon}}"></i>{{Content.defaultBtnText}}<span></span></a>
-                        <!-- <a routerLink="/{{Content.defaultBtnLink}}" class="default-btn wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms"><i class="{{Content.defaultBtnIcon}}"></i>{{Content.defaultBtnText}}<span></span></a> -->
+                         <a routerLink="/{{Content.defaultBtnLink}}" class="default-btn wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms"><i class="{{Content.defaultBtnIcon}}"></i>{{Content.defaultBtnText}}<span></span></a> 
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="main-banner">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 col-md-12">
+                <div class="main-banner-content" *ngFor="let Content of mainBannerContent;">
+                    <h1 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{Content.title}}</h1>
+                    <p class="wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1000ms">
+                        {{Content.paragraphText}}</p>
+                    <div class="btn-box">
+                        <a routerLink="/{{Content.defaultBtnLink}}" class="default-btn wow fadeInRight"
+                            data-wow-delay="200ms" data-wow-duration="1000ms"><i
+                                class="{{Content.defaultBtnIcon}}"></i>{{Content.defaultBtnText}}<span></span></a>
+                        <a href="{{Content.videoBtnLink}}" class="video-btn wow fadeInLeft popup-youtube"
+                            data-wow-delay="300ms" data-wow-duration="1000ms"><i class="{{Content.videoBtnIcon}}"></i>
+                            {{Content.videoBtnText}}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-12 imgestyle">
+                <img src="assets/img/Untitled-2-01.png">
             </div>
         </div>
     </div>

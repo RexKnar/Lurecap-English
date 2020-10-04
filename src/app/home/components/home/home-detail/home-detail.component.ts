@@ -14,7 +14,7 @@ export class HomeDetailComponent implements OnInit {
 
   ourMissionImage: Image[] = [
     {
-        img: 'assets/img/online-classes.jpg'
+        img: 'assets/img/8294-01.png'
     }
 ]
 ourMissionContent: Content[] = [

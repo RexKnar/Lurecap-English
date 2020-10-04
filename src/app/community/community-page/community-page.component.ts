@@ -11,7 +11,7 @@ export class CommunityPageComponent implements OnInit {
 
     projectStartImage: Image[] = [
         {
-            img: 'assets/img/community/1.jpg'
+            img: 'assets/img/8294-01.png'
         }
     ];
     projectStartContent: Content[] = [
