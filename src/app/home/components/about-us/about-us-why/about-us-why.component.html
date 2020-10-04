@@ -10,11 +10,14 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-12">
+                
                 <div class="our-brand-partners-list" *ngFor="let List of ourBrandPartnersList;">
                     <h2>{{List.title}}</h2>
                     <div class="row align-items-center">
                         <div class="col-lg-8 col-sm-8 col-md-8 our-mission-content">
+                            <div class="vector-shape5"><img src="assets/img/shape/vector-shape8.png" alt="image"></div>
                             <div class="content">
+                                
                                 <ul class="features-list" *ngFor="let List of featuresList;">
                                     <li ><i class="{{List.icon}}"></i> {{List.title}}
                                     </li>

@@ -14,7 +14,7 @@ export class HomeContentComponent implements OnInit {
 
   aboutImage: Image[] = [
     {
-      img: 'assets/img/AdobeStock.jpeg'
+      img: 'assets/img/3727712_04.png'
     }
   ]
   aboutContent: Content[] = [
