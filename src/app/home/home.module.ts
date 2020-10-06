@@ -36,7 +36,6 @@ import { AboutValueComponent } from './components/about-us/about-value/about-val
       TermsandcondtionsComponent,
       HomeBannerComponent,
       AboutValueComponent,
-  
     ],
     imports: [
       CommonModule,

@@ -6,8 +6,13 @@
                     <div class="content" *ngFor="let Content of ourMissionContent;">
                         <h2>{{Content.title}}</h2>
                         <p>{{Content.paragraphText1}}</p>
-                        <ul class="features-list">
-                            <li *ngFor="let List of featuresList;"><i class="{{List.icon}}"></i> {{List.title}}</li>
+                        <ul class="our-mission-list">
+                            <li *ngFor="let List of ourMissionList;">
+                                <span>
+                                    {{List.title}}
+                                    <img src="assets/img/our-mission/shape2.png" alt="image">
+                                </span>
+                            </li>
                         </ul>
                         <p>{{Content.paragraphText2}}</p>
                     </div>
