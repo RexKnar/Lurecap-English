@@ -16,7 +16,7 @@ export class CourseListComponent implements OnInit {
     {
         subTitle: "We offer",
         title: 'Learn English With Us !',
-        paragraphText: 'Learning vocabulary and grammar alone will not enable you to speak well in English. For that, you will have to acquire proper speaking skills. These can be acquired only through practice. Enroll Now'
+        paragraphText: 'Learning vocabulary and grammar alone will not enable you to speak well in English. For that, you will have to acquire proper speaking skills. These can be acquired only through practice.'
     }
 ]
 

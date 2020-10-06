@@ -1,4 +1,4 @@
-<section class="our-mission-area pb-70  ">
+<section class="our-mission-area ptb-100">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
@@ -9,12 +9,16 @@
                         <ul class="our-mission-list">
                             <li *ngFor="let List of ourMissionList;">
                                 <span>
+                                    <div class="icon">
+                                        <i class="{{List.icon}}"></i>
+                                    </div>
                                     {{List.title}}
                                     <img src="assets/img/our-mission/shape2.png" alt="image">
                                 </span>
                             </li>
                         </ul>
                         <p>{{Content.paragraphText2}}</p>
+                        
                     </div>
                 </div>
             </div>

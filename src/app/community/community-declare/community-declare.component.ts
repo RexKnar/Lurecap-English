@@ -19,7 +19,7 @@ export class CommunityDeclareComponent implements OnInit {
 ]
 ourMissionContent: Content[] = [
     {
-        title: 'Declaration',
+        title: 'Proclamation',
         paragraphText1: 'If anyone asks you to meet them in person, then only do so in a public place, and go together with a responsibile adult who you know and trust.',
         paragraphText2: 'Speak Refine and its Directors, Employees, or collaborators may not be held responsible for any issues, or activity held on, or outwith the speakrefine.com website.',
         defaultBtnIcon: 'flaticon-right',
