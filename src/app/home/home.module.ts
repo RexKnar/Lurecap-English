@@ -18,6 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeBannerComponent } from './components/home/home-banner/home-banner.component';
 import { SharedModule } from '../shared/shared.module';
 import { CoursesModule } from '../courses/courses.module';
+import { AboutValueComponent } from './components/about-us/about-value/about-value.component';
 
 @NgModule({
     declarations: [AboutUsComponent,
@@ -34,6 +35,7 @@ import { CoursesModule } from '../courses/courses.module';
       PrivacypolicyComponent,
       TermsandcondtionsComponent,
       HomeBannerComponent,
+      AboutValueComponent,
   
     ],
     imports: [

@@ -31,7 +31,7 @@ export class CourseDetailComponent implements OnInit {
           imageUrl: 'assets/img/online.jpg',
           videoUrl: 'https://player.vimeo.com/video/464457438',
           tutorId: 1,
-          tutorName: '',
+          tutorName: 'Amal J Eronimus ',
           userCount: 50
         },
       
@@ -40,96 +40,96 @@ export class CourseDetailComponent implements OnInit {
 
       chapters:  [
         {
-          chapterName: '1. ENGLISH LANGUAGE SPEAKING CUM INTRODUCTION ',
-          hours: ' 1 HR'
+          chapterName: '1. English Language Speaking Cum Introduction ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '2. INTRODUCING THE SELF   ',
-          hours: ' 1 HR'
+          chapterName: '2. Introducing The Self   ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: ' 3. GREETINGS AND WISHES  ',
-          hours: ' 1 HR'
+          chapterName: ' 3. Greetings And Wishes  ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: ' 4. BE VERBS WITH SENTENCE STRUCTURE  ',
-          hours: ' 1 HR'
+          chapterName: ' 4. Be Verbs With Sentence Structure  ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: ' 5. QUESTION TAG ',
-          hours: ' 1 HR'
+          chapterName: ' 5. Question Tag ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '  6. STATEMENT FRAMING  ',
-          hours: ' 1 HR'
+          chapterName: '  6. Statement Framing  ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '7. DOALOGUE ',
-          hours: ' 1 HR'
+          chapterName: '7. Dialouge ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '8. SUBJECT VERB OBJECT ',
-          hours: ' 1 HR'
+          chapterName: '8. Subject Verb Object ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '9. NOUNS ',
-          hours: ' 1 HR'
+          chapterName: '9. Nouns ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '10. W/H QUESTIONS ',
-          hours: ' 1 HR'
+          chapterName: '10. W/H Questions ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '11. BE VERBIAL QUESTION ',
-          hours: ' 1 HR'
+          chapterName: '11. Be Verbal Question ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '12. ARTICLES ',
-          hours: ' 1 HR'
+          chapterName: '12. Articles ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '13. VERBS ',
-          hours: ' 3 HRS'
+          chapterName: '13. Verbs ',
+          hours: ' 3 Hours'
         },
         {
-          chapterName: '14. PRESENT PAST FUTURE ',
-          hours: ' 1 HR'
+          chapterName: '14. Present Past Future ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: ' 15. ARTICLE ',
-          hours: ' 1 HR'
+          chapterName: ' 15. Article ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '16. BASIC TENSE  ',
-          hours: ' 3 HRS'
+          chapterName: '16. Basic Tense  ',
+          hours: ' 3 Hours'
         },
         {
-          chapterName: '17. PAST PARTICIPLE ',
-          hours: ' 1 HR'
+          chapterName: '17. Past Participle ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '18. ADVERB ',
-          hours: ' 1 HR'
+          chapterName: '18. Adverb ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '19. INFINITIVES ',
-          hours: ' 1 HR'
+          chapterName: '19. Infintives ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '20. ADJECTIVES ',
-          hours: ' 1 HR'
+          chapterName: '20. Adjectives ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '21. PREPOSITION  ',
-          hours: ' 1 HR'
+          chapterName: '21. Preposition  ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '22. PRONOUNS ',
-          hours: ' 1 HR'
+          chapterName: '22. Pronouns ',
+          hours: ' 1 Hour'
         },
         {
-          chapterName: '23. CONJUNCTION ',
-          hours: ' 2 HRS'
+          chapterName: '23. Conjunction',
+          hours: ' 2 Hour'
         },
       ],
       reviews: [

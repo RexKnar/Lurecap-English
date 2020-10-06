@@ -21,7 +21,7 @@ export class CourseOutcomeComponent implements OnInit {
 ]
 processImage: Image[] = [
     {
-        img: 'assets/img/Untitled-2k-01.png'
+        img: 'assets/img/67991-01.png'
     }
 ]
 processContent: Content[] = [

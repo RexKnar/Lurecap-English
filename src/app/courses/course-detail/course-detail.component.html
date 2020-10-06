@@ -8,11 +8,11 @@
             <div class="col-lg-4 order-md-2 col-md-12 ">
                 <div class="sticky-top cardfix">
                     <div class="courses-details-info">
-                       
-                            <div class="embed-responsive embed-responsive-16by9 ">
-                                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/464457438"
+
+                        <div class="embed-responsive embed-responsive-16by9 ">
+                            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/464457438"
                                 width="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                            </div>
+                        </div>
 
                         <ul class="info">
                             <li class="price">
@@ -88,8 +88,7 @@
                             <div class="courses-curriculum">
                                 <ul>
                                     <li *ngFor="let chapters of currentCourseDetails.chapters">
-                                        <a
-                                            class="d-flex justify-content-between align-items-center">
+                                        <a class="d-flex justify-content-between align-items-center">
                                             <span class="courses-name">{{chapters.chapterName}}</span>
                                             <div class="courses-meta">
 
@@ -105,9 +104,29 @@
                             <div class="courses-instructor">
                                 <div class="single-advisor-box">
                                     <div class="advisor-content">
-                                        <!-- <span class="sub-title tutor-font">{{currentCourseDetails.courseDetails.tutorName}}</span> -->
-                                        <span class="sub-title tutor-font">Amal J Eronimus is having a motto to be a better human being. an author, orator, student counselor, musician, trainer, translator, cum professor in english. having worked in maldives for 7 years as vice principal cum english teacher, served in media at manila, philippines. gained administrative skills offered an opportunity to possess the post of principal in shimoga, karnataka for five years.</span>
-                                        <span class="sub-title tutor-font">Authored five books cum a translative work. published articles in magazines and journals with isbn and issn numbers. having research under comparative literature, author of six books cum a translative work published on eranial palace in tamil. working on differnt projects under humanistic approaches and guiding students with value based teaching for their future career.</span>
+                                        <div class="course-author d-flex ">
+                                            <img src="assets/img/630740-200.png" class="rounded-circle" alt="image">
+                                            <ul>
+                                                <li>
+                                                    <span>{{currentCourseDetails.courseDetails.tutorName}}</span>
+                                                </li>
+                                                <li>
+                                                    English Expert
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <span class="sub-title tutor-font">Amal J Eronimus is having a motto to be a
+                                            better human being. an author, orator, student counselor, musician, trainer,
+                                            translator, cum professor in english. having worked in maldives for 7 years
+                                            as vice principal cum english teacher, served in media at manila,
+                                            philippines. gained administrative skills offered an opportunity to possess
+                                            the post of principal in shimoga, karnataka for five years.</span>
+                                        <span class="sub-title tutor-font">Authored five books cum a translative work.
+                                            published articles in magazines and journals with isbn and issn numbers.
+                                            having research under comparative literature, author of six books cum a
+                                            translative work published on eranial palace in tamil. working on differnt
+                                            projects under humanistic approaches and guiding students with value based
+                                            teaching for their future career.</span>
                                     </div>
                                 </div>
                             </div>
@@ -130,4 +149,4 @@
             </div>
         </div>
     </div>
-</section> 
+</section>
