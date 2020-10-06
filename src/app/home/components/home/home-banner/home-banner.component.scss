@@ -29,6 +29,7 @@ $black:#000;
         };
         .main-banner-content {
             margin-top: 0;
+            margin-right: -100px;
         }
     }
 }
@@ -52,114 +53,6 @@ $black:#000;
 
         .default-btn {
             margin-bottom: -7px;
-        }
-        .video-btn {
-            position: absolute;
-            display: inline-block;
-            text-transform: uppercase;
-            color: $primary-color;
-            font: {
-                size: 16px;
-                weight: 700;
-            };
-            margin: {
-                top: -3px;
-                left: 30px;
-            };
-            i {
-                width: 55px;
-                height: 55px;
-                line-height: 56px;
-                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .10);
-                display: inline-block;
-                text-align: center;
-                border-radius: 50%;
-                background-color:$white;
-                font-size: 20px;
-                margin-right: 5px;
-                transition: var(--transition);
-            }
-            &:hover {
-                i {
-                    background-color: $secondary-color;
-                    color:$white;
-                }
-            }
-        }
-    }
-}
-.main-banner-animation-image {
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-    img {
-        position: absolute;
-
-        &:nth-child(1) {
-            left: 0;
-            bottom: -220px;
-            z-index: 1;
-        }
-        &:nth-child(2) {
-            left: 192px;
-            top: -10px;
-            z-index: 1;
-        }
-        &:nth-child(3) {
-            left: -25px;
-            top: -200px;
-        }
-        &:nth-child(4) {
-            left: -2px;
-            right: 0;
-            margin: auto;
-            z-index: 1;
-            top: -145px;
-        }
-        &:nth-child(5) {
-            left: -10px;
-            right: 0;
-            top: -250px;
-            margin: auto;
-            z-index: 1;
-        }
-        &:nth-child(6) {
-            right: 150px;
-            top: -50px;
-            z-index: 1;
-        }
-        &:nth-child(7) {
-            right: 5px;
-            top: -120px;
-            z-index: -1;
-        }
-        &:nth-child(8) {
-            left: 0;
-            right: 0;
-            margin: auto;
-            top: -35px;
-        }
-        &:nth-child(9) {
-            right: 0;
-            top: -80px;
-        }
-        &:nth-child(10) {
-            right: 0;
-            bottom: -190px;
-        }
-        &:nth-child(11) {
-            right: 100px;
-            top: -10px;
-            z-index: -2;
-        }
-        &:nth-child(12) {
-            left: 140px;
-            top: 175px;
-            z-index: -1;
-        }
-        &:last-child {
-            display: none;
         }
     }
 }
@@ -185,6 +78,7 @@ $black:#000;
     .main-banner-content {
         margin-top: 0;
         text-align: left;
+        margin-right: -100px;
 
         h1 {
             font-size: 31px;
@@ -193,44 +87,14 @@ $black:#000;
                 top: -5px;
             };
         }
+        p{
+            text-align: center;
+        }
         .btn-box {
             margin: {
                 top: 25px;
                 bottom: -10px;
             };
-            .video-btn {
-                position: relative;
-                font-size: 14px;
-                top: -10px;
-                margin: {
-                    top: 0;
-                    left: 10px;
-                };
-                i {
-                    width: 40px;
-                    height: 40px;
-                    line-height: 40px;
-                    font-size: 15px;
-                    margin-right: 4px;
-                }
-            }
-        }
-    }
-    .main-banner-animation-image {
-        text-align: center;
-        width: auto;
-        height: auto;
-        margin-top: 55px;
-
-        img {
-            position: relative;
-
-            &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10), &:nth-child(11), &:nth-child(12) {
-                display: none;
-            }
-            &:last-child {
-                display: inline-block;
-            }
         }
     }
     .main-banner-image {
@@ -270,8 +134,7 @@ $black:#000;
         text-align: left;
         margin: {
             top: 0;
-            left: auto;
-            right: auto;
+            right: -100px;
         };
         h1 {
             font-size: 45px;
@@ -282,6 +145,7 @@ $black:#000;
         }
         p {
             max-width: 520px;
+            text-align: center;
             margin: {
                 left: auto;
                 right: auto;
@@ -292,32 +156,6 @@ $black:#000;
                 top: 30px;
                 bottom: -10px;
             };
-            .video-btn {
-                font-size: 15px;
-                position: relative;
-                top: -11px;
-                margin: {
-                    top: 0;
-                    left: 20px;
-                };
-            }
-        }
-    }
-    .main-banner-animation-image {
-        width: auto;
-        text-align: center;
-        height: auto;
-        margin-top: 55px;
-
-        img {
-            position: relative;
-
-            &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10), &:nth-child(11), &:nth-child(12) {
-                display: none;
-            }
-            &:last-child {
-                display: inline-block;
-            }
         }
     }
     .main-banner-image {
@@ -359,26 +197,14 @@ $black:#000;
             margin: {
                 bottom: 15px;
                 top: -8px;
+                right: -100px;
             };
+        }
+        p{
+            text-align: center;
         }
         .btn-box {
             margin-top: 25px;
-        }
-    }
-    .main-banner-animation-image {
-        width: auto;
-        text-align: center;
-        height: auto;
-
-        img {
-            position: relative;
-
-            &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10), &:nth-child(11), &:nth-child(12) {
-                display: none;
-            }
-            &:last-child {
-                display: inline-block;
-            }
         }
     }
 
@@ -396,71 +222,6 @@ $black:#000;
             font-size: 48px;
         }
     }
-    .main-banner-animation-image {
-        img {
-            max-width: 40%;
-                
-            &:nth-child(1) {
-                left: 45px;
-                bottom: -220px;
-            }
-            &:nth-child(2) {
-                left: 180px;
-                top: 10px;
-            }
-            &:nth-child(3) {
-                left: 15px;
-                top: -135px;
-            }
-            &:nth-child(4) {
-                left: 165px;
-                right: 0;
-                top: -100px;
-            }
-            &:nth-child(5) {
-                left: 145px;
-                right: 0;
-                top: -190px;
-            }
-            &:nth-child(6) {
-                right: 50px;
-                top: 80px;
-            }
-            &:nth-child(7) {
-                right: 5px;
-                top: -70px;
-                max-width: 30%;
-            }
-            &:nth-child(8) {
-                left: 170px;
-                right: 0;
-                top: 10px;
-            }
-            &:nth-child(9) {
-                right: 0;
-                top: 0;
-            }
-            &:nth-child(10) {
-                right: 0;
-                bottom: -190px;
-            }
-            &:nth-child(11) {
-                right: 45px;
-                top: 71px;
-                z-index: -2;
-                max-width: 30%;
-            }
-            &:nth-child(12) {
-                left: 100px;
-                top: 180px;
-                z-index: -1;
-            }
-            &:last-child {
-                display: none;
-            }
-        }
-    }
-
 }
 
 @media only screen and (min-width: 1550px) {
@@ -473,20 +234,6 @@ $black:#000;
     .main-banner-content {
         h1 {
             font-size: 65px;
-        }
-    }
-    .main-banner-animation-image {
-        img {    
-            &:nth-child(1) {
-                left: 35px;
-            }
-            &:nth-child(2) {
-                left: 255px;
-                top: 0;
-            }
-            &:nth-child(3) {
-                left: 10px;
-            }
         }
     }
 

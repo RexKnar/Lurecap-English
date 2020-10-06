@@ -4,10 +4,13 @@ $primary-color:#221638;
 $secondary-color:#9072c8;
 $white:#ffffff;
 $black: #000;
+
 @import '~ngx-bar-rating/themes/br-default-theme' ;
 @import '~ngx-toastr/toastr';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root {
-    --fontFamily: 'Nunito', sans-serif;
+    --fontFamily: 'Josefin Sans', sans-serif;
     // $color1:#20a52b;
     --fontSize: 17px;
     --transition: .5s;
@@ -18,7 +21,7 @@ body {
     margin: 0;
     font: {
         size: var(--fontSize);
-        family: var(--fontFamily);
+        family: 'Nunito', sans-serif;
     };
 }
 .container {
@@ -41,7 +44,7 @@ img {
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font: {
-        family: var(--fontFamily);
+        family: 'Josefin Sans', sans-serif;
         weight: 500;
     };
 }

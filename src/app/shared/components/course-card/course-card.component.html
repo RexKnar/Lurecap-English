@@ -13,12 +13,12 @@
                         <div class="course-author d-flex ">
                             <img src="assets/img/630740-200.png" class="rounded-circle" alt="image">
                             <span>{{coursesContent.tutorName}}
-                                
+
                             </span>
                         </div>
 
                         <h3><a
-                                [href]="['/course-detail?CourseId='+coursesContent.courseMasterId]">{{coursesContent. courseName}}</a>
+                                [href]="['/course-detail?CourseId='+coursesContent.courseMasterId]"><b>{{coursesContent. courseName}}</b></a>
                         </h3>
                         <p>{{coursesContent.description |Description:coursesContent }}</p>
                         <bar-rating [(rate)]="coursesContent.rating" [readOnly]="true"></bar-rating>
@@ -27,12 +27,12 @@
                                 <i class='flaticon-team'></i>{{coursesContent.count}} +users
                             </li>
                             <!-- <div class="others-option d-flex align-items-center">
-                    <div class="option-item">
-                        <a routerLink="/contact" class="default-btn style">
-                            Buy Now<span></span>
-                        </a>
-                    </div>
-                </div>  -->
+                                <div class="option-item">
+                                    <a routerLink="/contact" class="default-btn style">
+                                        Buy Now<span></span>
+                                    </a>
+                                </div>
+                            </div> -->
                             <div class="price">
                                 <span *ngIf="coursesContent.courseAmount!=0 && coursesContent.dicountAmount==0; ">₹
                                     {{coursesContent.courseAmount}}</span>
@@ -48,47 +48,3 @@
         </div>
     </div>
 </section>
-
-
-<!-- <div class="col-lg-4 col-md-6" *ngFor="let coursesContent of courseCardList">
-    <div class="single-courses-box">
-        <div class="courses-image">
-
-            <a [href]="['/course-detail?CourseId='+coursesContent.courseMasterId]" class="d-block image">
-                <img [src]="coursesContent.imageUrl " alt="image">
-            </a>
-        </div>
-        <div class="courses-content">
-            <div class="course-author d-flex ">
-                <span>{{coursesContent.tutorName}}
-                    <bar-rating [(rate)]="coursesContent.rating" [readOnly]="true"></bar-rating>
-                </span>
-            </div>
-
-            <h3><a
-                    [href]="['/course-detail?CourseId='+coursesContent.courseMasterId]">{{coursesContent. courseName}}</a>
-            </h3>
-            <p>{{coursesContent.description |Description:coursesContent }}</p>
-            <ul class="courses-box-footer d-flex justify-content-between align-items-center">
-                <li>
-                    <i class='flaticon-team'></i>{{coursesContent.count}} +users
-                </li>
-                <div class="others-option d-flex align-items-center">
-                    <div class="option-item">
-                        <a routerLink="/contact" class="default-btn style">
-                            Buy Now<span></span>
-                        </a>
-                    </div>
-                </div> 
-                <div class="price">
-                    <span *ngIf="coursesContent.courseAmount!=0 && coursesContent.dicountAmount==0; ">₹
-                        {{coursesContent.courseAmount}}</span>
-                    <span *ngIf="coursesContent.dicountAmount!=0 && coursesContent.courseAmount!=0 ;">₹
-                        {{coursesContent.dicountAmount}} <del  >₹ {{coursesContent.courseAmount}}</del>
-                    </span>
-                    <span *ngIf="coursesContent.courseAmount==0 ;" class="free">FREE</span>
-                </div>
-            </ul>
-        </div>
-    </div>
-</div> -->

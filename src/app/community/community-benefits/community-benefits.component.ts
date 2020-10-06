@@ -21,7 +21,7 @@ export class CommunityBenefitsComponent implements OnInit {
 singleFeaturedServicesBox: featuredServicesContent[] = [
     {
         icon: 'flaticon-analysis',
-        title: 'Worldwide learning community.',
+        title: 'Worldwide learning community',
         paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
         linkIcon: 'flaticon-right',
         linkText: 'Read More',
@@ -37,7 +37,7 @@ singleFeaturedServicesBox: featuredServicesContent[] = [
     },
     {
         icon: 'flaticon-idea',
-        title: 'Take advantage of conversation practise',
+        title: 'Fully dedicated environment',
         paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
         linkIcon: 'flaticon-right',
         linkText: 'Read More',
@@ -53,7 +53,7 @@ singleFeaturedServicesBox: featuredServicesContent[] = [
     },
     {
         icon: 'flaticon-structure',
-        title: 'Fully dedicated environmente',
+        title: 'Take advantage of conversation practise',
         paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
         linkIcon: 'flaticon-right',
         linkText: 'Read More',
