@@ -45,7 +45,7 @@ export class HomeIntroComponent implements OnInit {
 ]
 exploreLearningVideo: Video[] = [
     {
-        img: 'assets/img/8558-01.png',
+        img: 'assets/img/homeintro.png',
         icon: 'flaticon-google-play',
         videoLink: 'https://www.youtube.com/watch?v=Y5KCDWi7h9o'
     }

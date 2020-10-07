@@ -21,40 +21,40 @@ export class CourseOutcomeComponent implements OnInit {
 ]
 processImage: Image[] = [
     {
-        img: 'assets/img/67991-01.png'
+        img: 'assets/img/homeoutcome.png'
     }
 ]
 processContent: Content[] = [
     {
-        img: 'assets/img/People-Flat.png',
+        // img: 'assets/img/People-Fl;at.png',
         title: 'A more confident YOU!',
         number: '1'
     },
     {
-        img: 'assets/img/People-Flat.png',
+        // img: 'assets/img/People-Flat.png',
         title: 'The ability to express your ideas better!',
         number: '2'
     },
     {
-        img: 'assets/img/People-Flat.png',
+        // img: 'assets/img/People-Flat.png',
         title: 'Understand conversations better!',
         number: '3'
-    },
-    {
-        img: 'assets/img/People-Flat.png',
-        title: 'Improved Grammar and Vocabulary!',
-        number: '4'
-    },
-    {
-        img: 'assets/img/People-Flat.png',
-        title: 'No Mother Tougue Influence!',
-        number: '5'
-    },
-    {
-        img: 'assets/img/People-Flat.png',
-        title: 'Improved pronunciation and fluency!',
-        number: '6'
     }
+    // {
+    //     img: 'assets/img/People-Flat.png',
+    //     title: 'Improved Grammar and Vocabulary!',
+    //     number: '4'
+    // },
+    // {
+    //     img: 'assets/img/People-Flat.png',
+    //     title: 'No Mother Tougue Influence!',
+    //     number: '5'
+    // },
+    // {
+    //     img: 'assets/img/People-Flat.png',
+    //     title: 'Improved pronunciation and fluency!',
+    //     number: '6'
+    // }
 ]
 
 }
@@ -67,7 +67,7 @@ class Image {
 img: string;
 }
 class Content {
-img: string;
+// img: string;
 title : string;
 number : string;
 }
