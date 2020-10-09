@@ -291,7 +291,8 @@ top: 80px;
           .course-author{
             margin:20px 0px 30px 0px;
             ul{
-              padding-left: 2px;
+              padding-left: 10px;
+              padding-top: 30px;
             }
             span{
               color: $secondary-color;
@@ -303,8 +304,8 @@ top: 80px;
             }
           }
           .rounded-circle{
-            height: 70px;
-            width: 70px;
+            height: 100px;
+            width: 100px;
           }
       }
     }
@@ -473,8 +474,11 @@ top: 80px;
     }
   }
 }
+
+}
 .courses-details-info {
   background-color: #f8f9f8;
+  list-style-type: none;
   border-radius: 5px;
   padding: 0px 12px 0px 12px;
   margin: {
@@ -503,6 +507,7 @@ top: 80px;
       transform: translateY(-50%);
 
       i {
+        list-style-type: none;
         display: block;
         width: 60px;
         height: 60px;
@@ -543,7 +548,8 @@ top: 80px;
   }
   .info {
     margin-bottom: 0;
-    list-style-type: none;
+    list-style-type: none !important;
+    text-decoration: none !important;
     padding: {
       left: 25px;
       right: 25px;
@@ -551,6 +557,7 @@ top: 80px;
     }
     li {
       border-bottom: 1px solid #e5e5e7;
+      list-style-type: none !important;
       color: $color2;
       font: {
         size: 17px;
@@ -561,6 +568,7 @@ top: 80px;
         bottom: 14px;
       }
       span {
+          list-style-type: none !important;
         font-weight: 600;
         color: $primary-color;
         position: relative;
@@ -710,7 +718,6 @@ top: 80px;
       }
     }
   }
-}
 }
 @media only screen and (max-width: 767px) {
   .courses-details-desc {

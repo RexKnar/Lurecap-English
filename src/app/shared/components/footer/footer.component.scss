@@ -241,6 +241,9 @@ Go Top CSS
             padding-left: 0 !important;
         }
     }
+    .footer-bottom{
+        text-align: center;
+    }
     .footer-bottom-area {
         margin-top: 30px;
         text-align: center;
@@ -281,6 +284,9 @@ Go Top CSS
     .footer-area {
         padding-top: 80px;
     }
+    .footer-bottom{
+        text-align: center;
+    }
     
     .footer-bottom-area {
         margin-top: 50px;
@@ -295,6 +301,7 @@ Go Top CSS
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
 
     .single-footer-widget {
         &.pl-5 {

@@ -19,6 +19,7 @@ $secondary-color:#9072c8;
 
     .icon {
         margin-bottom: 25px;
+      
     }
     h3 {
         margin-bottom: 12px;
@@ -70,6 +71,10 @@ $secondary-color:#9072c8;
 
     .icon {
         margin-bottom: 25px;
+        height: 100px;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
     }
     h3 {
         color: $primary-color;

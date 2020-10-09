@@ -95,9 +95,9 @@
                     margin-top: 15px;
                     position: absolute;
                     visibility: hidden;
-                    background: var(--whiteColor);
+                    background: $white;
                     transition: all 0.2s ease-in-out;
-                    border-top: 3px solid var(--mainColor);
+                    border-top: 3px solid $primary-color;
                     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
 
                     li {
@@ -107,7 +107,7 @@
                             padding: 10px 20px;
                             position: relative;
                             display: block;
-                            color: var(--blackColor);
+                            color: $primary-color;
                             font: {
                                 size: 16.5px;
                                 weight: 700;
@@ -121,7 +121,7 @@
                                 right: 15px;
                             }
                             &:hover, &:focus, &.active {
-                                color: var(--mainColor);
+                                color: $primary-color;
                             }
                         }
                         .dropdown-menu {
@@ -133,10 +133,10 @@
                             
                             li {
                                 a {
-                                    color: var(--blackColor);
+                                    color: $primary-color;
                                     
                                     &:hover, &:focus, &.active {
-                                        color: var(--mainColor);
+                                        color: $primary-color;
                                     }
                                 }
                                 .dropdown-menu {
@@ -147,10 +147,10 @@
         
                                     li {
                                         a {
-                                            color: var(--blackColor);
+                                            color: $primary-color;
         
                                             &:hover, &:focus, &.active {
-                                                color: var(--mainColor);
+                                                color: $primary-color;
                                             }
                                         }
                                         .dropdown-menu {
@@ -161,10 +161,10 @@
                 
                                             li {
                                                 a {
-                                                    color: var(--blackColor);
+                                                    color: $primary-color;
                 
                                                     &:hover, &:focus, &.active {
-                                                        color: var(--mainColor);
+                                                        color: $primary-color;
                                                     }
                                                 }
                                                 .dropdown-menu {
@@ -175,10 +175,10 @@
                         
                                                     li {
                                                         a {
-                                                            color: var(--blackColor);
+                                                            color: $primary-color;
                 
                                                             &:hover, &:focus, &.active {
-                                                                color: var(--mainColor);
+                                                                color: $primary-color;
                                                             }
                                                         }
                                                         .dropdown-menu {
@@ -189,10 +189,10 @@
                                 
                                                             li {
                                                                 a {
-                                                                    color: var(--blackColor);
+                                                                    color: $primary-color;
                 
                                                                     &:hover, &:focus, &.active {
-                                                                        color: var(--mainColor);
+                                                                        color: $primary-color;
                                                                     }
                                                                 }
                                                                 .dropdown-menu {
@@ -203,17 +203,17 @@
                                         
                                                                     li {
                                                                         a {
-                                                                            color: var(--blackColor);
+                                                                            color: $primary-color;
                 
                                                                             &:hover, &:focus, &.active {
-                                                                                color: var(--mainColor);
+                                                                                color: $primary-color;
                                                                             }
                                                                         }
                                                                     }
                                                                 }
                                                                 &.active {
                                                                     a {
-                                                                        color: var(--mainColor);
+                                                                        color: $primary-color;
                                                                     }
                                                                 }
                                                                 &:hover {
@@ -226,7 +226,7 @@
                                                         }
                                                         &.active {
                                                             a {
-                                                                color: var(--mainColor);
+                                                                color: $primary-color;
                                                             }
                                                         }
                                                         &:hover {
@@ -239,7 +239,7 @@
                                                 }
                                                 &.active {
                                                     a {
-                                                        color: var(--mainColor);
+                                                        color: $primary-color;
                                                     }
                                                 }
                                                 &:hover {
@@ -252,7 +252,7 @@
                                         }
                                         &.active {
                                             a {
-                                                color: var(--mainColor);
+                                                color: $primary-color;
                                             }
                                         }
                                         &:hover {
@@ -265,7 +265,7 @@
                                 }
                                 &.active {
                                     a {
-                                        color: var(--mainColor);
+                                        color: $primary-color;
                                     }
                                 }
                                 &:hover {
@@ -278,7 +278,7 @@
                         }
                         &.active {
                             a {
-                                color: var(--mainColor);
+                                color: $primary-color;
                             }
                         }
                         &:hover {
@@ -319,7 +319,7 @@
                             li {
                                 a {
                                     margin-top: 14px;
-                                    color: var(--blackColor);
+                                    color: $primary-color;
                                     padding: 0;
                                     display: block;
                                     font: {
@@ -327,7 +327,7 @@
                                         weight: 700;
                                     };
                                     &:hover, &.active {
-                                        color: var(--mainColor);
+                                        color: $primary-color;
                                     }
                                 }
                                 &:first-child {
@@ -352,7 +352,7 @@
                                 text-align: center;
                                 font-size: 40px;
                                 transition: var(--transition);
-                                color: var(--blackColor);
+                                color: $primary-color;
                                 margin-bottom: 15px;
                                 border: {
                                     width: 1.5px;
@@ -378,7 +378,7 @@
                             .sub-title {
                                 display: block;
                                 margin-top: 5px;
-                                color: var(--mainColor);
+                                color: $primary-color;
                                 font: {
                                     weight: 600;
                                     size: 15px;
@@ -395,9 +395,9 @@
                             }
                             &:hover {
                                 .icon {
-                                    background-color: var(--mainColor);
-                                    border-color: var(--whiteColor);
-                                    color: var(--whiteColor);
+                                    background-color: $primary-color;
+                                    border-color: $white;
+                                    color: $white;
                                 }
                             }
                         }
@@ -427,7 +427,7 @@
                         border-radius: 5px;
                         background-color: #f5f5f5;
                         transition: var(--transition);
-                        color: var(--blackColor);
+                        color: $primary-color;
                         font: {
                             size: 16px;
                             weight: 400;
@@ -443,7 +443,7 @@
                             transition: var(--transition);
                         }
                         &:focus {
-                            border-color: var(--mainColor);
+                            border-color: $primary-color;
             
                             &::placeholder {
                                 color: transparent;
@@ -457,7 +457,7 @@
                         height: 48px;
                         background-color: transparent;
                         border: none;
-                        color: var(--mainColor);
+                        color: $primary-color;
                         border-radius: 5px;
                         font-size: 22px;
                         padding: 0 15px;
@@ -472,7 +472,7 @@
 }
 .navbar-area {
     position: absolute;
-    background-color: transparent;
+    background-color:transparent;
     top: 0;
     left: 0;
     width: 100%;
@@ -488,7 +488,7 @@
         width: 100%;
         z-index: 999;
         box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-        background-color: var(--whiteColor) !important;
+        background-color: $white !important;
         animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
         padding: {
             bottom: 5px;
@@ -504,6 +504,7 @@
 }
 .others-option-for-responsive {
     display: none;
+    background-color: white;
 
     .dot-menu {
         padding: 0 10px;
@@ -525,13 +526,13 @@
                 border-radius: 100%;
                 margin: 0 2px;
                 transition: var(--transition);
-                background-color: var(--blackColor);
+                background-color: $primary-color;
             }
         }
         &:hover {
             .inner {
                 .circle {
-                    background-color: var(--mainColor);
+                    background-color: $secondary-color;
                 }
             }
         }
@@ -564,7 +565,7 @@
     .option-inner {
         padding: 15px 15px 8px;
         box-shadow: 0 15px 40px rgba(0,0,0,.09);
-        background-color: var(--whiteColor);
+        background-color: $white;
 
         .search-box {
             margin-bottom: 15px;
@@ -579,7 +580,7 @@
                 border-radius: 5px;
                 background-color: #f5f5f5;
                 transition: var(--transition);
-                color: var(--blackColor);
+                color: $primary-color;
                 font: {
                     size: var(--fontSize);
                     weight: 400;
@@ -595,7 +596,7 @@
                     transition: var(--transition);
                 }
                 &:focus {
-                    border-color: var(--mainColor);
+                    border-color: $secondary-color;
     
                     &::placeholder {
                         color: transparent;
@@ -609,7 +610,7 @@
                 height: 48px;
                 background-color: transparent;
                 border: none;
-                color: var(--mainColor);
+                color: $primary-color;
                 border-radius: 5px;
                 padding: 0 15px;
             }
@@ -633,7 +634,7 @@
                 a {
                     display: inline-block;
                     position: relative;
-                    color: var(--blackColor);
+                    color: $primary-color;
 
                     span {
                         position: absolute;
@@ -644,15 +645,15 @@
                         text-align: center;
                         line-height: 14px;
                         border-radius: 50%;
-                        color: var(--whiteColor);
-                        background-color: var(--mainColor);
+                        color: $white;
+                        background-color: $secondary-color;
                         font: {
                             size: 10px;
                             weight: 600;
                         };
                     }
                     &:hover {
-                        color: var(--mainColor);
+                        color: $primary-color;
                     }
                 }
             }
@@ -669,7 +670,7 @@
         };
         &.is-sticky {
             padding: {
-                top: 10px;
+                // top: 10px;
                 bottom: 10px;
             };
             .wilo-responsive-nav {
@@ -789,7 +790,7 @@
                                                 weight: 400;
                                             };
                                             &:hover, &.active {
-                                                color: var(--mainColor);
+                                                color: $primary-color;
                                             }
                                         }
                                         &:first-child {
@@ -815,7 +816,7 @@
                                         text-align: center;
                                         font-size: 28px;
                                         transition: var(--transition);
-                                        color: var(--blackColor);
+                                        color: $primary-color;
                                         margin-bottom: 15px;
                                         border: {
                                             width: 1.5px;
@@ -841,7 +842,7 @@
                                     .sub-title {
                                         display: block;
                                         margin-top: 5px;
-                                        color: var(--mainColor);
+                                        color: $primary-color;
                                         font: {
                                             weight: 600;
                                             size: 13px;
@@ -858,9 +859,9 @@
                                     }
                                     &:hover {
                                         .icon {
-                                            background-color: var(--mainColor);
-                                            border-color: var(--whiteColor);
-                                            color: var(--whiteColor);
+                                            background-color: $primary-color;
+                                            border-color: $white;
+                                            color: $white;
                                         }
                                     }
                                 }
@@ -884,7 +885,7 @@
                         border-radius: 5px;
                         background-color: #f5f5f5;
                         transition: var(--transition);
-                        color: var(--blackColor);
+                        color: $primary-color;
                         font: {
                             size: var(--fontSize);
                             weight: 400;
@@ -900,7 +901,7 @@
                             transition: var(--transition);
                         }
                         &:focus {
-                            border-color: var(--mainColor);
+                            border-color: $primary-color;
             
                             &::placeholder {
                                 color: transparent;
@@ -914,7 +915,7 @@
                         height: 48px;
                         background-color: transparent;
                         border: none;
-                        color: var(--mainColor);
+                        color: $primary-color;
                         border-radius: 5px;
                         padding: 0 15px;
                     }
@@ -940,7 +941,7 @@
                         a {
                             display: inline-block;
                             position: relative;
-                            color: var(--blackColor);
+                            color: $primary-color;
         
                             span {
                                 position: absolute;
@@ -951,15 +952,15 @@
                                 text-align: center;
                                 line-height: 14px;
                                 border-radius: 50%;
-                                color: var(--whiteColor);
-                                background-color: var(--mainColor);
+                                color: $white;
+                                background-color: $secondary-color;
                                 font: {
                                     size: 10px;
                                     weight: 600;
                                 };
                             }
                             &:hover {
-                                color: var(--mainColor);
+                                color: $secondary-color;
                             }
                         }
                     }

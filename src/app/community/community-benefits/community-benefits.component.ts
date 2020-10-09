@@ -20,7 +20,7 @@ export class CommunityBenefitsComponent implements OnInit {
 ]
 singleFeaturedServicesBox: featuredServicesContent[] = [
     {
-        icon: 'flaticon-analysis',
+        icon: 'assets/img/services/icon4.png',
         title: 'Worldwide learning community',
         paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
         linkIcon: 'flaticon-right',
@@ -28,7 +28,7 @@ singleFeaturedServicesBox: featuredServicesContent[] = [
         link: 'services-details'
     },
     {
-        icon: 'flaticon-structure',
+        icon: 'assets/img/services/icon5.png',
         title: 'Free account for our students',
         paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
         linkIcon: 'flaticon-right',
@@ -36,7 +36,7 @@ singleFeaturedServicesBox: featuredServicesContent[] = [
         link: 'services-details'
     },
     {
-        icon: 'flaticon-idea',
+        icon: 'assets/img/services/icon6.png',
         title: 'Fully dedicated environment',
         paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
         linkIcon: 'flaticon-right',
@@ -44,7 +44,7 @@ singleFeaturedServicesBox: featuredServicesContent[] = [
         link: 'services-details'
     },
     {
-        icon: 'flaticon-analysis',
+        icon: 'assets/img/services/icon7.png',
         title: ' A powerful matchmaking algorithm.',
         paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
         linkIcon: 'flaticon-right',
@@ -52,7 +52,7 @@ singleFeaturedServicesBox: featuredServicesContent[] = [
         link: 'services-details'
     },
     {
-        icon: 'flaticon-structure',
+        icon: 'assets/img/services/icon8.png',
         title: 'Take advantage of conversation practise',
         paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
         linkIcon: 'flaticon-right',
@@ -60,7 +60,7 @@ singleFeaturedServicesBox: featuredServicesContent[] = [
         link: 'services-details'
     },
     {
-        icon: 'flaticon-idea',
+        icon: 'assets/img/services/icon9.png',
         title: 'Enjoy the learning experience on mobile',
         paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
         linkIcon: 'flaticon-right',
