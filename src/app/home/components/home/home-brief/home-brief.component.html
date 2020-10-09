@@ -3,21 +3,21 @@
         <div class="row align-items-center">
             <div class="col-lg-7 col-md-12">
                 <div class="scientist-box-list">
-                    <div class="row">
+                    <div class="row ">
                     </div>
-
+                    <img src="assets/img/homeabout.png" alt="image"  class="wow fadeInDown" data-wow-delay="500ms" data-wow-duration="1000ms" alt="image" data-speed="0.06" data-revert="true">
                     <div class="map-shape1"><img src="assets/img/shape/map-shape1.png" alt="image"></div>
-                    <!-- <div class="vector-shape5"><img src="assets/img/shape/vector-shape5.png" alt="image"></div> -->
                 </div>
             </div>
 
             <div class="col-lg-5 col-md-12">
                 <div class="scientist-section-title" *ngFor="let SectionTitle of scientistSectionTitle;">
                     <span class="sub-title"><img src="assets/img/star-icon.png" alt="image"> {{SectionTitle.subTitle}}</span>
-                    <h2>{{SectionTitle.title}}</h2>
-                    <p>{{SectionTitle.paragraphText1}}</p>
-                    <p>{{SectionTitle.paragraphText2}}</p>
-                    <a href="/about-us" class="default-btn"><i class="{{SectionTitle.linkIcon}}"></i>{{SectionTitle.linkText}}<span></span></a>
+                    <h2 class="wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1000ms">{{SectionTitle.title}}</h2>
+                    <p class="wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1000ms">{{SectionTitle.paragraphText1}}</p>
+                    <p class="wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1000ms" >{{SectionTitle.paragraphText2}}</p>
+                    <a href="/about-us" class="default-btn wow fadeInLeft"
+                    data-wow-delay="200ms" data-wow-duration="1000ms"><i class="{{SectionTitle.linkIcon}}"></i>{{SectionTitle.linkText}}<span></span></a>
                 </div>
             </div>
         </div>

@@ -1,13 +1,13 @@
-<section class="our-mission-area ptb-100">
+<section class="our-mission-area ">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="our-mission-content">
                     <div class="content" *ngFor="let Content of ourMissionContent;">
-                        <h2>{{Content.title}}</h2>
-                        <p>{{Content.paragraphText1}}</p>
+                        <h2 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{Content.title}}</h2>
+                        <p class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{Content.paragraphText1}}</p>
                         <ul class="our-mission-list">
-                            <li *ngFor="let List of ourMissionList;">
+                            <li *ngFor="let List of ourMissionList;" class="wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1000ms">
                                 <span>
                                     <div class="icon">
                                         <i class="{{List.icon}}"></i>
@@ -17,15 +17,14 @@
                                 </span>
                             </li>
                         </ul>
-                        <p>{{Content.paragraphText2}}</p>
-                        
+                        <p class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{Content.paragraphText2}}</p>    
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-6 col-md-12">
                 <div class="our-mission-image" *ngFor="let Image of ourMissionImage;">
-                    <img [src]="Image.img" alt="image">
+                    <img [src]="Image.img" alt="image"  class="wow fadeInDown" data-wow-delay="500ms" data-wow-duration="1500ms" alt="image" data-speed="0.06" data-revert="true">
                     <div class="shape"><img src="assets/img/our-mission/shape1.png"></div>
                 </div>
             </div>

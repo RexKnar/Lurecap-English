@@ -1,19 +1,18 @@
 <section class="contact-area pt-100 pb-70 bg-about-image ">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 about-image">
-                <!-- <div class="map-shape1"><img src="assets/img/shape/map-shape1.png" alt="image"></div> -->
+            <div class="col-lg-3 about-image">-->
                 <div class="vector-shape5"><img src="assets/img/shape/vector-shape5.png" alt="image"></div>
             </div>
             <div class="col-lg-6 contact-form">
-                <h2>Login</h2>
+                <h2 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">Login</h2>
                 <form [formGroup]="loginForm" (ngSubmit)="onSubmitLoginForm()">
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
                         <label>Email/Phone Number</label>
                     </div>
                     <div class="col-lg-12 col-md-6">
 
-                        <div class="form-group">
+                        <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
                             <input type="text" name="username" class="form-control" formControlName="username"
                                 placeholder="Email/Phone Number"
                                 [ngClass]="{ 'is-invalid': submitted && f.username.errors }">
@@ -22,12 +21,12 @@
                             <div *ngIf="f.username.errors.required" class="par-txxt">*required</div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-6">
+                    <div class="col-lg-2 col-md-6 wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
                         <label>Password</label>
                     </div>
                     <div class="col-lg-12 col-md-6">
 
-                        <div class="form-group">
+                        <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
                             <input type="password" name="password" class="form-control" formControlName="password"
                                 placeholder="Password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
                         </div>
@@ -38,14 +37,14 @@
 
 
 
-                    <div class="col-lg-12 col-md-12">
+                    <div class="col-lg-12 col-md-12 wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
                         <button type="submit" class="default-btn" (click)="userLogin()"><i
                                 class="flaticon-tick"></i>Submit<span></span></button>
                     </div>
                 </form>
                 <div class="col-lg-12 linkstyle">
-                    <div class=" col-lg-7 float-right">
-                        <a href="/signup">Create account</a> <span> | </span>
+                    <div class=" col-lg-7 float-right wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
+                        <a  href="/signup" >Create account</a> <span> | </span>
                         <a href="#">forgot password</a>
                     </div>
                 </div>

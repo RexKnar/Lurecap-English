@@ -2,9 +2,9 @@
 <section class="history-area ptb-100 bg-fafafb">
     <div class="container">
         <div class="section-title" *ngFor="let sectionTitleContent of sectionTitle;">
-            <span class="sub-title"><img src="assets/img/star-icon.png" alt="image"> {{sectionTitleContent.subTitle}}</span>
-            <h2>{{sectionTitleContent.title}}</h2>
-            <p>{{sectionTitleContent.paragraphText}}</p>
+            <span class="sub-title wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms"><img src="assets/img/star-icon.png" alt="image"> {{sectionTitleContent.subTitle}}</span>
+            <h2 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{sectionTitleContent.title}}</h2>
+            <p class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{sectionTitleContent.paragraphText}}</p>
         </div>
 
         <ol class="timeline history-timeline">
@@ -17,15 +17,15 @@
                     <div class="row align-items-center">
                         <div class="col-lg-8 col-md-12">
                             <div class="content">
-                                <h3>{{TimelineBlock.title}}</h3>
-                                <p>{{TimelineBlock.paragraphText}}</p>
-                                <p>{{TimelineBlock.paragraphText1}}</p>
+                                <h3 class="wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1000ms">{{TimelineBlock.title}}</h3>
+                                <p class="wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1000ms">{{TimelineBlock.paragraphText}}</p>
+                                <p class="wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1000ms">{{TimelineBlock.paragraphText1}}</p>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-12">
                             <div class="image">
-                                <img [src]="TimelineBlock.img" alt="image">
+                                <img [src]="TimelineBlock.img" alt="image"  class="wow fadeInDown" data-wow-delay="500ms" data-wow-duration="1000ms" alt="image" data-speed="0.06" data-revert="true">
                             </div>
                         </div>
                     </div>

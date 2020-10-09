@@ -4,20 +4,20 @@
             <div class="col-lg-6 col-md-12">
                 <div class="our-mission-content">
                     <div class="content" *ngFor="let Content of ourMissionContent;">
-                        <h2>{{Content.title}}</h2>
+                        <h2 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{Content.title}}</h2>
                        
-                        <ul class="features-list">
+                        <ul class="features-list wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
                             <li *ngFor="let List of featuresList;"><i class="{{List.icon}}"></i> {{List.title}}</li>
                         </ul>
-                        <p>{{Content.paragraphText1}}</p>
-                        <p>{{Content.paragraphText2}}</p>
+                        <p class="wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1000ms">{{Content.paragraphText1}}</p>
+                        <p class="wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1000ms">{{Content.paragraphText2}}</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-6 col-md-12">
                 <div class="our-mission-image" *ngFor="let Image of ourMissionImage;">
-                    <img [src]="Image.img" alt="image">
+                    <img [src]="Image.img"  class="wow fadeInDown" data-wow-delay="500ms" data-wow-duration="1000ms" alt="image" data-speed="0.06" data-revert="true">
                     <div class="shape"><img src="assets/img/our-mission/shape1.png"></div>
                 </div>
             </div>

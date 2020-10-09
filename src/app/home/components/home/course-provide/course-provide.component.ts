@@ -21,6 +21,14 @@ export class CourseProvideComponent implements OnInit {
 ]
 singleServicesItem: ServicesItem[] = [
     {
+        icon: 'assets/img/services/icon3.png',
+        title: 'Listening Skills ',
+        paragraphText: 'For Lectures, Presentations, Interviews,  workplace interactions, communicating with friends, etc.',
+        btnIcon: 'flaticon-right',
+        btnText: 'Read More',
+        link: 'single-services-2'
+    },
+    {
         icon: 'assets/img/services/icon1.png',
         title: 'Speaking Skills ',
         paragraphText: 'Everyday conversations, e.g. workplace interactions,communicating with friends, etc.',
@@ -35,15 +43,8 @@ singleServicesItem: ServicesItem[] = [
         btnIcon: 'flaticon-right',
         btnText: 'Read More',
         link: 'single-services-2'
-    },
-    {
-        icon: 'assets/img/services/icon3.png',
-        title: 'Listening Skills ',
-        paragraphText: 'For Lectures, Presentations, Interviews,  workplace interactions, communicating with friends, etc.',
-        btnIcon: 'flaticon-right',
-        btnText: 'Read More',
-        link: 'single-services-2'
     }
+  
 ]
 
 }

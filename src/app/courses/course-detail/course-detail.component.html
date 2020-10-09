@@ -2,68 +2,13 @@
 
     <div class="container">
         <div class="row">
-            <div class="courses-details-image d-lg-none ">
-                <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size" alt="image">
-            </div>
-            <div class="col-lg-4 order-md-2 col-md-12 ">
-                <div class="sticky-top cardfix">
-                    <div class="courses-details-info">
-
-                        <div class="embed-responsive embed-responsive-16by9 ">
+           
+            <div class="col-lg-8  col-md-12">
+                <div class="courses-details-image">
+                     <div class="embed-responsive embed-responsive-16by9 ">
                             <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/464457438"
                                 width="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                         </div>
-
-                        <ul class="info">
-                            <li class="price">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span><i class="flaticon-price-tag"></i> Price</span>
-                                    <span
-                                        *ngIf="currentCourseDetails.courseDetails.courseAmount!=0 && currentCourseDetails.courseDetails.dicountAmount==0; ">₹
-                                        {{currentCourseDetails.courseDetails.courseAmount}}
-                                    </span>
-                                    <span
-                                        *ngIf="currentCourseDetails.courseDetails.dicountAmount!=0 && currentCourseDetails.courseDetails.courseAmount!=0 ;">₹
-                                        {{currentCourseDetails.courseDetails.dicountAmount}} <del
-                                            class="discount-style">₹{{currentCourseDetails.courseDetails.courseAmount}}
-                                        </del>
-                                    </span>
-                                    <span *ngIf="currentCourseDetails.courseDetails.courseAmount==0 ;"
-                                        class="free">FREE</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span><i class="flaticon-distance-education"></i> Lessons</span>
-                                    {{currentCourseDetails.chapterCount}}
-                                </div>
-                            </li>
-                            <li>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span><i class="flaticon-web"></i> Enrolled</span>
-                                    {{currentCourseDetails.courseDetails.userCount}}+students
-                                </div>
-                            </li>
-                            <li>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span><i class="flaticon-open-padlock"></i> Access</span>
-                                    1-year
-                                </div>
-                            </li>
-                        </ul>
-
-                        <div class="btn-box">
-                            <a href="/signup" class="default-btn"><i class="flaticon-price-tag"></i>Buy
-                                Now<span></span></a>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-lg-8 order-md-1 col-md-12">
-                <div class="courses-details-image d-lg-inline d-none">
-                    <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size" alt="image">
                 </div>
                 <h3 class="coursename">{{currentCourseDetails.courseDetails.courseName}}</h3>
                 <h6>{{currentCourseDetails.courseDetails.provideWhat}}</h6>
@@ -105,7 +50,7 @@
                                 <div class="single-advisor-box">
                                     <div class="advisor-content">
                                         <div class="course-author d-flex ">
-                                            <img src="assets/img/630740-200.png" class="rounded-circle" alt="image">
+                                            <img src="assets/img/630740-200.jpg" class="rounded-circle" alt="image">
                                             <ul>
                                                 <li>
                                                     <span>{{currentCourseDetails.courseDetails.tutorName}}</span>
@@ -146,6 +91,64 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-lg-4  col-md-12 ">
+                <div class="sticky-top cardfix">
+                    <div class="courses-details-info">
+                        <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size" alt="image">
+                       
+                        <ul class="info">
+                           
+                            <li class="price">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span><i class="flaticon-price-tag"></i> Price</span>
+                                    <span
+                                        *ngIf="currentCourseDetails.courseDetails.courseAmount!=0 && currentCourseDetails.courseDetails.dicountAmount==0; ">₹
+                                        {{currentCourseDetails.courseDetails.courseAmount}}
+                                    </span>
+                                    <span
+                                        *ngIf="currentCourseDetails.courseDetails.dicountAmount!=0 && currentCourseDetails.courseDetails.courseAmount!=0 ;">₹
+                                        {{currentCourseDetails.courseDetails.dicountAmount}} <del
+                                            class="discount-style">₹{{currentCourseDetails.courseDetails.courseAmount}}
+                                        </del>
+                                    </span>
+                                    <span *ngIf="currentCourseDetails.courseDetails.courseAmount==0 ;"
+                                        class="free">FREE</span>
+                                </div>
+                            </li>
+
+                            <li >
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span><i class="flaticon-distance-education"></i> Lessons</span>
+                                    {{currentCourseDetails.chapterCount}}
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span><i class="flaticon-web"></i> Enrolled</span>
+                                    {{currentCourseDetails.courseDetails.userCount}}+students
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span><i class="flaticon-open-padlock"></i> Access</span>
+                                    1 year
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        <div class="btn-box">
+                            <a href="/signup" class="default-btn"><i class="flaticon-price-tag"></i>Buy
+                                Now<span></span></a>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

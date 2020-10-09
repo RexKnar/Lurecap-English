@@ -1,4 +1,4 @@
-<section class="courses-area ptb-100  bg-fafafb">
+<section class="courses-area ptb-100 bg-fafafb">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6" *ngFor="let coursesContent of courseCardList">
@@ -12,15 +12,15 @@
                     <div class="courses-content">
                         <div class="course-author d-flex ">
                             <img src="assets/img/630740-200.png" class="rounded-circle" alt="image">
-                            <span>{{coursesContent.tutorName}}
+                            <span class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{coursesContent.tutorName}}
 
                             </span>
                         </div>
 
                         <h3><a
-                                [href]="['/course-detail?CourseId='+coursesContent.courseMasterId]"><b>{{coursesContent. courseName}}</b></a>
+                                [href]="['/course-detail?CourseId='+coursesContent.courseMasterId]" class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms"><b>{{coursesContent. courseName}}</b></a>
                         </h3>
-                        <p>{{coursesContent.description |Description:coursesContent }}</p>
+                        <p class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{coursesContent.description |Description:coursesContent }}</p>
                         <bar-rating [(rate)]="coursesContent.rating" [readOnly]="true"></bar-rating>
                         <ul class="courses-box-footer d-flex justify-content-between align-items-center">
                             <li>
@@ -33,7 +33,7 @@
                                     </a>
                                 </div>
                             </div> -->
-                            <div class="price">
+                            <div class="price wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
                                 <span *ngIf="coursesContent.courseAmount!=0 && coursesContent.dicountAmount==0; ">₹
                                     {{coursesContent.courseAmount}}</span>
                                 <span *ngIf="coursesContent.dicountAmount!=0 && coursesContent.courseAmount!=0 ;">₹

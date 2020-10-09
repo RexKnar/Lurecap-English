@@ -11,7 +11,11 @@ export class HomeBannerComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  ourMissionImage: Image[] = [
+    {
+        img: 'assets/img/homebanner.png'
+    }
+]
   mainBannerContent: Content[] = [
     {
         title: 'Do you want to speak better English? ',
@@ -22,6 +26,9 @@ export class HomeBannerComponent implements OnInit {
     }
 ]
 
+}
+class Image {
+  img: string;
 }
 class Content {
 title : string;

@@ -1,19 +1,19 @@
-<section class="about-area res-pt-0 pb-100 ptb-100">
+<section class="about-area res-pt-0">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="about-img" *ngFor="let Image of aboutImage;">
-                    <img [src]="Image.img" alt="image">
-                    <div class="shape"><img src="assets/img/about/shape1.png"></div>
+                    <img [src]="Image.img" alt="image"   class="wow fadeInDown" data-wow-delay="500ms" data-wow-duration="1000ms" alt="image" data-speed="0.06" data-revert="true">
+                    <div class="shape"><img src="assets/img/our-mission/shape11.png"></div>
                 </div>
             </div>
 
             <div class="col-lg-6 col-md-12">
                 <div class="about-content">
                     <div class="content" *ngFor="let Content of aboutContent;">
-                        <h2>{{Content.title}}</h2>
-                        <p>{{Content.paragraphText1}}</p>
-                        <ul class="content-list">
+                        <h2 class="wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1000ms">{{Content.title}}</h2>
+                        <p class="wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1000ms">{{Content.paragraphText1}}</p>
+                        <ul class="content-list wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
                             <li *ngFor="let List of contentList;"><i class="{{List.icon}}"></i> {{List.title}}</li>
                         </ul>
                     </div>

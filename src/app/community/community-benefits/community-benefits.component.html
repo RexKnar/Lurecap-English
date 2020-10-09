@@ -1,8 +1,8 @@
 <section class="featured-services-area pt-100 pb-70">
     <div class="container">
         <div class="section-title" *ngFor="let sectionTitleContent of sectionTitle;">
-            <h2>{{sectionTitleContent.title}}</h2>
-            <p>{{sectionTitleContent.paragraphText}}</p>
+            <h2 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms" >{{sectionTitleContent.title}}</h2>
+            <p class="wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms" >{{sectionTitleContent.paragraphText}}</p>
         </div>
 
         <div class="row">
@@ -10,10 +10,10 @@
                <center>
                 <div class="single-featured-services-box">
                     <div class="icon">
-                        <i class="{{featuredServicesContent.icon}}"></i>
+                        <img [src]="featuredServicesContent.icon"  class="wow fadeInDown" data-wow-delay="500ms" data-wow-duration="1000ms" alt="image" data-speed="0.06" data-revert="true"> 
                     </div>
-                    <h3><a routerLink="/{{featuredServicesContent.link}}">{{featuredServicesContent.title}}</a></h3>
-                    <p>{{featuredServicesContent.paragraphText}}</p>
+                    <h3 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms"><a routerLink="/{{featuredServicesContent.link}}">{{featuredServicesContent.title}}</a></h3>
+                    <p class="wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms" >{{featuredServicesContent.paragraphText}}</p>
                     <div class="vector-shape5"><img src="assets/img/shape/vector-shape11.png" alt="image"></div>
                 </div>
                </center> 
