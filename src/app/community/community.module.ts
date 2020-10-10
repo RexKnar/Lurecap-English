@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CommunityRoutingModule } from './community-routing.module';
 import { CommunityPageComponent } from './community-page/community-page.component';
@@ -14,6 +14,7 @@ import { CommunityDeclareComponent } from './community-declare/community-declare
     CommunityRoutingModule,
     BrowserModule,
    
-  ]
+  ],
+  schemas: [NO_ERRORS_SCHEMA],
 })
 export class CommunityModule { }

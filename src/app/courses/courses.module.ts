@@ -1,5 +1,5 @@
 
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses.component';
@@ -12,7 +12,7 @@ import { BarRatingModule } from 'ngx-bar-rating';
 
 
 @NgModule({
-  declarations: [CoursesComponent,  CourseDetailComponent, CourseIntroComponent,  CourseListComponent],
+  declarations: [CoursesComponent, CourseDetailComponent, CourseIntroComponent, CourseListComponent],
   imports: [
     CommonModule,
     CoursesRoutingModule,
@@ -23,7 +23,11 @@ import { BarRatingModule } from 'ngx-bar-rating';
   exports: [
     CourseListComponent
   ],
-  
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
+  ]
+
 })
 export class CoursesModule { }

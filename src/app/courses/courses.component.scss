@@ -1,1 +1,31 @@
- 
+$white: #fff;
+$primary-color: #221638;
+$secondary-color:#9072c8;
+$black:#000;
+$color2:#45414c;
+.sub-title {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: $primary-color;
+    font: {
+        weight: 700;
+        size: 15px;
+    };
+    img {
+        margin-right: 5px;
+        animation: {
+            name: rotateme;
+            duration: 40s;
+            iteration-count: infinite;
+            timing-function: linear;
+        };
+    }
+}
+h2 {
+    margin-bottom: 12px;
+    font: {
+        size: 30px;
+    };
+}

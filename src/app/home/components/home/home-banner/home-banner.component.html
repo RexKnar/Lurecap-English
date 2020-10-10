@@ -1,18 +1,6 @@
 <div class="main-banner">
     <div class="container-fluid">
         <div class="row">
-            <!-- <div class="col-lg-6 col-md-12 col-xs-12 d-block d-sm-none align-items-center">
-                <div class="main-banner-content" *ngFor="let Content of mainBannerContent;">
-                    <h1 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{Content.title}}</h1>
-                    <p class="wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1000ms">
-                        {{Content.paragraphText}}</p>
-                    <div class="btn-box">
-                        <a routerLink="/{{Content.defaultBtnLink}}" class="default-btn wow fadeInRight"
-                            data-wow-delay="200ms" data-wow-duration="1000ms"><i
-                                class="{{Content.defaultBtnIcon}}"></i>{{Content.defaultBtnText}}<span></span></a>
-                    </div>
-                </div>
-            </div> -->
 
             <div class="col-lg-6 col-md-12 col-xs-12  ">
                 <div class="main-banner-content" *ngFor="let Content of mainBannerContent;">
@@ -29,10 +17,12 @@
 
             <div class="col-lg-6 col-md-12 col-xs-12 imgestyle d-none d-sm-block  ">
                 <div class="our-mission-image" *ngFor="let Image of ourMissionImage;">
-                    <img [src]="Image.img" alt="image"  class="wow fadeInDown" data-wow-delay="500ms" data-wow-duration="1000ms" alt="image" data-speed="0.06" data-revert="true">
+                    <img [src]="Image.img" alt="image" class="wow fadeInDown" data-wow-delay="500ms"
+                        data-wow-duration="1000ms" alt="image" data-speed="0.06" data-revert="true">
                 </div>
-                <div class="vector-shape4"><img src="assets/img/shape/vector-shape4.png" alt="image"></div>
-            </div>
+                <div class="vector-shape4"><img src="assets/img/shape/vector-shape3.png" alt="image"></div>
+               </div>
+
         </div>
     </div>
 </div>

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { AboutUsComponent } from './components/about-us/about-us.component';
@@ -44,6 +44,7 @@ import { AboutValueComponent } from './components/about-us/about-value/about-val
       FormsModule,
       SharedModule,
       CoursesModule
-    ]
+    ],
+    schemas: [NO_ERRORS_SCHEMA],
   })
 export class HomeModule { }
