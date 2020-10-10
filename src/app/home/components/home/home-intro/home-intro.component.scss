@@ -4,6 +4,12 @@ $secondary-color:#9072c8;
 $black:#000;
 $color2:#45414c;
 
+.bg-about-image{
+    background-image:url('/assets/img/page-title-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .funfacts-area {
     position: relative;
     z-index: 1;

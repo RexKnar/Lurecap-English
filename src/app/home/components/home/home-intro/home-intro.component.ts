@@ -19,19 +19,20 @@ export class HomeIntroComponent implements OnInit {
         subTitle: 'Develop your soft skills and become more confident using English. '
     },
     {
+      icon: 'assets/img/icon3.png',
+      title: 'Accuracy',
+      subTitle: 'Focus on using grammar and vocabulary accurately in English. '
+  },
+    {
         icon: 'assets/img/icon2.png',
         title: 'Fluency',
         subTitle: 'Get more comfortable communicating  in various scenarios.'
     },
-    {
-        icon: 'assets/img/icon3.png',
-        title: 'Accuracy',
-        subTitle: 'Focus on using grammar and vocabulary accurately in English. '
-    },
+   
     {
         icon: 'assets/img/icon4.png',
         title: 'Pronunciation',
-        subTitle: 'Get rid of mother tongue influence (MTI)'
+        subTitle: 'Get rid of mother tongue influence (MTI) and speak English'
     }
 ];
   exploreLearningContent: Content[] = [
