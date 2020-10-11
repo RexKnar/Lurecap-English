@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { CoursesComponent } from './courses.component';
+import { PleaseWaitComponent } from './please-wait/please-wait.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
 
 const routes: Routes = [
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: "thankyou",
     component : ThankyouComponent
+  },
+  {
+    path: "please-wait",
+    component : PleaseWaitComponent
   },
 ];
 
