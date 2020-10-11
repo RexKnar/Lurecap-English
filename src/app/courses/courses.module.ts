@@ -9,10 +9,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CourseListComponent } from './course-list/course-list.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { BarRatingModule } from 'ngx-bar-rating';
+import { ThankyouComponent } from './thankyou/thankyou.component';
 
 
 @NgModule({
-  declarations: [CoursesComponent, CourseDetailComponent, CourseIntroComponent, CourseListComponent],
+  declarations: [CoursesComponent, CourseDetailComponent, CourseIntroComponent, CourseListComponent, ThankyouComponent],
   imports: [
     CommonModule,
     CoursesRoutingModule,
