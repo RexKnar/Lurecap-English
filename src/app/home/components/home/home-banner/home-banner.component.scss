@@ -77,7 +77,7 @@ $black:#000;
     .main-banner {
         margin-bottom: 60px;
         padding: {
-            top: 100px;
+            top: 200px;
             bottom: 0;
         };
         .container-fluid {
@@ -132,7 +132,7 @@ $black:#000;
 
     .main-banner {
         padding: {
-            top: 100px;
+            top: 200px;
             bottom: 80px;
         };
         .container-fluid {
@@ -175,6 +175,12 @@ $black:#000;
     }
     .main-banner-image {
         margin-top: 55px;
+       
+           .img{
+            display: none;
+           }
+     
+
     }
 
 }
@@ -183,7 +189,7 @@ $black:#000;
 
     .main-banner {
         padding: {
-            top: 120px;
+            top: 220px;
             bottom: 200px;
         };
         .container-fluid {
@@ -214,16 +220,17 @@ $black:#000;
             margin: {
                 bottom: 15px;
                 top: -8px;
-                left: 50px;
-                // right: -100px;
             };
         }
         p{
-            text-align: center;
+            text-align: left;
         }
         .btn-box {
             margin-top: 25px;
         }
+    }
+    .our-mission-image{
+        margin-top: 200px;
     }
 
 }

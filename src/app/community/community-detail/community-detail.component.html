@@ -1,22 +1,32 @@
 <section class="scientist-area  pb-70 ptb-100">
     <div class="container">
         <div class="row align-items-center bg-about-image">
+            <div class="col-lg-12">
+                <center>
+                    <span class="sub-title wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms"><img
+                            src="assets/img/star-icon.png" alt="image">
+                        <h2>Community</h2>
+                    </span>
+                </center>
+            </div>
             <div class="col-lg-5 col-md-12">
                 <div class="scientist-section-title" *ngFor="let SectionTitle of scientistSectionTitle">
-                    <span class="sub-title wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms"><img src="assets/img/star-icon.png" alt="image"> {{SectionTitle.subTitle}}</span>
-                    <h2 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{SectionTitle.title}}</h2>
-                    <p class="wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">{{SectionTitle.paragraphText1}}</p>
-                    <p class="wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1000ms" >{{SectionTitle.paragraphText2}}</p>
+                    <h2 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{SectionTitle.title}}
+                    </h2>
+                    <p class="wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
+                        {{SectionTitle.paragraphText1}}</p>
+                    <p class="wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1000ms">
+                        {{SectionTitle.paragraphText2}}</p>
                 </div>
             </div>
             <div class="col-lg-7 col-md-12">
                 <div class="scientist-box-list">
                     <div class="row">
                     </div>
-                    <img src="assets/img/communityabout.png" class="wow fadeInDown" data-wow-delay="500ms" data-wow-duration="1000ms" alt="image" data-speed="0.06" data-revert="true">
+                    <img src="assets/img/communityabout.png" class="wow fadeInDown" data-wow-delay="500ms"
+                        data-wow-duration="1000ms" alt="image" data-speed="0.06" data-revert="true">
                 </div>
             </div>
         </div>
     </div>
 </section>
-
