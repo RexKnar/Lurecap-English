@@ -1,5 +1,5 @@
 export const ROUTE_CONFIG = {
-    baseUrl: 'http://cmgmtrexknar-001-site1.ftempurl.com/api'
+    baseUrl: 'https://speakrefine.com/api'
 };
 
 export const COURSE_CARD_API_CONFIG = {
@@ -14,3 +14,7 @@ export const CORE_API_CONFIG = {
     SiginURL: '/Token',
     SignupURL: '/Token/RegisterUser',
 };
+
+export const PAYMENT_API_CONFIG={
+    PayuOrderUrl:'/Payment/PayuOrder?CourseMasterId=',
+}

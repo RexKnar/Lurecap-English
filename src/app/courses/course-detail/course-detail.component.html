@@ -133,14 +133,14 @@
                         </div>
                         <div class="tab-pane fade" id="reviews" role="tabpanel">
                             <div class="row">
-                                <div class="courses-reviews col-lg-3 col-md-4 col-sm-3 col-xs-2">
+                                <div class="courses-reviews col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                     <!-- <span>Learner Feedback </span> -->
                                     <div class="rating-count">
                                         <span>4.1</span>
                                         <bar-rating ></bar-rating>
                                     </div>
                                 </div>
-                                <div class=" courses-reviews col-lg-9 col-md-8 col-sm-8 col-xs-8">
+                                <div class=" courses-reviews col-lg-9 col-md-9 col-sm-9 col-xs-">
                                     <div class="row">
                                         <!-- <div class="col-lg-3">
                                             <div>5 star</div>
@@ -271,7 +271,7 @@
                         </ul>
 
                         <div class="btn-box">
-                            <a href="/signup" class="default-btn"><i class="flaticon-price-tag"></i>Buy
+                            <a href="/signup?courseid={{currentCourseId}}" [routerLink]="['/signup']" [queryParams]="{ courseid: currentCourseId }" class="default-btn"><i class="flaticon-price-tag"></i>Buy
                                 Now<span></span></a>
 
                         </div>
