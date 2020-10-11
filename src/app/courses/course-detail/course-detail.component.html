@@ -2,20 +2,21 @@
 
     <div class="container">
         <div class="row">
-           
+
             <div class="col-lg-8  col-md-12">
                 <div class="courses-details-image">
-                     <div class="embed-responsive embed-responsive-16by9 ">
-                            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/464457438"
-                                width="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                        </div>
+                    <div class="embed-responsive embed-responsive-16by9 ">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/464457438"
+                            width="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div class="d-block d-sm-none">
                     <div class="courses-details-info ">
-                        <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size d-none d-sm-block " alt="image">
-                       
+                        <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size d-none d-sm-block "
+                            alt="image">
+
                         <ul class="info">
-                           
+
                             <li class="price">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span><i class="flaticon-price-tag"></i> Price</span>
@@ -34,7 +35,7 @@
                                 </div>
                             </li>
 
-                            <li >
+                            <li>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span><i class="flaticon-distance-education"></i> Lessons</span>
                                     {{currentCourseDetails.chapterCount}}
@@ -133,14 +134,17 @@
                         </div>
                         <div class="tab-pane fade" id="reviews" role="tabpanel">
                             <div class="row">
-                                <div class="courses-reviews col-lg-3 col-md-4 col-sm-3 col-xs-2">
+                                <div class="courses-reviews col-lg-3 col-md-3 col-sm-2 col-xs-2">
                                     <!-- <span>Learner Feedback </span> -->
-                                    <div class="rating-count">
+                                    <div class="rating-count align-items-center">
                                         <span>4.1</span>
-                                        <bar-rating ></bar-rating>
+                                        <div class="bar">
+                                            <bar-rating></bar-rating>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div class=" courses-reviews col-lg-9 col-md-8 col-sm-8 col-xs-8">
+                                <div class=" courses-reviews col-lg-9 col-md-9 col-sm-8 col-xs-8">
                                     <div class="row">
                                         <!-- <div class="col-lg-3">
                                             <div>5 star</div>
@@ -155,7 +159,7 @@
                                             <div>5 star</div>
                                         </div>
                                         <div class="middle">
-                                            <ngb-progressbar></ngb-progressbar>      
+                                            <ngb-progressbar></ngb-progressbar>
                                         </div>
                                         <div class="side right">
                                             <div>044568</div>
@@ -185,7 +189,7 @@
                                             <div>2 star</div>
                                         </div>
                                         <div class="middle">
-                                            <ngb-progressbar></ngb-progressbar> 
+                                            <ngb-progressbar></ngb-progressbar>
                                         </div>
                                         <div class="side right">
                                             <div>05</div>
@@ -201,12 +205,24 @@
                                             <div>00</div>
                                         </div>
                                     </div>
-                                  
+
                                 </div>
                             </div>
-                            
+                            <div class="reviewstyle col-md-12 col-sm-12 col-xs-12">
+                                <h5>Wite A Review</h5>
+                                <bar-rating></bar-rating>
+                                <form>
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            placeholder="Say Whats in your mind" rows="3"></textarea>
+                                    </div>
+                                </form>
+
+                                <button type="submit" class="default-btn">Submit<span></span></button>
+                            </div>
+
                             <div class="courses-review-comments col-lg-12">
-                                
+
                                 <div class="user-review" *ngFor="let userReview of currentCourseDetails.reviews">
                                     <span class="d-block sub-comment">{{userReview.userName}}</span>
                                     <div class="review-rating">
@@ -226,9 +242,9 @@
                 <div class="sticky-top cardfix">
                     <div class="courses-details-info d-none d-sm-block ">
                         <img src="{{currentCourseDetails.courseDetails.imageUrl}}" class="image-size" alt="image">
-                       
+
                         <ul class="info">
-                           
+
                             <li class="price">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span><i class="flaticon-price-tag"></i> Price</span>
@@ -247,7 +263,7 @@
                                 </div>
                             </li>
 
-                            <li >
+                            <li>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span><i class="flaticon-distance-education"></i> Lessons</span>
                                     {{currentCourseDetails.chapterCount}}

@@ -19,6 +19,7 @@ import { HomeBannerComponent } from './components/home/home-banner/home-banner.c
 import { SharedModule } from '../shared/shared.module';
 import { CoursesModule } from '../courses/courses.module';
 import { AboutValueComponent } from './components/about-us/about-value/about-value.component';
+import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
 
 @NgModule({
     declarations: [AboutUsComponent,
@@ -36,6 +37,7 @@ import { AboutValueComponent } from './components/about-us/about-value/about-val
       TermsandcondtionsComponent,
       HomeBannerComponent,
       AboutValueComponent,
+      DisclaimerComponent,
     ],
     imports: [
       CommonModule,
