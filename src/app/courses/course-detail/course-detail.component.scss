@@ -278,6 +278,112 @@ top: 80px;
         }
       }
     }
+    .courses-reviews {
+      span {
+        margin-bottom: 0;
+        display: inline-block;
+        margin-right: 15px;
+        font: {
+          size: 18px;
+          weight: 600;
+        }
+      }
+      // .rating {
+      //   display: inline-block;
+      //   position: relative;
+      //   top: 1px;
+
+      //   span {
+      //     font-size: 19px;
+      //     color: #cecfd2;
+      //     margin-right: -2px;
+
+      //     &.checked {
+      //       color: orange;
+      //     }
+      //   }
+      // }
+      .rating-count {
+        margin: {
+          top: 30px;
+          bottom: 20px;
+        }
+        line-height: 0.8;
+        span {
+          display: block;
+          font-size:80px;
+          font-weight: 700;
+          color: $primary-color;
+        }
+      }
+      .row {
+        overflow: hidden;
+        margin: {
+          left: 0;
+          right: 0;
+        }
+      }
+      .side {
+        float: left;
+        width: 10%;
+        margin-top: 10px;
+        margin-right: 10px;
+
+        div {
+          font: {
+            size: 14px;
+            weight: 600;
+          }
+        }
+      }
+      .middle {
+        margin-top: 14px;
+        float: left;
+        width: 70%;
+      }
+      .right {
+        text-align: right;
+        margin-left: 10px;
+      }
+      // .bar-container {
+      //   width: 80%;
+      //   background-color: #f1f1f1;
+      //   text-align: center;
+      //   color: $white;
+      //   border-radius: 5px;
+      // }
+      // .bar-5 {
+      //   width: 100%;
+      //   height: 18px;
+      //   background-color: #4caf50;
+      //   border-radius: 5px;
+      // }
+      // .bar-4 {
+      //   width: 75%;
+      //   height: 18px;
+      //   background-color: #2196f3;
+      //   border-radius: 5px;
+      //   border-radius: 5px;
+      // }
+      // .bar-3 {
+      //   width: 50%;
+      //   height: 18px;
+      //   background-color: #00bcd4;
+      //   border-radius: 5px;
+      // }
+      // .bar-2 {
+      //   width: 25%;
+      //   height: 18px;
+      //   background-color: #ff9800;
+      //   border-radius: 5px;
+      // }
+      // .bar-1 {
+      //   width: 0;
+      //   height: 18px;
+      //   background-color: #f44336;
+      //   border-radius: 5px;
+      // }
+    }
     .courses-instructor {
       .single-advisor-box {
         .advisor-content {
@@ -310,110 +416,10 @@ top: 80px;
             height: 100px;
             width: 100px;
           }
+        }
       }
     }
-    .courses-reviews {
-      h3 {
-        margin-bottom: 0;
-        display: inline-block;
-        margin-right: 15px;
-        font: {
-          size: 21px;
-          weight: 800;
-        }
-      }
-      .rating {
-        display: inline-block;
-        position: relative;
-        top: 1px;
-
-        span {
-          font-size: 19px;
-          color: #cecfd2;
-          margin-right: -2px;
-
-          &.checked {
-            color: orange;
-          }
-        }
-      }
-      .rating-count {
-        margin: {
-          top: 10px;
-          bottom: 20px;
-        }
-        span {
-          display: block;
-          font-size: var(--fontSize);
-          color: $color2;
-        }
-      }
-      .row {
-        overflow: hidden;
-        margin: {
-          left: 0;
-          right: 0;
-        }
-      }
-      .side {
-        float: left;
-        width: 9%;
-        margin-top: 10px;
-
-        div {
-          font: {
-            size: var(--fontSize);
-            weight: 700;
-          }
-        }
-      }
-      .middle {
-        margin-top: 14px;
-        float: left;
-        width: 82%;
-      }
-      .right {
-        text-align: right;
-      }
-      .bar-container {
-        width: 100%;
-        background-color: #f1f1f1;
-        text-align: center;
-        color: $white;
-        border-radius: 5px;
-      }
-      .bar-5 {
-        width: 100%;
-        height: 18px;
-        background-color: #4caf50;
-        border-radius: 5px;
-      }
-      .bar-4 {
-        width: 75%;
-        height: 18px;
-        background-color: #2196f3;
-        border-radius: 5px;
-        border-radius: 5px;
-      }
-      .bar-3 {
-        width: 50%;
-        height: 18px;
-        background-color: #00bcd4;
-        border-radius: 5px;
-      }
-      .bar-2 {
-        width: 25%;
-        height: 18px;
-        background-color: #ff9800;
-        border-radius: 5px;
-      }
-      .bar-1 {
-        width: 0;
-        height: 18px;
-        background-color: #f44336;
-        border-radius: 5px;
-      }
-    }
+   
     .courses-review-comments {
       margin-top: 40px;
 
@@ -442,7 +448,7 @@ top: 80px;
           border-radius: 5px;
         }
         .sub-comment {
-          margin-bottom: 8px;
+          // margin-bottom: 8px;
           font: {
             weight: 700;
           }
@@ -453,23 +459,24 @@ top: 80px;
 
           .review-stars {
             display: inline-block;
+            color: rgb(255, 230, 0) !important;
 
-            i {
-              color: #cecfd2;
-              font-size: 18px;
-              display: inline-block;
-              margin-right: -3px;
+            // i {
+            //   color: #cecfd2;
+            //   font-size: 18px;
+            //   display: inline-block;
+            //   margin-right: -3px;
 
-              &.checked {
-                color: orange;
-              }
-            }
+            //   &.checked {
+            //     color: rgb(255, 230, 0);
+            //   }
+            // }
           }
           span {
             color: $primary-color;
             position: relative;
             top: -2px;
-            font-weight: 800;
+            font-weight: 600;
             margin-left: 5px;
           }
         }
@@ -478,7 +485,6 @@ top: 80px;
   }
 }
 
-}
 .courses-details-info {
   background-color: #f8f9f8;
   list-style-type: none;
@@ -830,8 +836,24 @@ top: 80px;
             font-size: 17px;
           }
         }
+        .rating-count {
+          margin: {
+            top: 30px;
+            bottom: 20px;
+          }
+          line-height: 0.8;
+          span {
+            display: block;
+            font-size:50px;
+            font-weight: 700;
+            color: $primary-color;
+          }
+        }
+        // .bar-rating{
+        //   width: 60%;
+        // }
         .side {
-          width: 20%;
+          width: 10%;
 
           div {
             font-size: 15px;

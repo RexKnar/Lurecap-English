@@ -125,20 +125,95 @@
                                             having research under comparative literature, author of six books cum a
                                             translative work published on eranial palace in tamil. working on differnt
                                             projects under humanistic approaches and guiding students with value based
-                                            teaching for their future career.</span>
+                                            teaching for their future career.
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="reviews" role="tabpanel">
-                            <div class="courses-review-comments">
+                            <div class="row">
+                                <div class="courses-reviews col-lg-3 col-md-4 col-sm-3 col-xs-2">
+                                    <!-- <span>Learner Feedback </span> -->
+                                    <div class="rating-count">
+                                        <span>4.1</span>
+                                        <bar-rating ></bar-rating>
+                                    </div>
+                                </div>
+                                <div class=" courses-reviews col-lg-9 col-md-8 col-sm-8 col-xs-8">
+                                    <div class="row">
+                                        <!-- <div class="col-lg-3">
+                                            <div>5 star</div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <ngb-progressbar></ngb-progressbar>      
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div>04</div>
+                                        </div> -->
+                                        <div class="side ">
+                                            <div>5 star</div>
+                                        </div>
+                                        <div class="middle">
+                                            <ngb-progressbar></ngb-progressbar>      
+                                        </div>
+                                        <div class="side right">
+                                            <div>044568</div>
+                                        </div>
+
+                                        <div class="side">
+                                            <div>4 star</div>
+                                        </div>
+                                        <div class="middle">
+                                            <ngb-progressbar></ngb-progressbar>
+                                        </div>
+                                        <div class="side right">
+                                            <div>03</div>
+                                        </div>
+
+                                        <div class="side">
+                                            <div>3 star</div>
+                                        </div>
+                                        <div class="middle">
+                                            <ngb-progressbar></ngb-progressbar>
+                                        </div>
+                                        <div class="side right">
+                                            <div>04</div>
+                                        </div>
+
+                                        <div class="side">
+                                            <div>2 star</div>
+                                        </div>
+                                        <div class="middle">
+                                            <ngb-progressbar></ngb-progressbar> 
+                                        </div>
+                                        <div class="side right">
+                                            <div>05</div>
+                                        </div>
+
+                                        <div class="side">
+                                            <div>1 star</div>
+                                        </div>
+                                        <div class="middle">
+                                            <ngb-progressbar></ngb-progressbar>
+                                        </div>
+                                        <div class="side right">
+                                            <div>00</div>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                            
+                            <div class="courses-review-comments col-lg-12">
+                                
                                 <div class="user-review" *ngFor="let userReview of currentCourseDetails.reviews">
+                                    <span class="d-block sub-comment">{{userReview.userName}}</span>
                                     <div class="review-rating">
                                         <div class="review-stars">
                                             <bar-rating [(rate)]="userReview.rating" [readOnly]="true"></bar-rating>
                                         </div>
                                     </div>
-                                    <span class="d-block sub-comment">{{userReview.userName}}</span>
                                     <p>{{userReview.review}}</p>
                                 </div>
                             </div>
