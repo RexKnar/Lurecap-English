@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AthenticationService } from '../../../shared/services/athentication.service';
-import { ToastrService } from "ngx-toastr";
+import { ToastrService } from 'ngx-toastr';
 import {MessageConstants} from '../../../shared/models/messageConstants';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PaymentService } from '../../../shared/services/payment.service';
 import { LocalStorageService } from 'src/app/shared/services/LocalStorageService';
 
@@ -17,19 +17,20 @@ import { LocalStorageService } from 'src/app/shared/services/LocalStorageService
 export class SignupComponent implements OnInit {
     registerForm: FormGroup;
     submitted = false;
-    courseId:any;
+    courseId: any;
     constructor(private formBuilder: FormBuilder,
-        private route: ActivatedRoute,
-        private toastr: ToastrService,
-        private _paymentService: PaymentService,
-        public _localStorageService: LocalStorageService,
-        private readonly _athenticationService: AthenticationService) { }
+                private route: ActivatedRoute,
+                private toastr: ToastrService,
+                private _paymentService: PaymentService,
+                public _localStorageService: LocalStorageService,
+                private readonly _router: Router,
+                private readonly _athenticationService: AthenticationService) { }
     get f() {
         return this.registerForm.controls;
     }
 
     ngOnInit(): void {
-        this.courseId=parseInt(this.route.snapshot.queryParamMap.get('courseid'));
+        this.courseId = parseInt(this.route.snapshot.queryParamMap.get('courseid'));
         this.registerForm = this.formBuilder.group({
             passWord: ['', [Validators.required]],
             name: ['', [Validators.required]],
@@ -47,7 +48,7 @@ export class SignupComponent implements OnInit {
             return false;
         }
     }
-    newRegister() { 
+    newRegister() {
         if (this.registerForm.invalid) {
             return;
         }
@@ -56,35 +57,37 @@ export class SignupComponent implements OnInit {
         this.registerForm.value.userId = '';
         this.registerForm.value.mailDate = '2020-10-02T21:19:47.437Z';
         this._athenticationService.Registeration(this.registerForm.value).subscribe((data: any) => {
-            if(data.response)
+            if (data.response)
             {
                 this._localStorageService.setAuthorizationData(data.response);
-            this.toastr.success(
-                MessageConstants.REGISTER_SUCCESS, "",
+                this.toastr.success(
+                MessageConstants.REGISTER_SUCCESS, '',
                  { timeOut: 2000, }
                  );
-                 if(this.courseId )
+                if (this.courseId )
             {
                 this.purchaseCourse(this.courseId);
             }
-            this.registerForm.reset();
-            this.submitted = false;
+                this.registerForm.reset();
+
+                this.submitted = false;
             }
             else{
                 this.toastr.error(
-                    MessageConstants.REGISTER_FAILED, "",
+                    MessageConstants.REGISTER_FAILED, '',
                      { timeOut: 2000, }
                      );
             }
-            
+
         });
 
     }
 
-    purchaseCourse(courseId:number){
-        this._paymentService.payuOrder(courseId).subscribe((data:any)=>{
-            if(data.redirectUrl)
+    purchaseCourse(courseId: number){
+        this._paymentService.payuOrder(courseId).subscribe((data: any) => {
+            if (data.redirectUrl)
             {
+                this._router.navigate(['/please-wait'], { queryParams: { paymentId: data.paymentId } });
                 window.open(data.redirectUrl);
             }
         });

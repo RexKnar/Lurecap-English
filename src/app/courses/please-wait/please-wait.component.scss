@@ -1,0 +1,80 @@
+$white: #fff;
+$primary-color: #221638;
+$secondary-color:#9072c8;
+$black:#000;
+
+.project-start-area {
+    position: relative;
+    z-index: 1;
+    padding-top: 200px;
+    height: 100vh;
+    .thank{
+        height: 400px;
+        width: 400px;
+    }
+    
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+    .project-start-area {
+        text-align: center;
+        margin-top: 30px;
+
+        .sub-title {
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 27px;
+            margin-bottom: 12px;
+        }
+        .default-btn {
+            margin-top: 0;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .project-start-area {
+        text-align: center;
+        max-width: 600px;
+        margin: {
+            left: auto;
+            right: auto;
+            top: 35px;
+        };
+        .sub-title {
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 35px;
+        }
+        .default-btn {
+            margin-top: 0;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .project-start-area {
+        h2 {
+            font-size: 36px;
+        }
+    }
+
+}
+
+.bg-about-image{
+    // background-image:url('assets/img/bg4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}

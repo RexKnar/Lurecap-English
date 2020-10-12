@@ -279,6 +279,7 @@ top: 80px;
       }
     }
     .courses-reviews {
+      margin-bottom: 50px;
       span {
         margin-bottom: 0;
         display: inline-block;
@@ -482,6 +483,15 @@ top: 80px;
         }
       }
     }
+  }
+}
+.reviewstyle{
+  h5{
+    margin-top: 20px;
+    
+  }
+  .default-btn{
+    padding: 10px 15px 10px 20px;
   }
 }
 
@@ -837,23 +847,26 @@ top: 80px;
           }
         }
         .rating-count {
+          text-align: center;
           margin: {
             top: 30px;
             bottom: 20px;
           }
           line-height: 0.8;
+          .bar{
+            margin-left:30%;
+          
+          }
           span {
             display: block;
-            font-size:50px;
+            font-size:80px;
             font-weight: 700;
             color: $primary-color;
           }
         }
-        // .bar-rating{
-        //   width: 60%;
-        // }
+       
         .side {
-          width: 10%;
+          width: 15%;
 
           div {
             font-size: 15px;
@@ -863,6 +876,7 @@ top: 80px;
           width: 60%;
         }
       }
+     
       .courses-review-comments {
         h3 {
           padding-bottom: 10px;
@@ -892,6 +906,8 @@ top: 80px;
       }
     }
   }
+  
+
   .courses-details-info {
     margin: {
       left: 0;

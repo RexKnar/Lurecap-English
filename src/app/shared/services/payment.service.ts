@@ -14,5 +14,8 @@ export class PaymentService {
   payuOrder(courseMasterId:number):Observable<any>{
     return this.httpClient.post(ROUTE_CONFIG.baseUrl + PAYMENT_API_CONFIG.PayuOrderUrl+courseMasterId,courseMasterId);
   }
+  verifyPayment(paymentId:any):Observable<any>{
+    return this.httpClient.get(ROUTE_CONFIG.baseUrl + PAYMENT_API_CONFIG.VerifyPaymentUrl+paymentId);
+  }
   
 }

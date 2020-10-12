@@ -10,10 +10,11 @@ import { CourseListComponent } from './course-list/course-list.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { BarRatingModule } from 'ngx-bar-rating';
 import { ThankyouComponent } from './thankyou/thankyou.component';
+import { PleaseWaitComponent } from './please-wait/please-wait.component';
 
 
 @NgModule({
-  declarations: [CoursesComponent, CourseDetailComponent, CourseIntroComponent, CourseListComponent, ThankyouComponent],
+  declarations: [CoursesComponent, CourseDetailComponent, CourseIntroComponent, CourseListComponent, ThankyouComponent, PleaseWaitComponent],
   imports: [
     CommonModule,
     CoursesRoutingModule,

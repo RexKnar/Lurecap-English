@@ -17,4 +17,5 @@ export const CORE_API_CONFIG = {
 
 export const PAYMENT_API_CONFIG={
     PayuOrderUrl:'/Payment/PayuOrder?CourseMasterId=',
+    VerifyPaymentUrl:'/Payment/VerifyPaymentPayuMoney?PaymentId=',
 }
