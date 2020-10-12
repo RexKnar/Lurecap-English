@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <h3 class="coursename">{{currentCourseDetails.courseDetails.courseName}}</h3>
-                <h6>{{currentCourseDetails.courseDetails.provideWhat}}</h6>
+                <p [innerHtml]="currentCourseDetails.courseDetails.provideWhat" ></p>
                 <div class="courses-details-desc">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item"><a class="nav-link active" id="overview-tab" data-toggle="tab"
@@ -81,7 +81,7 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="overview" role="tabpanel">
                             <div class="courses-overview">
-                                <p>{{currentCourseDetails.courseDetails.description}}</p>
+                                <p [innerHtml]="currentCourseDetails.courseDetails.description"></p>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="curriculum" role="tabpanel">
@@ -210,15 +210,16 @@
                             </div>
                             <div class="reviewstyle col-md-12 col-sm-12 col-xs-12">
                                 <h5>Wite A Review</h5>
-                                <bar-rating></bar-rating>
+                                <bar-rating [(rate)]="addReview.rating"></bar-rating>
                                 <form>
                                     <div class="form-group">
-                                        <textarea class="form-control" id="exampleFormControlTextarea1"
-                                            placeholder="Say Whats in your mind" rows="3"></textarea>
+                                        <textarea  (change)="doTextareaValueChange($event)"  [(ngModel)]='addReview.review' class="form-control" id="exampleFormControlTextarea1"
+                                            placeholder="Say Whats in your mind" rows="3">{{addReview.review}}</textarea>
                                     </div>
                                 </form>
 
-                                <button type="submit" class="default-btn">Submit<span></span></button>
+                                <button type="submit" class="default-btn" *ngIf="currentUser" (click)="insertReview()">Submit<span></span></button>
+                                <button type="submit" class="default-btn" *ngIf="!currentUser" (click)="loginAlert()">Submit<span></span></button>
                             </div>
 
                             <div class="courses-review-comments col-lg-12">

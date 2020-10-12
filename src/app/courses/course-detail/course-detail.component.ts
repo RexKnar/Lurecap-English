@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AddReview } from 'src/app/shared/models/Course';
 // import { CourseDetail, CourseDetails } from 'src/app/shared/models/Course';
 import { CourseService } from 'src/app/shared/services/course.service';
-
+import { LocalStorageService } from 'src/app/shared/services/LocalStorageService';
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-course-detail',
   templateUrl: './course-detail.component.html',
@@ -10,12 +12,22 @@ import { CourseService } from 'src/app/shared/services/course.service';
 })
 export class CourseDetailComponent implements OnInit {
   constructor(private readonly _courseService: CourseService,
+    private _localStorageService: LocalStorageService,
     private route: ActivatedRoute) { }
   currentCourseId: number;
   currentCourseDetails: CourseDetail;
   currentReviewDetails:any;
   courseDetails: CourseDetails;
-
+  addReview:AddReview = new AddReview;
+  currentUser:any;
+  
+  doTextareaValueChange(ev) {
+    try {
+      this.addReview.review = ev.target.value;
+    } catch(e) {
+      console.info('could not set textarea-value');
+    }
+  }
   currentCourseDetails2 = 
     {
 
@@ -147,6 +159,9 @@ export class CourseDetailComponent implements OnInit {
     this.currentCourseId = parseInt(this.route.snapshot.queryParamMap.get('CourseId'));
     this.getCurrentCourseDetails(this.currentCourseId);
     this.getReviewDetails(this.currentCourseId);
+    this.addReview.courseMasterId=this.currentCourseId;
+
+    this.currentUser=this._localStorageService.getAuthorizationData();
 
   }
   getCurrentCourseDetails(currentCourseId): void {
@@ -160,6 +175,23 @@ export class CourseDetailComponent implements OnInit {
       console.log(data.reviewData)
       this.currentReviewDetails = data.reviewData[0];
     });
+  }
+
+  insertReview() : void {
+    if(this.addReview.rating>0)
+    {
+      this._courseService.insertReview(this.addReview).subscribe((data:any)=>{
+        this.addReview.rating=0;
+        this.addReview.review='';
+      });
+    }
+
+    
+  }
+
+  
+  loginAlert(){
+      alert('Please Login To Add Review');
   }
 }
 
