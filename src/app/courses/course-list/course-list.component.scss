@@ -1,83 +1,29 @@
-@import "../../home/components/home/course-provide/course-provide.component.scss";
-// .bg{
-//     background-image: url('assets/img/offer.png');
-//     background-repeat: no-repeat;
-//     background-position: cover;
-// }
-// .project-start-area {
-//     position: relative;
-//     z-index: 1;
-  
-//     &.bg-color {
-//       background-color:white;
-//       .project-start-content {
-//         h2 {
-//           color: #fff;
-//         }
-//         p {
-//           color: #fff;
-//         }
-//         .default-btn {
-//           span {
-//             background-color: var(--whiteColor);
-//           }
-//           &:hover {
-//             color: var(--blackColor);
-//           }
-//         }
-//       }
-//     }
-//   }
-//   .project-start-image {
-//     text-align: center;
-//     position: relative;
-//     z-index: 1;
-//     overflow: hidden;
-//     h2{
-//         font-size: 28px;
-//         color: purple;
-//         font-size: 600;
-//         display: inline-block;
-//     }
-//     p{
-//         font-size: 12px;
-//     }
-//   }
+$white: #fff;
+$primary-color: #221638;
+$color2:#45414c;
+$secondary-color:#9072c8;
+$black:#000; 
+
 
   .offerzone {
     margin-bottom: 30px;
     text-align: center;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    // background-color: $white;
-    // border-radius: 5px;
-    // padding: 40px 30px 35px;
-    transition: var(--transition);
 
     .project-start-image {
-        margin-bottom: 25px;
-        // height: 100px;
-        // width: 100px;
-        // margin-left: auto;
-        // margin-right: auto;
+     
+        margin-left: auto;
+        margin-right: auto;
     }
     .offertext{
-        position: absolute;
-        margin-top: -250px;
-        margin-left: 60%;
+        margin-top: 150px;
 
         h3 {
             color: $primary-color;
-            position: absolute;
             margin-bottom: 12px;
             
             font: {
                 size: 18px;
             };
-            a {
-                display: inline-block;
-            }
         }
         P{
             color: $secondary-color;
@@ -86,287 +32,40 @@
     
 }
 
-  .project-start-content {
-    .sub-title {
-      position: relative;
-      display: block;
-      text-transform: uppercase;
-      margin-bottom: 15px;
-      color: var(--mainColor);
-      font: {
-        weight: 700;
-        size: 15px;
-      }
-      img {
-        margin-right: 5px;
-        animation: {
-          name: rotateme;
-          duration: 40s;
-          iteration-count: infinite;
-          timing-function: linear;
-        }
-      }
-    }
-    h2 {
-      margin-bottom: 15px;
-      font: {
-        size: 30px;
-      }
-    }
-    p {
-      margin-bottom: 20px;
-  
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-    .default-btn {
-      margin-top: 5px;
-    }
-  }
-  
   @media only screen and (max-width: 767px) {
-    .project-start-content {
+
+    .offerzone {
       text-align: center;
-      margin-top: 30px;
   
-      .sub-title {
-        margin-bottom: 12px;
-        font-size: 14px;
+      .project-start-image {
+       
+          margin-left: auto;
+          margin-right: auto;
       }
-      h2 {
-        font-size: 27px;
-        margin-bottom: 12px;
+      .offertext{
+          margin-top: 60px;
+  
+          h3 {
+              color: $primary-color;
+              margin-bottom: 12px;
+              
+              font: {
+                  size: 14px;
+              };
+          }
+          P{
+              color: $secondary-color;
+          }
       }
-      .default-btn {
-        margin-top: 0;
-      }
-    }
+      
+  }
   }
   
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .project-start-content {
-      text-align: center;
-      max-width: 600px;
-      margin: {
-        left: auto;
-        right: auto;
-        top: 35px;
-      }
-      .sub-title {
-        font-size: 14px;
-      }
-      h2 {
-        font-size: 35px;
-      }
-      .default-btn {
-        margin-top: 0;
-      }
-    }
   }
   
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .project-start-content {
-      h2 {
-        font-size: 36px;
-      }
-    }
+  
   }
   
-  .funfacts-area {
-    position: relative;
-    z-index: 1;
-  
-    &.bg-image {
-      .single-funfacts-item {
-        h3 {
-          color: var(--whiteColor);
-        }
-        &::before {
-          background-color: #402939;
-        }
-        p {
-          color: #a6a6b4;
-        }
-      }
-    }
-  }
-  .single-funfacts-box {
-    margin-bottom: 30px;
-    border: 1px solid #f0eae2;
-    border-radius: 5px;
-    padding: 20px 20px 20px 98px;
-    position: relative;
-    background-color: var(--whiteColor);
-    transition: var(--transition);
-  
-    .icon {
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    h3 {
-      margin-bottom: 3px;
-      font: {
-        size: 18px;
-        font-weight: 600;
-      }
-    }
-    &:hover {
-      border-color: var(--mainColor);
-    }
-  }
-  .single-funfacts-item {
-    margin-bottom: 30px;
-    padding-left: 98px;
-    position: relative;
-  
-    .icon {
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    h3 {
-      margin-bottom: 3px;
-      font: {
-        size: 28px;
-      }
-    }
-    &::before {
-      width: 1px;
-      height: 100%;
-      content: "";
-      position: absolute;
-      right: 10px;
-      top: 0;
-      background-color: #eacbae;
-      transform: rotate(25deg);
-    }
-  }
-  .col-lg-3 {
-    &:last-child {
-      .single-funfacts-item {
-        &::before {
-          display: none;
-        }
-      }
-    }
-  }
-  
-  @media only screen and (max-width: 767px) {
-    .single-funfacts-box {
-      padding: 15px 8px;
-      text-align: center;
-  
-      .icon {
-        position: relative;
-        transform: translateY(0);
-        margin-bottom: 20px;
-        left: 0;
-        top: 0;
-  
-        img {
-          width: 50px;
-        }
-      }
-      h3 {
-        font-size: 20px;
-      }
-    }
-    .single-funfacts-item {
-      text-align: center;
-      padding-left: 0;
-  
-      .icon {
-        position: relative;
-        left: 0;
-        transform: unset;
-        margin-bottom: 20px;
-      }
-      h3 {
-        font-size: 22px;
-      }
-      &::before {
-        display: none;
-      }
-    }
-  }
-  
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .single-funfacts-box {
-      padding: 20px 15px;
-      text-align: center;
-  
-      .icon {
-        position: relative;
-        left: 0;
-        top: 0;
-        transform: translateY(0);
-        margin-bottom: 20px;
-      }
-      h3 {
-        font-size: 22px;
-      }
-    }
-    .single-funfacts-item {
-      padding-left: 0;
-      text-align: center;
-  
-      .icon {
-        position: relative;
-        left: 0;
-        top: 0;
-        transform: translateY(0);
-        margin-bottom: 20px;
-      }
-      h3 {
-        font-size: 22px;
-      }
-      &::before {
-        right: -25px;
-      }
-    }
-  }
-  
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .single-funfacts-box {
-      padding: 15px 15px 15px 80px;
-  
-      .icon {
-        left: 15px;
-  
-        img {
-          width: 50px;
-        }
-      }
-      h3 {
-        font-size: 22px;
-      }
-      p {
-        font-size: 15px;
-      }
-    }
-    .single-funfacts-item {
-      padding-left: 85px;
-  
-      .icon {
-        left: 15px;
-  
-        img {
-          width: 50px;
-        }
-      }
-      h3 {
-        font-size: 22px;
-      }
-      p {
-        font-size: 15px;
-      }
-      &::before {
-        right: -8px;
-      }
-    }
-  }
   
