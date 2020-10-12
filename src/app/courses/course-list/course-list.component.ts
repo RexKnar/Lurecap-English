@@ -12,27 +12,8 @@ export class CourseListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  sectionTitle: sectionTitleContent[] = [
-    {
-        subTitle: "We offer",
-        title: 'Learn English With Us !',
-        paragraphText: 'Learning vocabulary and grammar alone will not enable you to speak well in English. For that, you will have to acquire proper speaking skills. These can be acquired only through practice.'
-    }
-]
 
 
 }
-class sectionTitleContent {
-subTitle : string;
-title : string;
-paragraphText : string;
-}
-class ServicesItem {
-icon : string;
-title : string;
-paragraphText : string;
-btnIcon : string;
-btnText : string;
-link : string;
-}
+
 
