@@ -5,13 +5,15 @@ import { AddReview } from 'src/app/shared/models/Course';
 import { CourseService } from 'src/app/shared/services/course.service';
 import { LocalStorageService } from 'src/app/shared/services/LocalStorageService';
 import { FormsModule } from '@angular/forms';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 @Component({
   selector: 'app-course-detail',
   templateUrl: './course-detail.component.html',
   styleUrls: ['./course-detail.component.scss']
 })
-export class CourseDetailComponent implements OnInit {
-  constructor(private readonly _courseService: CourseService,
+export class CourseDetailComponent implements OnInit {  
+  videoUrl: SafeResourceUrl;
+  constructor( public sanitizer: DomSanitizer,private readonly _courseService: CourseService,
     private _localStorageService: LocalStorageService,
     private route: ActivatedRoute) { }
   currentCourseId: number;
@@ -163,10 +165,19 @@ export class CourseDetailComponent implements OnInit {
 
     this.currentUser=this._localStorageService.getAuthorizationData();
 
+    // console.log( this.currentCourseDetails.courseDetails.videoUrl);
+    
+    
+
   }
   getCurrentCourseDetails(currentCourseId): void {
     this._courseService.getCourseDetails(currentCourseId).subscribe((data: any) => {
+    
       this.currentCourseDetails = data;
+      this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+        this.currentCourseDetails.courseDetails.videoUrl
+      );
+      console.log(this.videoUrl);
     });
   }
 
