@@ -17,4 +17,7 @@ export class CourseService {
   getCourseDetails(courseId: any): Observable<any> {
     return this.httpClient.get<any>(ROUTE_CONFIG.baseUrl + COURSE_CARD_API_CONFIG.GetCourseDetails + courseId);
   }
+  getReviewDetails(courseId:number): Observable<any>{
+    return this.httpClient.get<any>(ROUTE_CONFIG.baseUrl + COURSE_CARD_API_CONFIG.GetReviewDetailsUrl + courseId);
+  }
 }

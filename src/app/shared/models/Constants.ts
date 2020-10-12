@@ -4,7 +4,8 @@ export const ROUTE_CONFIG = {
 
 export const COURSE_CARD_API_CONFIG = {
     GetAllCourseList: '/v1/Course/GetAllCourseList?userType=learner',
-    GetCourseDetails: '/v1/Course/GetCourseDetailsBYCourseId?courseId='
+    GetCourseDetails: '/v1/Course/GetCourseDetailsBYCourseId?courseId=',
+    GetReviewDetailsUrl:'/v1/Course/GetReviewDetailsByCourseId?CourseId='
 };
 
 export const CONTACT_US_API_CONFIG = {

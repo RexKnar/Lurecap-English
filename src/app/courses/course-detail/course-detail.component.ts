@@ -12,10 +12,11 @@ export class CourseDetailComponent implements OnInit {
   constructor(private readonly _courseService: CourseService,
     private route: ActivatedRoute) { }
   currentCourseId: number;
-  // currentCourseDetails: CourseDetail;
-  // courseDetails: CourseDetails;
+  currentCourseDetails: CourseDetail;
+  currentReviewDetails:any;
+  courseDetails: CourseDetails;
 
-  currentCourseDetails = 
+  currentCourseDetails2 = 
     {
 
       courseDetails : 
@@ -144,12 +145,20 @@ export class CourseDetailComponent implements OnInit {
   
   ngOnInit(): void {
     this.currentCourseId = parseInt(this.route.snapshot.queryParamMap.get('CourseId'));
-    // this.getCurrentCourseDetails(this.currentCourseId);
+    this.getCurrentCourseDetails(this.currentCourseId);
+    this.getReviewDetails(this.currentCourseId);
 
   }
   getCurrentCourseDetails(currentCourseId): void {
     this._courseService.getCourseDetails(currentCourseId).subscribe((data: any) => {
-      // this.currentCourseDetails = data;
+      this.currentCourseDetails = data;
+    });
+  }
+
+  getReviewDetails(currentCourseId) : void{
+    this._courseService.getReviewDetails(currentCourseId).subscribe((data: any) => {
+      console.log(data.reviewData)
+      this.currentReviewDetails = data.reviewData[0];
     });
   }
 }
@@ -177,9 +186,9 @@ export class CourseDetails {
   tutorId: number;
 }
 export class ChapterDetails {
-  // chapterId: number;
+  chapterId: number;
   chapterName: string;
-  // orderNo: number;
+  orderNo: number;
   hours: string;
 
 }

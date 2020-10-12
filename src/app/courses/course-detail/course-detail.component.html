@@ -137,9 +137,9 @@
                                 <div class="courses-reviews col-lg-3 col-md-3 col-sm-2 col-xs-2">
                                     <!-- <span>Learner Feedback </span> -->
                                     <div class="rating-count align-items-center">
-                                        <span>4.1</span>
+                                        <span>{{currentReviewDetails.averageRating}}</span>
                                         <div class="bar">
-                                            <bar-rating></bar-rating>
+                                            <bar-rating [rate]="currentReviewDetails.averageRating" [readOnly]="true"></bar-rating>
                                         </div>
 
                                     </div>
@@ -159,50 +159,50 @@
                                             <div>5 star</div>
                                         </div>
                                         <div class="middle">
-                                            <ngb-progressbar></ngb-progressbar>
+                                            <ngb-progressbar type="success" [max]="currentReviewDetails.totalRatingCount" [value]="currentReviewDetails.fiveRatingCount" [striped]="false" ></ngb-progressbar>
                                         </div>
                                         <div class="side right">
-                                            <div>044568</div>
+                                            <div>{{currentReviewDetails.fiveRatingCount}}</div>
                                         </div>
 
                                         <div class="side">
                                             <div>4 star</div>
                                         </div>
                                         <div class="middle">
-                                            <ngb-progressbar></ngb-progressbar>
+                                            <ngb-progressbar type="primary" [max]="currentReviewDetails.totalRatingCount" [value]="currentReviewDetails.fourRatingCount" [striped]="false" ></ngb-progressbar>
                                         </div>
                                         <div class="side right">
-                                            <div>03</div>
+                                            <div>{{currentReviewDetails.fourRatingCount}}</div>
                                         </div>
 
                                         <div class="side">
                                             <div>3 star</div>
                                         </div>
                                         <div class="middle">
-                                            <ngb-progressbar></ngb-progressbar>
+                                            <ngb-progressbar type="info" [max]="currentReviewDetails.totalRatingCount" [value]="currentReviewDetails.threeRatingCount" [striped]="false" ></ngb-progressbar>
                                         </div>
                                         <div class="side right">
-                                            <div>04</div>
+                                            <div>{{currentReviewDetails.threeRatingCount}}</div>
                                         </div>
 
                                         <div class="side">
                                             <div>2 star</div>
                                         </div>
                                         <div class="middle">
-                                            <ngb-progressbar></ngb-progressbar>
+                                            <ngb-progressbar type="warning" [max]="currentReviewDetails.totalRatingCount" [value]="currentReviewDetails.twoRatingCount" [striped]="false" ></ngb-progressbar>
                                         </div>
                                         <div class="side right">
-                                            <div>05</div>
+                                            <div>{{currentReviewDetails.twoRatingCount}}</div>
                                         </div>
 
                                         <div class="side">
                                             <div>1 star</div>
                                         </div>
                                         <div class="middle">
-                                            <ngb-progressbar></ngb-progressbar>
+                                            <ngb-progressbar type="danger" [max]="currentReviewDetails.totalRatingCount" [value]="currentReviewDetails.oneRatingCount" [striped]="false" ></ngb-progressbar>
                                         </div>
                                         <div class="side right">
-                                            <div>00</div>
+                                            <div>{{currentReviewDetails.oneRatingCount}}</div>
                                         </div>
                                     </div>
 
