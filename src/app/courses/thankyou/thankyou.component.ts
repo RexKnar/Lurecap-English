@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-thankyou',
@@ -7,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThankyouComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private readonly _router: Router,) { }
 
   ngOnInit(): void {
+
+    setTimeout(this.redirectPage, 1000);
+  }
+
+  public redirectPage()
+  {
+    this._router.navigate(['/signup']);
+    window.open('https://portal.speakrefine.com');
   }
 }

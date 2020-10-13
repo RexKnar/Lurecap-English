@@ -6,9 +6,11 @@
             <div class="col-lg-8  col-md-12">
                 <div class="courses-details-image">
                     <div class="embed-responsive embed-responsive-16by9 ">
-                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/464457438"
+                        <iframe class="embed-responsive-item" [src]="this.videoUrl"
                             width="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            
                     </div>
+                   
                 </div>
                 <div class="d-block d-sm-none">
                     <div class="courses-details-info ">
@@ -66,7 +68,7 @@
                     </div>
                 </div>
                 <h3 class="coursename">{{currentCourseDetails.courseDetails.courseName}}</h3>
-                <h6>{{currentCourseDetails.courseDetails.provideWhat}}</h6>
+                <p [innerHtml]="currentCourseDetails.courseDetails.provideWhat" ></p>
                 <div class="courses-details-desc">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item"><a class="nav-link active" id="overview-tab" data-toggle="tab"
@@ -81,7 +83,7 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="overview" role="tabpanel">
                             <div class="courses-overview">
-                                <p>{{currentCourseDetails.courseDetails.description}}</p>
+                                <p [innerHtml]="currentCourseDetails.courseDetails.description"></p>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="curriculum" role="tabpanel">
@@ -137,9 +139,9 @@
                                 <div class="courses-reviews col-lg-3 col-md-3 col-sm-2 col-xs-2">
                                     <!-- <span>Learner Feedback </span> -->
                                     <div class="rating-count align-items-center">
-                                        <span>4.1</span>
+                                        <span>{{currentReviewDetails.averageRating}}</span>
                                         <div class="bar">
-                                            <bar-rating></bar-rating>
+                                            <bar-rating [rate]="currentReviewDetails.averageRating" [readOnly]="true"></bar-rating>
                                         </div>
 
                                     </div>
@@ -159,50 +161,50 @@
                                             <div>5 star</div>
                                         </div>
                                         <div class="middle">
-                                            <ngb-progressbar></ngb-progressbar>
+                                            <ngb-progressbar type="success" [max]="currentReviewDetails.totalRatingCount" [value]="currentReviewDetails.fiveRatingCount" [striped]="false" ></ngb-progressbar>
                                         </div>
                                         <div class="side right">
-                                            <div>044568</div>
+                                            <div>{{currentReviewDetails.fiveRatingCount}}</div>
                                         </div>
 
                                         <div class="side">
                                             <div>4 star</div>
                                         </div>
                                         <div class="middle">
-                                            <ngb-progressbar></ngb-progressbar>
+                                            <ngb-progressbar type="primary" [max]="currentReviewDetails.totalRatingCount" [value]="currentReviewDetails.fourRatingCount" [striped]="false" ></ngb-progressbar>
                                         </div>
                                         <div class="side right">
-                                            <div>03</div>
+                                            <div>{{currentReviewDetails.fourRatingCount}}</div>
                                         </div>
 
                                         <div class="side">
                                             <div>3 star</div>
                                         </div>
                                         <div class="middle">
-                                            <ngb-progressbar></ngb-progressbar>
+                                            <ngb-progressbar type="info" [max]="currentReviewDetails.totalRatingCount" [value]="currentReviewDetails.threeRatingCount" [striped]="false" ></ngb-progressbar>
                                         </div>
                                         <div class="side right">
-                                            <div>04</div>
+                                            <div>{{currentReviewDetails.threeRatingCount}}</div>
                                         </div>
 
                                         <div class="side">
                                             <div>2 star</div>
                                         </div>
                                         <div class="middle">
-                                            <ngb-progressbar></ngb-progressbar>
+                                            <ngb-progressbar type="warning" [max]="currentReviewDetails.totalRatingCount" [value]="currentReviewDetails.twoRatingCount" [striped]="false" ></ngb-progressbar>
                                         </div>
                                         <div class="side right">
-                                            <div>05</div>
+                                            <div>{{currentReviewDetails.twoRatingCount}}</div>
                                         </div>
 
                                         <div class="side">
                                             <div>1 star</div>
                                         </div>
                                         <div class="middle">
-                                            <ngb-progressbar></ngb-progressbar>
+                                            <ngb-progressbar type="danger" [max]="currentReviewDetails.totalRatingCount" [value]="currentReviewDetails.oneRatingCount" [striped]="false" ></ngb-progressbar>
                                         </div>
                                         <div class="side right">
-                                            <div>00</div>
+                                            <div>{{currentReviewDetails.oneRatingCount}}</div>
                                         </div>
                                     </div>
 
@@ -210,15 +212,16 @@
                             </div>
                             <div class="reviewstyle col-md-12 col-sm-12 col-xs-12">
                                 <h5>Wite A Review</h5>
-                                <bar-rating></bar-rating>
+                                <bar-rating [(rate)]="addReview.rating"></bar-rating>
                                 <form>
                                     <div class="form-group">
-                                        <textarea class="form-control" id="exampleFormControlTextarea1"
-                                            placeholder="Say Whats in your mind" rows="3"></textarea>
+                                        <textarea  (change)="doTextareaValueChange($event)"  [(ngModel)]='addReview.review' class="form-control" id="exampleFormControlTextarea1"
+                                            placeholder="Say Whats in your mind" rows="3">{{addReview.review}}</textarea>
                                     </div>
                                 </form>
 
-                                <button type="submit" class="default-btn">Submit<span></span></button>
+                                <button type="submit" class="default-btn" *ngIf="currentUser" (click)="insertReview()">Submit<span></span></button>
+                                <button type="submit" class="default-btn" *ngIf="!currentUser" (click)="loginAlert()">Submit<span></span></button>
                             </div>
 
                             <div class="courses-review-comments col-lg-12">
@@ -248,11 +251,11 @@
                             <li class="price">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span><i class="flaticon-price-tag"></i> Price</span>
-                                    <span
+                                    <span 
                                         *ngIf="currentCourseDetails.courseDetails.courseAmount!=0 && currentCourseDetails.courseDetails.dicountAmount==0; ">₹
                                         {{currentCourseDetails.courseDetails.courseAmount}}
                                     </span>
-                                    <span
+                                    <span 
                                         *ngIf="currentCourseDetails.courseDetails.dicountAmount!=0 && currentCourseDetails.courseDetails.courseAmount!=0 ;">₹
                                         {{currentCourseDetails.courseDetails.dicountAmount}} <del
                                             class="discount-style">₹{{currentCourseDetails.courseDetails.courseAmount}}
@@ -287,7 +290,7 @@
                         </ul>
 
                         <div class="btn-box">
-                            <a href="/signup" class="default-btn"><i class="flaticon-price-tag"></i>Buy
+                            <a href="/signup?courseid={{currentCourseId}}" [routerLink]="['/signup']" [queryParams]="{ courseid: currentCourseId }" class="default-btn"><i class="flaticon-price-tag"></i>Buy
                                 Now<span></span></a>
 
                         </div>
@@ -298,3 +301,6 @@
         </div>
     </div>
 </section>
+
+
+

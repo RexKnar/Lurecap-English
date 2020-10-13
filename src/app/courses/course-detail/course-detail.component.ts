@@ -1,21 +1,36 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AddReview } from 'src/app/shared/models/Course';
 // import { CourseDetail, CourseDetails } from 'src/app/shared/models/Course';
 import { CourseService } from 'src/app/shared/services/course.service';
-
+import { LocalStorageService } from 'src/app/shared/services/LocalStorageService';
+import { FormsModule } from '@angular/forms';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 @Component({
   selector: 'app-course-detail',
   templateUrl: './course-detail.component.html',
   styleUrls: ['./course-detail.component.scss']
 })
-export class CourseDetailComponent implements OnInit {
-  constructor(private readonly _courseService: CourseService,
+export class CourseDetailComponent implements OnInit {  
+  videoUrl: SafeResourceUrl;
+  constructor( public sanitizer: DomSanitizer,private readonly _courseService: CourseService,
+    private _localStorageService: LocalStorageService,
     private route: ActivatedRoute) { }
   currentCourseId: number;
-  // currentCourseDetails: CourseDetail;
-  // courseDetails: CourseDetails;
-
-  currentCourseDetails = 
+  currentCourseDetails: CourseDetail;
+  currentReviewDetails:any;
+  courseDetails: CourseDetails;
+  addReview:AddReview = new AddReview;
+  currentUser:any;
+  
+  doTextareaValueChange(ev) {
+    try {
+      this.addReview.review = ev.target.value;
+    } catch(e) {
+      console.info('could not set textarea-value');
+    }
+  }
+  currentCourseDetails2 = 
     {
 
       courseDetails : 
@@ -144,13 +159,50 @@ export class CourseDetailComponent implements OnInit {
   
   ngOnInit(): void {
     this.currentCourseId = parseInt(this.route.snapshot.queryParamMap.get('CourseId'));
-    // this.getCurrentCourseDetails(this.currentCourseId);
+    this.getCurrentCourseDetails(this.currentCourseId);
+    this.getReviewDetails(this.currentCourseId);
+    this.addReview.courseMasterId=this.currentCourseId;
+
+    this.currentUser=this._localStorageService.getAuthorizationData();
+
+    // console.log( this.currentCourseDetails.courseDetails.videoUrl);
+    
+    
 
   }
   getCurrentCourseDetails(currentCourseId): void {
     this._courseService.getCourseDetails(currentCourseId).subscribe((data: any) => {
-      // this.currentCourseDetails = data;
+    
+      this.currentCourseDetails = data;
+      this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+        this.currentCourseDetails.courseDetails.videoUrl
+      );
+      console.log(this.videoUrl);
     });
+  }
+
+  getReviewDetails(currentCourseId) : void{
+    this._courseService.getReviewDetails(currentCourseId).subscribe((data: any) => {
+      console.log(data.reviewData)
+      this.currentReviewDetails = data.reviewData[0];
+    });
+  }
+
+  insertReview() : void {
+    if(this.addReview.rating>0)
+    {
+      this._courseService.insertReview(this.addReview).subscribe((data:any)=>{
+        this.addReview.rating=0;
+        this.addReview.review='';
+      });
+    }
+
+    
+  }
+
+  
+  loginAlert(){
+      alert('Please Login To Add Review');
   }
 }
 
@@ -177,9 +229,9 @@ export class CourseDetails {
   tutorId: number;
 }
 export class ChapterDetails {
-  // chapterId: number;
+  chapterId: number;
   chapterName: string;
-  // orderNo: number;
+  orderNo: number;
   hours: string;
 
 }
