@@ -52,10 +52,10 @@
                     <div class="col-lg-2 col-md-6 wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
                         <label>Password</label>
                     </div>
-                    <div class="col-lg-12 col-md-6">
+                    <div class="col-lg-12 col-md-6 ">
 
                         <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
-                            <input type="text" name="PassWord" class="form-control" formControlName="passWord"
+                            <input type="password" name="PassWord" class="form-control" formControlName="passWord"
                                 placeholder="Your Password"
                                 [ngClass]="{ 'is-invalid': submitted && f.passWord.errors }">
                         </div>
@@ -63,7 +63,7 @@
                             <div *ngIf="f.passWord.errors.required" class="par-txxt">*required</div>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-md-6 form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
+                    <div class="col-lg-12 col-md-6 form-group wow fadeInLeft mb-5" data-wow-delay="00ms" data-wow-duration="1000ms">
 
                         <div class="col-lg-4 float-left">
                             <input type="radio" name="gender" value=1 formControlName="gender">
@@ -81,7 +81,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-2 col-md-6 wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
+                    <div class="col-lg-2 col-md-6 wow fadeInLeft mt-10" data-wow-delay="00ms" data-wow-duration="1000ms">
                         <label>City</label>
                     </div>
                     <div class="col-lg-12 col-md-6">
@@ -106,7 +106,10 @@
                 </form>
                 <div class="col-lg-12 linkstyle ">
                     <div class=" col-lg-6 float-right">
-                        <p class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">Already have an account !<a href="/signin"> <span> Log In</span></a></p>
+                        <p class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">Already have an account !
+                            <a [routerLink]="['/signin']" [queryParams]="{ courseid: courseId }" *ngIf="courseId"> <span> Log In</span></a>
+                            <a [routerLink]="['/signin']"  *ngIf="!courseId"> <span> Log In</span></a>
+                        </p>
                     </div>
                 </div>
             </div>

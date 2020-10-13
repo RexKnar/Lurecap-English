@@ -20,7 +20,9 @@
                         <h3><a
                                 [href]="['/course-detail?CourseId='+coursesContent.courseMasterId]" class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms"><b>{{coursesContent. courseName}}</b></a>
                         </h3>
-                        <p class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{coursesContent.description |Description:coursesContent }}</p>
+                        <p class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms" [innerHtml]="coursesContent.provideWhat |Description:coursesContent">
+                            <!-- {{coursesContent.description |Description:coursesContent }} -->
+                        </p>
                         <bar-rating [(rate)]="coursesContent.rating" [readOnly]="true"></bar-rating>
                         <ul class="courses-box-footer d-flex justify-content-between align-items-center">
                             <li>

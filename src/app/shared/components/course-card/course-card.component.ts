@@ -9,14 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course-card.component.scss']
 })
 export class CourseCardComponent implements OnInit {
-  // courseCardList: CourseList[] = [];
+  courseCardList: CourseList[] = [];
 
   constructor(
     private readonly _courseService: CourseService,
     private readonly _router: Router
 
   ) { }
-  courseCardList: CourseList[] = [
+  courseCardList2: CourseList[] = [
     {
       courseMasterId: 8,
       courseName: 'BASIC ENGLISH SPEAKING',
@@ -71,14 +71,14 @@ export class CourseCardComponent implements OnInit {
 
   ];
   ngOnInit(): void {
-    // this.get();
+    this.get();
 
 
   }
 
   get() {
     this._courseService.getCourseList().subscribe((data: any) => {
-      // this.courseCardList = data.allCourse;
+      this.courseCardList = data.allCourse;
     });
 
   }
