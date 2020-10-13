@@ -6,23 +6,26 @@
                     <div class="courses-image">
 
                         <a [href]="['/course-detail?CourseId='+coursesContent.courseMasterId]" class="d-block image">
-                            <img [src]="coursesContent.imageUrl " alt="image">
+                            <img src="assets/img/courseImg/{{coursesContent.imageUrl}}" alt="image">
                         </a>
                     </div>
                     <div class="courses-content">
                         <div class="course-author d-flex ">
                             <img src="assets/img/630740-200.png" class="rounded-circle" alt="image">
-                            <span class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{coursesContent.tutorName}}
+                            <span class="wow fadeInLeft" data-wow-delay="00ms"
+                                data-wow-duration="1000ms">{{coursesContent.tutorName}}
 
                             </span>
                         </div>
 
-                        <h3><a
-                                [href]="['/course-detail?CourseId='+coursesContent.courseMasterId]" class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms"><b>{{coursesContent. courseName}}</b></a>
+                        <h3><a [href]="['/course-detail?CourseId='+coursesContent.courseMasterId]"
+                                class="wow fadeInLeft" data-wow-delay="00ms"
+                                data-wow-duration="1000ms"><b>{{coursesContent. courseName}}</b></a>
                         </h3>
-                        <p class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms" [innerHtml]="coursesContent.provideWhat |Description:coursesContent">
+                        <div class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms"
+                            [innerHtml]="coursesContent.provideWhat |Description:coursesContent"></div>
                             <!-- {{coursesContent.description |Description:coursesContent }} -->
-                        </p>
+                        
                         <bar-rating [(rate)]="coursesContent.rating" [readOnly]="true"></bar-rating>
                         <ul class="courses-box-footer d-flex justify-content-between align-items-center">
                             <li>
