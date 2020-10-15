@@ -29,7 +29,7 @@ export class ContactPageComponent implements OnInit {
         {
             icon: 'bx bx-phone-call',
             title: 'Contact',
-            number: '+91-94874 27429',
+            number: '+91-94886 68587',
             email: 'academy@speakrefine.com'
         }
     ];
