@@ -1,5 +1,11 @@
 @import "../../../../styles.scss";
 
+.navbar {
+    img{
+        max-width: 70%;
+    }
+}
+
 .wilo-responsive-nav {
     display: none;
 }
