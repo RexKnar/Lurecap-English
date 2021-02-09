@@ -1,4 +1,4 @@
-<section class="courses-area bg-fafafb">
+<!-- <section class="courses-area bg-fafafb">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6" ></div>
@@ -23,7 +23,7 @@
                                  Buy Now<span></span>
                              </a>
                              </div>
-                            <!-- <bar-rating></bar-rating> -->
+                            <bar-rating></bar-rating>
                         </center>
                         
                     </div>
@@ -31,5 +31,130 @@
             </div>
             <div class="col-lg-4 col-md-6" ></div>
         </div>
+    </div>
+</section> -->
+
+<section class="contact-area pt-100 pb-70 bg-about-image ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6  about-img">
+                <h2 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">Are you seeking Industry's best professional English course?</h2>
+                <p>We provide best in class professional English learning programs for top notch institutions in India. Our online English speaking course provides you 10 times more speaking practice as compared to any classroom course, English speaking software or App. 80% of our students increase fluency and reduce hesitation in English speaking within the first month itself.</p>
+                <div class="shape"><img src="assets/img/our-mission/shape11.png"></div>
+                <!-- <div class="vector-shape5"><img src="assets/img/shape/vector-shape5.png" alt="image"></div> -->
+                <ul class="content-list wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
+                    <li><i class="flaticon-tick"></i> Spoken English</li>
+                    <li><i class="flaticon-tick"></i> Vocabulary building</li>
+                    <li><i class="flaticon-tick"></i> Correct pronunciation</li>
+                    <li><i class="flaticon-tick"></i> Communication development</li>
+                    <li><i class="flaticon-tick"></i> Writing Email , Notices and draft</li>
+                    <li><i class="flaticon-tick"></i> Development of poise/elegance</li>
+                    <li><i class="flaticon-tick"></i> Presentation skills</li>
+                    <li><i class="flaticon-tick"></i> Confidence building</li>
+                    <li><i class="flaticon-tick"></i>  Group discussions – Debate</li>
+                    <li><i class="flaticon-tick"></i> Written Aspects of Business English</li>
+                    <li><i class="flaticon-tick"></i> Guidelines for Interviews</li>
+                    <li><i class="flaticon-tick"></i> Dealing with Interview Questions</li>
+                    <li><i class="flaticon-tick"></i> Career Guidance</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 contact-form card">
+                <h4 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">Reach our expert team !</h4>
+            
+                    
+                    <div class="col-lg-12 col-md-6">
+
+                        <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
+                            <input type="text"  class="form-control" 
+                                placeholder="Institute Name" [(ngModel)]="ddd"
+                               >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                           
+                            
+                            <div class="col-lg-12 col-md-6">
+        
+                                <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
+                                    <input type="text"  class="form-control" 
+                                        placeholder="Number of students " [(ngModel)]="instituteDetails.numberofstudents"
+                                       >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            
+                            <div class="col-lg-12 col-md-6">
+        
+                                <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
+                                    <input type="text"  class="form-control" 
+                                        placeholder="City" [(ngModel)]="instituteDetails.city"
+                                       >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   
+                    
+                    <div class="col-lg-12 col-md-6">
+
+                        <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
+                            <input type="text"  class="form-control" 
+                                placeholder="Contact Person Name" [(ngModel)]="instituteDetails.contactpersonName"
+                               >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                        
+                            
+                            <div class="col-lg-12 col-md-6">
+        
+                                <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
+                                    <input type="text"  class="form-control" 
+                                        placeholder="Mobile Number" [(ngModel)]="instituteDetails.mobilenumber"
+                                       >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        
+                            
+                            <div class="col-lg-12 col-md-6">
+        
+                                <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
+                                    <input type="text"  class="form-control" 
+                                        placeholder="Email" [(ngModel)]="instituteDetails.email"
+                                       >
+                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="col-lg-12 col-md-12">
+
+                        <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
+                               <textarea placeholder="Message" class="textrea" [(ngModel)]="instituteDetails.message"></textarea>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-12 col-md-12 wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
+                        <button type="submit" class="default-btn" (click)="contactInstitute();"><i
+                                class="flaticon-tick"></i>Submit<span></span></button>
+                    </div>
+                <!-- </form> -->
+           
+            </div>
+            <div class="col-lg-3 about-image">
+            </div>
+        </div>
+        <div class="shape-img1"><img src="assets/img/shape/shape1.svg" alt="image"></div>
+        <div class="shape-img2"><img src="assets/img/shape/shape2.png" alt="image"></div>
+        <div class="shape-img3"><img src="assets/img/shape/shape3.png" alt="image"></div>
     </div>
 </section>

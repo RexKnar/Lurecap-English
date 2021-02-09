@@ -6,3 +6,14 @@ export class Contact {
     refund: boolean;
     mailDate: string;
 }
+
+export class InstituteInput {
+    instituteName: string;
+    numberofstudents: string;
+    contactpersonName: string;
+    mobilenumber: string;
+    email: string;
+    city: string;
+    message: string;
+    createdOn: string;
+}

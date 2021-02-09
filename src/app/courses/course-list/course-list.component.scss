@@ -3,6 +3,41 @@ $primary-color: #221638;
 $secondary-color:#9072c8;
 $black:#000;
 
+.contact-area{
+    .about-img {
+        // text-align: center;
+        position: relative;
+        z-index: 1;
+    
+        .shape {
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+        ul{
+            li{
+               
+                list-style-type: none;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .textrea{
+        width: 100%;
+    }
+    .card{
+        padding: 35px;
+        box-shadow: 0 15px 35px rgb(50 50 93 / 42%), 0 15px 35px transparent;
+        h4{
+            margin-bottom: 10px;
+        }
+    }
+    
+}
 
 .courses-area {
     position: relative;
