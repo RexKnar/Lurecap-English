@@ -15,12 +15,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LocalStorageService } from './shared/services/LocalStorageService';
 
 import { AuthInterceptor } from "src/app/shared/interceptors/AuthInterceptor"
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
+    CommonModule,
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
@@ -29,6 +32,7 @@ import { AuthInterceptor } from "src/app/shared/interceptors/AuthInterceptor"
     BarRatingModule,
     HomeModule,
     CoreModule,
+    FormsModule,
     NgbModule,
     CommunityModule,
     BrowserAnimationsModule,

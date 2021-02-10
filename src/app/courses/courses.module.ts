@@ -11,6 +11,7 @@ import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { BarRatingModule } from 'ngx-bar-rating';
 import { ThankyouComponent } from './thankyou/thankyou.component';
 import { PleaseWaitComponent } from './please-wait/please-wait.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { PleaseWaitComponent } from './please-wait/please-wait.component';
     SharedModule,
     NgbModule,
     BarRatingModule,
+    FormsModule,
   ],
   exports: [
     CourseListComponent
