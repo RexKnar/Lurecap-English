@@ -33,7 +33,18 @@
         </div>
     </div>
 </section> -->
-
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-lg-12">
+            <center>
+                <span class="sub-title wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms"><img
+                        src="assets/img/star-icon.png" alt="image"></span>
+                    <h4>join as Institution</h4>
+                
+            </center>
+        </div>   
+    </div>
+</div>
 <section class="contact-area pt-100 pb-70 bg-about-image ">
     <div class="container">
         <div class="row">
@@ -66,7 +77,7 @@
 
                         <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
                             <input type="text"  class="form-control" 
-                                placeholder="Institute Name" [(ngModel)]="ddd"
+                                placeholder="Institute Name" [ngModel]="instituteDetails.instituteName"
                                >
                         </div>
                     </div>
@@ -78,7 +89,7 @@
         
                                 <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
                                     <input type="text"  class="form-control" 
-                                        placeholder="Number of students " [(ngModel)]="instituteDetails.numberofstudents"
+                                        placeholder="Number of students " [ngModel]="instituteDetails.numberofstudents"
                                        >
                                 </div>
                             </div>
@@ -89,7 +100,7 @@
         
                                 <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
                                     <input type="text"  class="form-control" 
-                                        placeholder="City" [(ngModel)]="instituteDetails.city"
+                                        placeholder="City" [ngModel]="instituteDetails.city"
                                        >
                                 </div>
                             </div>
@@ -102,7 +113,7 @@
 
                         <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
                             <input type="text"  class="form-control" 
-                                placeholder="Contact Person Name" [(ngModel)]="instituteDetails.contactpersonName"
+                                placeholder="Contact Person Name" [ngModel]="instituteDetails.contactpersonName"
                                >
                         </div>
                     </div>
@@ -114,7 +125,7 @@
         
                                 <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
                                     <input type="text"  class="form-control" 
-                                        placeholder="Mobile Number" [(ngModel)]="instituteDetails.mobilenumber"
+                                        placeholder="Mobile Number" [ngModel]="instituteDetails.mobilenumber"
                                        >
                                 </div>
                             </div>
@@ -126,7 +137,7 @@
         
                                 <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
                                     <input type="text"  class="form-control" 
-                                        placeholder="Email" [(ngModel)]="instituteDetails.email"
+                                        placeholder="Email" [ngModel]="instituteDetails.email"
                                        >
                                        
                                 </div>
@@ -137,7 +148,7 @@
                     <div class="col-lg-12 col-md-12">
 
                         <div class="form-group wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">
-                               <textarea placeholder="Message" class="textrea" [(ngModel)]="instituteDetails.message"></textarea>
+                               <textarea placeholder="Message" class="textrea" [ngModel]="instituteDetails.message"></textarea>
                         </div>
                     </div>
 

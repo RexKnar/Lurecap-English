@@ -525,6 +525,8 @@
             display: flex;
             align-items: center;
             height: 30px;
+            font-weight: 900;
+            font-size: 20px;
 
             .circle {
                 height: 5px;
@@ -975,7 +977,7 @@
         }
         .logo {
             position: relative;
-            width: 70%;
+            width: 100px;
             z-index: 999;
         }
     }

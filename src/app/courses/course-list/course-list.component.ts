@@ -10,7 +10,7 @@ import { ContactUsService } from 'src/app/shared/services/contact-us.service';
 export class CourseListComponent implements OnInit {
 
   public instituteDetails:InstituteInput = new InstituteInput();
-  ddd:any='dummy';
+  //ddd:any='dummy';
 
   constructor(private _contactService: ContactUsService ) {
     
